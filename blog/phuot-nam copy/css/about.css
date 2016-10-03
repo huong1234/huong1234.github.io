@@ -1,0 +1,143 @@
+body { 
+	padding-top: 0px; 
+	line-height: 16.8px;
+	font-family: Helvetica; 
+	font-size: 15px;
+	font-weight: 500;
+	color:black;
+}
+.productioninfo{
+	margin-top: 5px;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+img#logo-header {
+    width: 100px;
+}
+a.dropdown-toggle{
+	font-size:12px;
+/*font-family: Garamond; */
+}
+a.list-group-item{
+	border: none;
+	margin-left:0px;
+}
+/*nav.navbar.navbar-default{
+	max-width: 930px;
+}*/
+.footer-head a{
+	font-size: 14px;
+	
+}
+footer ul{
+	list-style-type: none;
+	margin:0px;
+	padding:0px;
+}
+.about{
+	text-align: center;
+}
+.row ul{
+	margin-top: 8px;
+	margin-bottom: 19px;
+	list-style-type: none;
+}
+.form-group{
+	width: 400px;
+	margin-left: 100px;
+}
+a.dropdown-toggle{
+	color:black;
+	font-size:16px;
+}
+.badge{
+	background-color:orange;
+	border-radius: 0px;
+	position: absolute;
+	right: 0px;
+}
+
+i.fa.fa-shopping-cart{
+	color:green;
+}
+.product-price{
+	font-weight: 900;
+	font-size: 16px;
+	color:green;
+	line-height: 23px;
+
+}
+.new-product h4, .product-hot h4, h4.title{
+	font-size: 24px
+	font-weight:700;
+	line-height: 4em;
+	text-align: center;
+	color: green;
+}
+#main-content .text-center{
+	text-align: center;
+	margin-bottom: 40px;
+	margin-top: 18px;
+	font-size: 20px;
+	color: green;
+	font-weight: 600;
+}
+.panel.panel-default{
+	border: 0px;
+}
+.panel-default ul li a{
+	color: black;
+}
+.footer-bottom{
+	color:white;
+	background-color: green;
+}
+.row.grid-demo p a{
+	color:black;
+}
+.header-top{
+	background-color: green;
+	margin-bottom: 19px;
+}
+.header-top .contactinfo ul.nav.nav-pills>li>a{
+	font-size: 14px;
+	color:white;
+
+}
+.nav>li>a{
+	padding: 2px 8px;
+}
+.social-icon .nav li a i{
+	color:white;
+	padding: 1px 6px;
+	margin-bottom: 0px;
+
+}
+.footer-head h4{
+	color:green;
+	font-size: 14px;
+	font-weight: 500;
+}
+.left-sidebar h3{
+	font-weight: 600;
+	color:green;
+	margin-bottom: 15px;
+	font-size: 19px;
+}
+i.fa.fa-youtube-play.fa-2x{
+	color: red;
+}
+.connect p{
+	margin-top: 20px;
+	font-weight: 600;
+	margin-bottom: 0px;
+}
+.productioninfo .productname {
+	overflow: hidden;
+	height: 30px;
+	margin-bottom: 2px;
+	margin-top: 10px;
+	color:black;
+	font-size: 13px;
+	/*text-overflow: ellipsis; */
+}

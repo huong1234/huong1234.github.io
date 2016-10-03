@@ -11,6 +11,7 @@
 body{
  	background-color : pink;
  	max-width: 100%;
+ 	text-align: center;
 
  }
 
@@ -32,51 +33,68 @@ body{
 	max-width: 100%;
 	max-height: 100%;
 	/*padding-top: 30px;*/
+	margin-left: -8px;
 }
 
 #header {
-	background-image: url('http://www.visitsweden.com/ImageVault/Images/id_1850/scope_0/ImageVaultHandler.aspx');
-	width: 100%;
+	background-image: url(http://www.bactom.com/uploads/1/bannerweb-3.jpg);
+	width: 1000px;
+	margin: auto;
+	height: 290px;
+
 }
 .qc{
 	text-align: center;
 	background: #583c24;;
 	font: white;
+	margin-bottom:15px;
 
 }
 
-#main-menu, #footer1{
+.price{
+	font-size: red;
+}
+#main-content, #main-content2, #footer1{
 	width: 100%;
 	border: 1px ;
 	padding: 10px;
 	border-top-width: 5px;
-	font-size: 10px;
+	font-size: 14px;
 	color: green;
 	text-decoration: none;
 	/*float: left;*/
-	max-width: 100%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: auto;
+	border:1px dotted #c0bebe;
 }
 
-#main-menu div:hover, #main-menu div.active{
+
+#main-content2{
+	float:left;
+	width: 82%;
+	border:3px dotted #c0bebe;
+}
+#main-content div:hover, #main-content div.active{
 	color:orange;
 }
 
-#main-menu div.active{
+#main-content div.active{
 	font-weight: bold;
 }
 
 .box2{
 	float:left;
 	position: relative;
-	border-radius: 2px;
+	border-radius: 10px;
 	background: white;
 	border:1px dotted #c0bebe;
 	padding: 8px;
-	margin: 10px 5px;
+	margin: 19px 9px;
 	position: relative;
 	display: block;
 	font-family:"UTM-Helve",arial;
-	width: 23%;
+	width: 22.45%;
 }
 .ProductAttrs {
 	text-align: center;
@@ -90,20 +108,33 @@ body{
 
 #menu {
   position: relative;
+
+  
+  magin: auto;
 }
 /*==Style cho menu===*/
-#menu ul {
+#menu > ul {
   background: #1F568B;
   list-style-type: none;
   text-align: center;
+  width: 1000px;
+  margin:auto;
 }
 #menu >ul > li {
-  color: #f1f1f1;
+  /*color: red;*/
   display: inline-block;
-  width: 120px;
-  height: 40px;
-  line-height: 40px;
-  margin-left: -5px;
+  width: 102px;
+  height: 37px;
+  line-height: 36px;
+  margin-left: 7px;
+}
+#menu >ul >li >ul{
+	max-width: 200px;
+	list-style-type: none;
+	background: #1F568B;
+}
+#menu >ul >li >ul >li{
+	width:	200px;
 }
 #menu a {
   text-decoration: none;
@@ -170,3 +201,44 @@ a.logo:hover img{
 	padding: 15px;
 
 }*/
+
+.row{
+	width: 100%
+	float: left;
+	border:3px dotted #c0bebe;
+	
+	margin:3px 2px;
+	border-radius: 3px;
+
+
+}
+.col{
+	width: 18%;
+	float:left;
+	border:1px dotted #c0bebe;
+	
+}
+.block-conten2{
+	width: 100%;
+	border:1px dotted #c0bebe;
+}
+.block-content ul li {
+	
+	list-style: none;
+	background: url(http://www.bactom.com/tpl/luontuoisach.vn/images/footer-list-style-blue.png) 2px 20px no-repeat;
+	/*margin-left: 14px;*/
+
+}
+.block-content a{
+	text-decoration: none;
+	font-size: 15px;
+	padding: 1px;
+	border-bottom: 1px dashed #3F51B5;
+	padding-left: 5px;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+.block-content2 img{
+	max-width: 100%;
+}

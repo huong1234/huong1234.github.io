@@ -1,0 +1,118 @@
+
+//Bai ve hinh
+	function printTriangle(n){
+		var str='';
+
+		for (var i=0; i<n; i++){
+			for (var j=0; j<i+1; j++){
+				//in ra i dau * 
+				str  = str + '*';
+			}
+			//In ra dau xuong dong
+			str += '<br/>';
+		}
+		document.write(str);
+		return str;
+	}
+
+	function printEmptyRectangle(a,b){
+		var str='';
+		var str2 ='x';
+		for (var i=0; i <b; i++){ //b dong i=0 la dong 1
+			for (var j=0; j<a; j++){
+				if (i==0)
+				{
+					str = str + 'x';
+				}
+				else (i!=0)
+				{	
+
+					str = 'x';
+				}
+				
+			}
+			str += '</br>';	
+		}
+		document.write(str);
+		return str;
+
+	}
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+</body>
+</html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script> 	
+
+	//Bai 1 
+	function bai1(n){
+		var result=1; 
+		for (var i =1; i<=n; i++)
+			result = result * i; 
+		document.write("<p>" + n + "! =" +result + "</p>");
+		return result; 
+	}
+
+	//Bai 2
+	function bai2(string){
+		var text = "";
+		fLen = string.length; 
+		for (var i=0; i <fLen ;i++){
+	
+			text = text + string[fLen - i - 1] ; 
+		}
+		document.write("<p>" +"Chuoi dao nguoc la " +text + "</p>");
+		return text; 
+	}
+
+	//Bai 3
+	function duplicate(string){
+		var text = "";
+		fLen = string.length; 
+		for (var i = 0; i < 9; i++){
+			text = text + string + "-"; 
+		}
+		document.write("<p>" +"10 lan chuoi sao chep la " +text + "</p>");
+		return text + string; 
+	}
+
+	//Bai 4
+	function bai4(arr) {		
+		arr.sort(); 
+		for (var i = 1; i <= arr.length; i++) {
+			document.write("<p>" + i + ". "+ arr[i-1] + "</p>");			
+		}
+		return arr;
+	}
+
+	//Bai 5
+	function bai5(arr) {
+		var arr2 = [];  
+		for (var i = 0; i < arr.length; i++) 
+			arr2[i] = arr[i] * 2 ;
+
+		document.write("<p>" + "Mang double la : " + arr2 +"</p>");
+		return arr2;
+	}
+
+	//Bai 6
+	function bai6(arr){
+		var arr2 = [];
+		for (var i=0 ; i<arr.length; i++)
+			arr2[i] = arr[i] % 2; 
+		document.write("<p>" + "Mang phan du la : " + arr2 +"</p>");
+		return arr2; 
+
+	}
+
+</script> 
+</body>
+</html>

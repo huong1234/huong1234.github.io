@@ -1,0 +1,26 @@
+<script> 
+	function thongbao() { /*goi function này thì code bên trong sẽ dược thực hiên*/
+		alert("demo javascript");
+	}
+	function tinhtong(x,y){
+		alert(x+y ); 
+	}
+
+	var z; //z là global variable
+	var tinhtong= function(x,y) {
+
+		alert("ket qua  " + (x+y) );
+
+		return x+y ; /*chi co thể truy suất ở trong function thôi*/
+		/*x,y là local variable*/
+	}
+
+	var hero ={ //có 3 thuộc tính
+		name : "robin",
+		level:26,
+		say : function() { //phương thức của đối tượng -là function nên phải gọi say()
+			alert("xin chào các ban. tôi là " + this.name);
+		}
+	}
+
+</script>

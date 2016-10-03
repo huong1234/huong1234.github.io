@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap 3 Button Group</title>
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
+
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+
+
+
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> -->    
+    <script src="js/jquery.min.js"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+
+    
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+
+
+    <!-- bxSlider Javascript file -->
+    <script src="jquery.bxslider/jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+
+
+    <style type="text/css">
+        .example{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+    <div class="col-md-12 col-sm-12 col-sm-12">
+
+    <nav class="navbar navbar-default">
+
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img id="logo-header" alt="Brand" src="logo.jpg">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Coffee Story <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Giới thiệu hạt cafe</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">7 ngày vs cà phê giả</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Quy trình Rang Cà phê</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Phòng Nghiên Cứu Cà phê</a></li>                         
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="file:///Users/huong/Desktop/huong1234.github.io/blog/test/menu.html">Coffee</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Beverage</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Tea & Drink</a></li>                           
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Franchise <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Hướng dẫn hợp tác</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Các bước gia nhập</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Nội thất</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">FAQ</a></li>                             
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Store <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Hệ thống cửa hàng</a></li>                                 
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Events & News <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Tin tức</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Sự kiện</a></li>                             
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <!-- <button type="submit" class="btn btn-default">Submit</button> -->
+            </form>
+        </div><!-- /.navbar-header -->
+    </nav><!-- /.navbar -->
+
+    <ul id="slider1">
+        <li><img src="images/pic1.jpg" /></li>
+        <li><img src="images/pic2.jpg" /></li>
+        <li><img src="images/pic3.jpg" /></li>
+    </ul>
+
+<div class="about">
+    <div class="row">
+        <h3> 7 DAYS COFFEE LÀ GÌ </h3>    
+        <p><b>7</b>": có nghĩa là cà phê rang tươi ngon nhất trong vòng 7 ngày."</p>
+        <p><b>DAYS</b>": là uống cà phê tươi ngon mỗi ngày sẽ rất tốt cho sức khỏe."</p>
+        <p><b>COFFEE</b>": có nghĩa là cà phê rang tươi ngon nhất trong vòng 7 ngày."</p>
+        <p><b>7</b>": có nghĩa là cà phê rang tươi ngon nhất trong vòng 7 ngày."</p>
+
+    </div>
+    
+</div>
+
+
+    <ul id="slider2">
+        <li><img src="images/slider/tea1.jpg" /></li>
+        <li><img src="images/slider/tea2.jpg" /></li>
+        <li><img src="images/slider/tea3.jpg" /></li>
+        <li><img src="images/slider/tea4.jpg" /></li>
+        <!-- <li><img src="images/slider/tea5.jpg" /></li>
+        <li><img src="images/slider/tea6.jpg" /></li>
+        <li><img src="images/slider/tea7.jpg" /></li>
+        <li><img src="images/slider/tea8.jpg" /></li> -->
+        <!-- <li><img src="images/slider/tea1.jpg" /></li>
+        <li><img src="images/slider/tea1.jpg" /></li>
+        <li><img src="images/slider/tea1.jpg" /></li> -->
+    </ul>
+
+</div> <!-- col-md-10 -->
+
+</div>  <!-- row -->
+<div class="row">
+
+<div class="col-md-6 col-xs-6">
+    <a href="http://7dayscoffee.vn/vn/gioi-thieu-hat-ca-phe.html">
+            <img class="img-responsive" src="http://7dayscoffee.vn/uploads/guide/20160815114029_j7mQ7d9pGr.jpg" alt="Giớ thiệu hạt cà phê"> 
+    </a>
+    <div class="info-about">
+        <h4>
+           <a href="http://7dayscoffee.vn/vn/gioi-thieu-hat-ca-phe.html "></a> 
+        </h4>
+        <p>
+            "Cà phê của 7 Days Coffee là sản phẩm cà phê được tạo ra để bảo vệ sức khỏe ủa khách hàng, nhờ vào việc sử ..."
+        </p>
+        
+    </div>
+    
+</div>
+<div class="col-md-6 col-xs-6">
+    <a href="http://7dayscoffee.vn/vn/gioi-thieu-hat-ca-phe.html">
+            <img class="img-responsive" src="http://7dayscoffee.vn/uploads/guide/20160815114029_j7mQ7d9pGr.jpg" alt="Giớ thiệu hạt cà phê"> 
+    </a>
+    <div class="info-about">
+        <h4>
+           <a href="http://7dayscoffee.vn/vn/gioi-thieu-hat-ca-phe.html "></a> 
+        </h4>
+        <p>
+            "Cà phê của 7 Days Coffee là sản phẩm cà phê được tạo ra để bảo vệ sức khỏe ủa khách hàng, nhờ vào việc sử ..."
+        </p>
+        
+    </div>
+    
+</div>
+</div> <!-- row -->
+
+<div class="row"> <!-- row -->
+<div class="col-md-6 col-xs-6">
+    <div class="news-7day clearfix">
+        <h4>
+            <a href="http://7dayscoffee.vn/vn/tin-tuc/">Tin tức:</a>
+        </h4>
+        <figure class="pull-leftL20">
+            <img src="http://7dayscoffee.vn/uploads/banner/20150814140541_PmEw2PHamp.jpg" alt="Giới thiệu 1 không gia cafe hoàn toàn mới" class="img-circle">            
+        </figure>
+        <div class="padT20">
+            "
+                    Với thương hiệu 7 Days Coffee, khách hàng sẽ được trải nghiệm 1 không gian cà phê thật trọn vẹn bằng những sản phẩm tươi sạch và an toàn, nhưng vẫn giữ được mùi vị đặc trưng của cà phê nhờ việc quản lý chất lượng một cách triệt để. Vì thế cà phê sẽ vô cùng tươi ngon và an toàn.                    "
+            <p class="text-right">
+                <a href="http://7dayscoffee.vn/vn/tin-tuc/gioi-thieu-1-khong-gian-ca-phe-hoan-toan-moi-8.html">(Chi tiết)</a>
+                
+            </p>
+            
+        </div>
+    </div>
+</div>
+<div class="col-md-6 col-xs-6">
+    <div class="news-7day clearfix">
+        <h4>
+            <a href="http://7dayscoffee.vn/vn/tin-tuc/">Sự kiện:</a>
+        </h4>
+        <figure class="pull-leftL20">
+            <img src="http://7dayscoffee.vn/uploads/banner/20150814141048_iOiejpYNn5.jpg" class="img-circle">            
+        </figure>
+        <div class="padT20">
+            "                  
+                    7 Days Coffee mang đến 1 trải nghiệm về không gian hoàn toàn mới lạ và cảm nhận hương vị cà phê độc đáo. Cùng khám phá tại 786 Âu Cơ, P.14, Q. Tân Bình. "
+            <p class="text-right">
+                <a href="http://7dayscoffee.vn/vn/su-kien/khong-gian-ca-phe-dam-chat-han-9.html">(Chi tiết)</a>
+                
+            </p>
+            
+        </div>
+    </div>
+</div>
+</div>  <!-- end of row -->
+
+
+<!-- Footer -->
+<footer>
+    <div class="row grid-demo">
+        <div class="col-xs-2 col-sm-4 col-md-2">
+            <h5>THÔNG TIN CÔNG TY</h5>
+            <ul>
+                <li>
+                    <a href="http://7dayscoffee.vn/vn/7-day-coffee.html">7 days coffee</a>
+                </li>
+                <li>
+                    <a href="http://7dayscoffee.vn/vn/gioi-thieu-cong-ty.html">Giới thiệu công ty</a> 
+                </li>
+                <li>
+                    <a href="http://7dayscoffee.vn/vn/loi-chao-cua-ceo.html">Lời chào của CEO</a> 
+                </li>
+            </ul>
+
+        </div>
+        <div class="col-xs-2 col-sm-4 col-md-2">
+            <h5> MENU</b></h5>
+            <ul>
+                <li>
+                    <a href="http://7dayscoffee.vn/vn/menu/coffee">Coffee</a>
+                </li>
+                <li>
+                    <a href="http://7dayscoffee.vn/vn/menu/beverage">Beverage</a>
+                </li>
+                <li>
+                    <a href="http://7dayscoffee.vn/vn/menu/tea-drink">Tea& drink</a>
+                </li>
+                <li>
+                    <a href="http://7dayscoffee.vn/vn/menu/tin-tuc">Tin tức</a>
+                </li>
+                <li>
+                    <a href="http://7dayscoffee.vn/vn/menu/su-kien">Sự kiện</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xs-2 col-sm-4 col-md-2">
+            <h5>COFFEE STORY</h5>
+            <ul>
+                <li>
+                    <a href="http://7dayscoffee.vn/vn/gioi-thieu-hat-ca-phe.html">Giới thiệu hạt cà phê</a>
+                </li>
+                <li>
+                    <a href="http://7dayscoffee.vn/vn/7-days-vs-ca-phe-gia.html">7 Days vs Cà phê giả</a>
+                </li>
+                <li>
+                    <a href="http://7dayscoffee.vn/vn/quy-trinh-rang-ca-phe.html">Quy trình rang cà phê</a>
+                </li>
+                <li>
+                    <a href="http://7dayscoffee.vn/vn/phong-nghien-cuu-ca-phe.html">Phòng nghiên cứu cà phê</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xs-2 col-sm-4 col-md-2">
+            <h5>FRANCHISE</h5>
+            <ul>
+                <li>
+                    <a href="http://7dayscoffee.vn/vn/huong-dan-hop-tac.html">Hướng dẫn hợp tác</a>
+                </li>
+                <li>
+                    <a href="http://7dayscoffee.vn/vn/cac-buoc-gia-nhap.html">Các bước gia nhập</a>
+                </li>
+                <li>
+                    <a href="http://7dayscoffee.vn/vn/noi-that.html">Nội thất</a>
+                </li>
+                <li>
+                    <a href="http://7dayscoffee.vn/vn/faq.html">FAQ</a>
+                </li>
+            </ul>   
+        </div>
+        <div class="col-xs-2 col-sm-4 col-md-2">
+            <h5>FAMILY SITE</h5>
+            <ul>
+                <li>
+                    <a href="http://purenara.com.vn">Pure Nara</a>
+                </li>
+                <li>
+                    <a href="http://purenara.com.vn">Limo & Friends</a>
+                </li>
+                <li>
+                    <a href="http://purenara.com.vn">Bw Projects </a>
+                </li>
+                <li>
+                    <a href="http://purenara.com.vn">Lime Orange </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-xs-2 col-sm-4 col-md-2">
+            <div class="fix_h">
+            <h5>Social Network</h5>
+            <div class="social">
+
+            
+            
+                    <a target="_blank" href="https://www.facebook.com/7dayscoffee.vn">
+                        <i class="fa-facebook-square"> </i> </a>
+                
+                    <a target="_blank" href="https://www.facebook.com/7dayscoffee.vn">
+                        <i class="fa-facebook-square"> </i> </a>
+                    <a target="_blank" href="https://www.facebook.com/7dayscoffee.vn">
+                        <i class="fa-facebook-square"> </i> </a>
+            </div>
+            </div>
+
+                    
+        </div>
+    </div><!-- /.row -->
+
+    <div class="info_com" style=" 
+    line-height: 2em;
+    font-weight: 300;">
+
+
+        <p><strong>COFFEE WAY COMPANY</strong>:Công ty TNHH Con đường Cà Phê</p>
+        <p style="padding-bottom: 100px;">30 đường số 5, Khu Phố 4, Xã Bình Hưng, huyện Bình Chánh, TP.HCM - [Email] : "<a href="mailto:support@7dayscoffee.vn">support@7dayscoffee.vn</a>"[Tel]:08 3758 9000</p>
+
+        
+
+    </div>
+</footer>
+</div> <!-- /.container -->
+
+<script>
+    $(document).ready(function(){
+      $('#slider1').bxSlider({
+        mode: 'fade',
+        auto: true,
+        autoControls: true,
+        pause: 2000
+        });
+
+
+      $('#slider2').bxSlider({
+        minSlides:4,
+        maxSlides:4,
+        // mode: 'fade',
+         auto: true,
+        autoControls: true,
+        pause: 2000,
+        slideWidth:360,
+        slideMargin: 10
+        });
+    });
+
+    // $('.bxslider').bxSlider({
+    //     minSlides: 2,
+    //     maxSlides: 2,
+    //     slideWidth: 360,
+    //     slideMargin: 10
+    // });
+</script>
+</body>
+</html>

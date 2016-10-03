@@ -1,0 +1,93 @@
+<html>
+    <head>
+	   <meta charset="utf-8">
+        <title>Calculator</title>
+        <link rel="stylesheet" type="text/css" href="css/calculator.css">
+    </head>
+    <body>
+        <div id = "calculator">
+            <!-- screen amd clear keys -->
+            <div class="top">
+                <span onclick="clearContent()" class="clear">C</span>
+                <div id="screen"></div>
+            </div>
+
+            <div class="keys">
+                <!-- operator and other keys -->
+                <span onclick="getNumberSelected(this)">1</span>
+                <span onclick="getNumberSelected(this)">2</span>
+                <span onclick="getNumberSelected(this)">3</span>
+                <span onclick="getOperatorSelected(this)" class="operator"> + </span>
+                <span onclick="getNumberSelected(this)">4</span>
+                <span onclick="getNumberSelected(this)">5</span>
+                <span onclick="getNumberSelected(this)">6</span>
+                <span onclick="getOperatorSelected(this)" class="operator"> - </span>
+                <span onclick="getNumberSelected(this)">7</span>
+                <span onclick="getNumberSelected(this)">8</span>
+                <span onclick="getNumberSelected(this)">9</span>
+                <span onclick="getOperatorSelected(this)"> * </span>
+                <span onclick="getNumberSelected(this)">0</span>
+                <span onclick="getOperatorSelected(this)" class="operator"> . </span>
+                <span onclick="getOperatorSelected(this)" class="operator"> sqrt </span>
+                 <span onclick="getNumberSelected(this)" class="operator"> / </span>
+                 <span onclick="getNumberSelected(this)" class="operator"> sqr </span>
+                 <span onclick="clearContent()" class="clear"> C </span>
+                <span onclick="calculate()" class="eval"> = </span>
+
+            </div>
+        </div>
+
+        <script language="javascript">
+
+var buffer=""; var selector=true;var bresult=false;
+function getNumberSelected(span){
+    console.log(span.innerHTML);
+    var val= span.innerHTML; 
+    buffer+=val;
+    document.getElementById("screen").innerHTML=buffer;
+    selector=true;
+    //alert("buffer");
+}
+function getOperatorSelected(span){
+    if (selector==false)
+    {    
+        return;
+    }
+
+    console.log(span.innerHTML);
+    var val=span.innerHTML;
+    buffer+=val;
+    //operator=val;
+    document.getElementById("screen").innerHTML=buffer;
+    selector=false;
+    bresult=false;
+}
+
+function calculate(){
+    if (bresult==true)
+        return; 
+    var result;
+    alert(buffer);
+    result=eval(buffer);
+    alert(buffer);
+    if (result % 1 !== 0 ) 
+    {
+        result = result.toFixed(2);
+    }
+    buffer+=" = " + result ; 
+    console.log(result);
+    document.getElementById("screen").innerHTML=buffer;
+    bresult=true;
+}
+
+function clearContent(){
+    //alert("buffer");
+    buffer="";
+    document.getElementById("screen").innerHTML=buffer;
+    console.log("buffer");
+}
+    </script>
+
+</body>
+</html>
+               

@@ -1,0 +1,41 @@
+body { 
+	padding-top: 50px; 
+	line-height: 16.8px;
+	font-family: Garamond; 
+	font-size: 14px;
+	font-weight: 500;
+
+	color:black;
+
+	
+}
+img#logo-header {
+    width: 30px;
+}
+a.dropdown-toggle{
+	font-size:20px;
+/*font-family: Garamond; */
+}
+a.list-group-item{
+	border: none;
+	margin-left:-52px;
+}
+/*nav.navbar.navbar-default{
+	max-width: 930px;
+}*/
+footer a{
+	font-size: 10px;
+	color:#000;
+}
+footer ul{
+	list-style-type: none;
+	margin:0px;
+	padding:0px;
+}
+.about{
+	text-align: center;
+}
+.row ul{
+	margin-bottom: 39px;
+	list-style-type: none;
+}

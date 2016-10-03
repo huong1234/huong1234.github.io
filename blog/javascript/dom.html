@@ -1,0 +1,87 @@
+
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+</head>
+    <body>
+        <script language="javascript">
+          function change_background()
+          {
+             document.getElementById("message").style.background = 'red';
+          }
+          
+          function change_color()
+          {
+             document.getElementById("message").style.color = 'blue';
+          }
+          
+          function change_height()
+          {
+             document.getElementById("message").style.height = '500px';
+          }
+          
+          function change_font_size()
+          {
+             document.getElementById("message").style.fontSize = '30px';
+          }
+          function changeFontSize(x)
+          {
+          	document.getElementById("test").style.fontSize = x; 
+          }
+          function changeBgColor(color)
+          {
+          	document.getElementById("test").style.background = color; 
+          }
+          function increaseFontSize()
+          {        	 
+            var test = document.getElementById('message');
+          	var style = window.getComputedStyle(test,null).getPropertyValue('font-size');
+          	var fontSize = parseFloat(style);
+          	document.getElementById('message').style.fontSize = (fontSize + 1)+'px';
+
+
+          	console.log(fontSize);
+          }
+
+          function decreaseFontSize()
+          {        	 
+            var test = document.getElementById('message');
+          	var style = window.getComputedStyle(test,null).getPropertyValue('font-size');
+          	var fontSize = parseFloat(style);
+          	document.getElementById('message').style.fontSize = (fontSize - 1)+'px';
+
+
+          	console.log(fontSize);
+          }
+
+
+          function copyContent()
+          {
+          	var html = document.getElementById('dom1').innerHTML;
+          	console.log(html);
+          	document.getElementById('dom2').innerHTML = html;
+          }
+
+          function changeColor()
+          {
+          	document.getElementById("message").style.color = "blue";
+          	document.getElementById("dom1").style.color = 'yellow';
+          	document.getElementById("dom2").style.color = 'red';
+          }
+        </script>
+      	<div id="test">
+      		<h3 id="message">10 dieu tuoi tre thuong lang phi </h3>
+      		<p id="dom1">Sức khoẻ: Lúc còn trẻ, người ta thường ỷ lại vào sức sống tràn trề đang có. Họ làm việc như điên, vui chơi thâu đêm, ăn uống không điều độ…. Cứ như thế, cơ thể mệt mỏi và lão hoá nhanh. Khi về già, cố níu kéo sức khoẻ thì đã muộn. </p>
+      		<p id="dom2">Thời gian: Mỗi thời khắc “vàng ngọc” qua đi là không bao giờ lấy lại được. Vậy mà không hiếm kẻ ném 8 giờ làm việc qua cửa sổ. Mỗi ngày, hãy nhìn lại xem mình đã làm được điều gì. Nếu câu trả lời là “không”, hãy xem lại quỹ thời gian của bạn nhé! </p>
+      
+      	</div>
+        <input type="button" value="Change backgroud" onclick="change_background()"/>
+        <input type="button" value="Change color" onclick="change_color()"/>
+        <input type="button" value="Change height" onclick="change_height()"/>
+        <input type="button" value="Change fontsize" onclick="change_font_size()"/>
+
+
+</script> 
+</body>
