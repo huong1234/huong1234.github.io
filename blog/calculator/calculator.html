@@ -1,0 +1,142 @@
+<html>
+    <head>
+	   <meta charset="utf-8">
+        <title>Calculator Project</title>
+        <link rel="stylesheet" href="calculator.css">
+    </head>
+    <body>
+        <div id = "calculator">
+             <!--screen and clear keys-->
+            <div class="top">
+                
+                <input name="display" id="display" value="">
+            </div>
+
+            <div class="keys">
+                <!-- operator and other keys -->
+                <!-- this = document.getelementbyId --> 
+                <button onclick="runC()" class="oper del" id="clearMem">C</button>
+                <button onclick="runRootSquare(this)" class="oper" id="runRootSquare">√x</button>
+                <button onclick="runSquare(this)" class="oper" id="runSquare">x²</button>
+                <button onclick="getOperatorSelected(this)" class="oper" id="divide">/</button>
+
+                <button onclick="getNumberSelected(this)" class="digit" >7</button>
+                <button onclick="getNumberSelected(this)" class="digit" >8</button>
+                <button onclick="getNumberSelected(this)" class="digit" >9</button>
+                <button onclick="getOperatorSelected(this)" class="oper" id="multiply">*</button>
+
+                
+                <button onclick="getNumberSelected(this)" class="digit" >4</button>
+                <button onclick="getNumberSelected(this)" class="digit" >5</button>
+                <button onclick="getNumberSelected(this)" class="digit" >6</button>
+                <button onclick="getOperatorSelected(this)" class="oper" id="minus">-</button>
+
+                
+                <button class="digit" onclick="getNumberSelected(this)">1</button>
+                <button onclick="getNumberSelected(this)" class="digit" >2</button>
+                <button onclick="getNumberSelected(this)" class="digit" >3</button>
+                <button onclick="getOperatorSelected(this)" class="oper" id="plus">+</button>
+
+
+                <button onclick="getNumberSelected(this)" class="digit" >0</button>
+                <button onclick="getOperatorSelected(this)" class="oper" id="dot">.</button>
+                <button onclick="getOperatorSelected(this)" class="oper" id="percentage">%</button>
+                <button onclick="runEquals()" class="oper" id="equal">=</button>
+                
+
+            </div>
+        </div>
+        <script language="javascript">
+
+
+
+var buffer=""; var boperator=true;var bresult=false;
+
+function getNumberSelected(input){
+
+ 	buffer += input.innerHTML;
+ 	if (Number(buffer) >100000000){
+ 			console.log("stop");
+ 			return false;
+ 	}
+ 	boperator = false;
+ 	document.getElementById("display").value= buffer;
+}
+
+function getOperatorSelected(input){
+	console.log(boperator);
+    if (boperator==true)
+    {    
+        return;
+    }
+    buffer+=input.innerHTML;
+    document.getElementById("display").value=buffer;
+
+    boperator=true;
+    bresult=false;
+}
+
+function runEquals(){
+    if (bresult==true){
+    	console.log("return");
+        return; 
+    }
+    var result;
+    
+    result=eval(buffer);
+    console.log(result);
+    if (result % 1 !== 0 ) 
+    {
+        result = result.toFixed(2);
+    }
+    buffer+=" = " + result ; 
+    console.log(result);
+    document.getElementById("display").value=buffer;
+    bresult=true;
+}
+
+function runSquare(input){
+	
+    if (boperator==true)
+    {    
+        return;
+    }
+    var result= eval(buffer);
+    
+    buffer+=input.innerHTML;
+    buffer+=" = " + Number(result)*Number(result);
+    console.log(buffer);
+    console.log(Number(result));
+    document.getElementById("display").value=buffer;
+
+    boperator=true;
+    bresult=false;
+}
+
+function runRootSquare(input){
+	
+    if (boperator==true)
+    {    
+        return;
+    }
+    var result= eval(buffer);
+    
+    buffer+=input.innerHTML;
+    buffer+=" = " + Math.sqrt(Number(result)); 
+    console.log(Number(result));
+    document.getElementById("display").value=buffer;
+
+    boperator=true;
+    bresult=false;
+}
+function runC(){
+	bresult=false;
+    buffer="";
+    document.getElementById("display").value=buffer;
+}
+
+    </script>
+
+</body>
+</html>
+               

@@ -1,0 +1,84 @@
+* {
+   box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+}
+
+/* Basic reset*/
+*{
+	margin:0;
+	padding: 0;
+	font-size:16px Arial;
+}
+.clear{
+	clear: both;
+	display: block;
+}
+/* A nice BG gradient */
+html {
+	height: 100%;
+	background: white;
+	background: radial-gradient(circle, #fff 20%, #ccc);
+	background-size: cover;
+}
+body{
+ 	background-color: pink;
+    max-width: 100%;
+    text-align: center;
+    line-height: 1;
+    width: 400px;
+    height: 500px;
+    border-radius: 50px;    
+    margin:auto;
+ }
+
+div#calculator{
+	margin-top:120px;
+}
+
+#calculator {
+	width: 410px;
+	height: auto; 	
+	margin-left: 1px;
+
+}
+
+.digit {
+	font-size: 2rem;
+    background-color: black;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 2px;
+    margin-top: 5px;
+    margin-right: 12px;
+    margin-left: 0px;
+    color: white;
+}
+.oper {
+	font-size: 2rem;
+    background-color: blue;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 2px;
+    color: white;
+    margin-top: 5px;
+    margin-right: 12px;
+    margin-left: 0px;
+}
+.del{
+	background-color: red;
+}
+#display {
+	width: 83%;
+    height: 55px;
+    border-radius: 10px;
+    text-align: right;
+    font-size: 37px;
+    margin-top: 30px;
+    margin-bottom: 14px;
+
+}
