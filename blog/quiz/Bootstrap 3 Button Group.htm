@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///Users/huong/Desktop/huong1234.github.io/Project/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Bootstrap 3 Button Group</title>
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
+
+  
+    <link rel="stylesheet" type="text/css" href="./Bootstrap 3 Button Group_files/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./Bootstrap 3 Button Group_files/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./Bootstrap 3 Button Group_files/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./Bootstrap 3 Button Group_files/about.css">
+
+
+
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> -->    
+    <script id="__webHelper__" type="text/javascript" src="./Bootstrap 3 Button Group_files/saved_resource"></script><script src="./Bootstrap 3 Button Group_files/jquery.min.js"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+
+    
+    <script src="./Bootstrap 3 Button Group_files/bootstrap.min.js"></script>
+    <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+
+
+    <!-- bxSlider Javascript file -->
+    <script src="./Bootstrap 3 Button Group_files/jquery.bxslider.min.js"></script>
+
+
+    <!-- bxSlider CSS file -->
+    <link href="./Bootstrap 3 Button Group_files/jquery.bxslider.css" rel="stylesheet">
+
+
+    <style type="text/css">
+        .example{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<header>
+<div class="header-top">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 hidden-xs">
+				<div class="contactinfo">
+					<ul class="nav nav-pills">
+						<li><a><i class="fa fa-phone"></i>+84.123 456 789</a></li>
+						<li><a><i class="fa fa-envelope"></i>info@domain.com</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-6 hidden-xs">
+				<div class="social-icon">
+					<ul class="nav nav-pills pull-right">
+						<li><a><i class="fa fa-phone"></i></a></li>
+						<li><a><i class="fa fa-youtube-play"></i></a></li>
+						<li><a><i class="fa fa-google-plus"></i></a></li>
+						<li><a><i class="fa fa-instagram"></i></a></li>
+						
+					</ul>					
+				</div>				
+			</div>
+		</div>
+	</div>	
+</div> <!-- end of header-top -->
+
+<div class="header_middle">
+<div class="container">
+    <div class="row">
+    	<div class="col-sm-2">
+            <div class="logo text-center">
+                <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html">
+                    <img src="./Bootstrap 3 Button Group_files/logo.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-6">
+        	<div class="input-group">
+            	<input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm, thương hiệu...">
+            	<span class="input-group-btn"> 
+            		<button class="btn btn-default" type="button">Search</button> 
+            	</span>
+            </div>
+        </div>
+        <div class="col-sm-1">
+        	<div class="cart">
+        		<a><i class="fa fa-shopping-cart fa-2x"></i></a>        		
+        	</div>        	
+        </div>
+        <div class="col-sm-3 hidden-xs">
+        	<div class="sign-in pull-right">
+        						
+				<ul class="nav nav-pills">
+					<li><a data-toggle="modal" data-target="#myModal"><i class="fa fa-lock">Đăng nhập</i></a></li>
+					<li><a href="file:///Users/huong/Desktop/huong1234.github.io/Project/register.html"><i class="fa fa-registered">Đăng ký</i></a></li>
+						
+				</ul>
+				
+        	</div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-lock"> Đăng nhập</i></h4>
+      </div>
+      <div class="modal-body" style="padding: 40px 50px;">
+        <form role="form">
+        <div class="form-group">
+            <label for="usrname">
+                <span class="glyphicon glyphicon-home"></span>"Tài khoản"
+            </label>
+            <input type="email" class="form-control" id="usrname" placeholder="Điền email" required="">
+        </div>
+        <div class="form-group">
+            <label for="psw">
+                <span class="glyphicon glyphicon-eye-open"></span>"Mật khẩu"    
+            </label>
+            <input type="password" class="form-control" id="psw" placeholder="Điền mật khẩu" required="">
+        </div>
+        <div class="checkbox">
+            <label>
+            <input type="checkbox" value="" checked="">"Remember me" 
+            </label>
+        </div>
+        <button type="submit" class="btn btn-sucess btn-block">
+            <span class="glyphicon glyphicon-off"></span>"Đăng nhập"  
+        </button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Hủy bỏ</button>
+        <p> 
+            Bạn chưa là thành viên? 
+            <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/register.html" class="register-link">Đăng ký</a>
+        </p>
+        <p>
+            <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#" class="forgot-password">Quên mật khẩu</a> 
+        </p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div> <!-- end of header middle -->
+
+
+
+           
+
+<div class="header-bottom">
+<nav class="navbar navbar-default">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="logo text-center">
+                    <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html">
+                        <img src="./Bootstrap 3 Button Group_files/logo.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-10">
+                
+            
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#"></a>
+        </div>
+
+
+
+            <!-- Collect the nav links, forms, and other content for toggling  -->
+       
+        <div class="collapse navbar-collapse pull-right" id="menu">
+
+            <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">COURSES <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">Giới thiệu hạt cafe</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">7 ngày vs cà phê giả</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">Quy trình Rang Cà phê</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">Phòng Nghiên Cứu Cà phê</a></li>                         
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICES<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="file:///Users/huong/Desktop/huong1234.github.io/blog/test/menu.html">Balo Túi Phượt</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">Quần áo</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">Phụ kiện</a></li> 
+                            <li role="separator" class="divider"></li>
+                            <li><a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">Mũ bảo hiểm</a></li> 
+                            <li role="separator" class="divider"></li>
+                            <li><a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">Đồ bảo hộ moto</a></li>                           
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">COMMUNITY <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">Tin tức khuyến mãi</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">Chia sẻ kinh nghiệm</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">Khám phá</a></li>                            
+                        </ul>
+                    </li>
+
+                    <li><a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">ABOUT US</a></li>
+                    <li><a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">SIGN UP</a></li>
+                    <li><a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">LOGIN</a></li>
+                    
+
+
+            </ul>
+
+<!--         </div>  end of class navbar 
+</div> <!-- end of row --> 
+        </div>
+ <!--        <div class="col-xs-12 visible-xs">
+            <button type="button" class="btn btn-sucess button-menu-mobile" data-toggle="modal" data-target="#myModal1">☰</button>
+
+        </div> -->
+        </div> <!-- end of class col-10 -->
+    </div> <!-- end of class container -->
+</div></nav>
+</div> <!-- end of class header bottom -->
+</header> <!-- end of 1.header -->
+
+<!-- <section class="slider">
+    <div class="container">
+
+        <ul id="slider1">
+            <li><img src="images/pic1.jpg" /></li>
+            <li><img src="images/pic2.jpg" /></li>
+            <li><img src="images/pic3.jpg" /></li>
+        </ul>
+    </div>
+</section> -->
+<!-- end of 2.section class=slider -->
+
+
+<!-- 3.section id=main-content -->
+<section id="main-content"> 
+<div class="container">
+
+    
+
+    
+        
+        <div class="product-hot">
+            <h2 class="text-center title">Sản Phẩm Hot</h2>            
+            <ul class="nav nav-tabs">
+                <li><a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#balo" data-toggle="tab">Balo</a></li>
+                <li><a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#mu" data-toggle="tab">Mũ</a></li>
+                <li><a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#quanao" data-toggle="tab">Quần áo</a></li>
+                <li><a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#phukien" data-toggle="tab">Phụ kiện</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane" id="balo">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="productioninfo">
+                                <span class="badge">-50%</span>
+                                <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">
+                                    <img src="./Bootstrap 3 Button Group_files/balo-nam-vai-phoi-da-han-quoc-1.jpg" alt="" class="img-responsive">
+                                </a>
+                                <p class="productname">                  
+                                    <a class="sp" href="file:///Users/huong/Desktop/huong1234.github.io/Project/san-pham-chi-tiet.html">Balo vải nam phối da Hàn Quốc</a>
+                                </p>
+                                <div class="product-price"><span> 150.000d </span> </div>
+                                    <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/cart.html" class="btn btn-default product-button">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    Mua hàng</a>                        
+                                 
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="productioninfo">
+                                <span class="badge">-50%</span>
+                                <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">
+                                    <img src="./Bootstrap 3 Button Group_files/balo-nam-vai-phoi-da-han-quoc-1.jpg" alt="" class="img-responsive">
+                                </a>
+                                <p class="productname">                  
+                                    <a class="sp" href="file:///Users/huong/Desktop/huong1234.github.io/Project/san-pham-chi-tiet.html">Balo vải nam phối da Hàn Quốc</a>
+                                </p>
+                                <div class="product-price"><span> 150.000d </span> </div>
+                                    <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/cart.html" class="btn btn-default product-button">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    Mua hàng</a>                        
+                                 
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="productioninfo">
+                                <span class="badge">-50%</span>
+                                <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">
+                                    <img src="./Bootstrap 3 Button Group_files/balo-nam-vai-phoi-da-han-quoc-1.jpg" alt="" class="img-responsive">
+                                </a>
+                                <p class="productname">                  
+                                    <a class="sp" href="file:///Users/huong/Desktop/huong1234.github.io/Project/san-pham-chi-tiet.html">Balo vải nam phối da Hàn Quốc</a>
+                                </p>
+                                <div class="product-price"><span> 150.000d </span> </div>
+                                    <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/cart.html" class="btn btn-default product-button">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    Mua hàng</a>                        
+                                 
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="productioninfo">
+                                <span class="badge">-50%</span>
+                                <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">
+                                    <img src="./Bootstrap 3 Button Group_files/balo-nam-vai-phoi-da-han-quoc-1.jpg" alt="" class="img-responsive">
+                                </a>
+                                <p class="productname">                  
+                                    <a class="sp" href="file:///Users/huong/Desktop/huong1234.github.io/Project/san-pham-chi-tiet.html">Balo vải nam phối da Hàn Quốc</a>
+                                </p>
+                                <div class="product-price"><span> 150.000d </span> </div>
+                                    <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/cart.html" class="btn btn-default product-button">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    Mua hàng</a>                        
+                                 
+                            </div>
+                        </div>
+
+                    Balo
+                    </div>
+                </div>
+                <div class="tab-pane" id="mu">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="productioninfo">
+                                <span class="badge">-50%</span>
+                                <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">
+                                    <img src="./Bootstrap 3 Button Group_files/balo-nam-vai-phoi-da-han-quoc-1.jpg" alt="" class="img-responsive">
+                                </a>
+                                <p class="productname">                  
+                                    <a class="sp" href="file:///Users/huong/Desktop/huong1234.github.io/Project/san-pham-chi-tiet.html">Balo vải nam phối da Hàn Quốc</a>
+                                </p>
+                                <div class="product-price"><span> 150.000d </span> </div>
+                                    <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/cart.html" class="btn btn-default product-button">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    Mua hàng</a>                        
+                                 
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="productioninfo">
+                                <span class="badge">-50%</span>
+                                <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">
+                                    <img src="./Bootstrap 3 Button Group_files/balo-nam-vai-phoi-da-han-quoc-1.jpg" alt="" class="img-responsive">
+                                </a>
+                                <p class="productname">                  
+                                    <a class="sp" href="file:///Users/huong/Desktop/huong1234.github.io/Project/san-pham-chi-tiet.html">Balo vải nam phối da Hàn Quốc</a>
+                                </p>
+                                <div class="product-price"><span> 150.000d </span> </div>
+                                    <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/cart.html" class="btn btn-default product-button">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    Mua hàng</a>                        
+                                 
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="productioninfo">
+                                <span class="badge">-50%</span>
+                                <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">
+                                    <img src="./Bootstrap 3 Button Group_files/balo-nam-vai-phoi-da-han-quoc-1.jpg" alt="" class="img-responsive">
+                                </a>
+                                <p class="productname">                  
+                                    <a class="sp" href="file:///Users/huong/Desktop/huong1234.github.io/Project/san-pham-chi-tiet.html">Balo vải nam phối da Hàn Quốc</a>
+                                </p>
+                                <div class="product-price"><span> 150.000d </span> </div>
+                                    <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/cart.html" class="btn btn-default product-button">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    Mua hàng</a>                        
+                                 
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="productioninfo">
+                                <span class="badge">-50%</span>
+                                <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">
+                                    <img src="./Bootstrap 3 Button Group_files/balo-nam-vai-phoi-da-han-quoc-1.jpg" alt="" class="img-responsive">
+                                </a>
+                                <p class="productname">                  
+                                    <a class="sp" href="file:///Users/huong/Desktop/huong1234.github.io/Project/san-pham-chi-tiet.html">Balo vải nam phối da Hàn Quốc</a>
+                                </p>
+                                <div class="product-price"><span> 150.000d </span> </div>
+                                    <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/cart.html" class="btn btn-default product-button">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    Mua hàng</a>                        
+                                 
+                            </div>
+                        </div>
+
+                    Mũ
+                    </div>
+                </div>
+
+
+                <div class="tab-pane" id="quanao">
+                            <div class="productioninfo">
+                                <span class="badge">-50%</span>
+                                <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">
+                                    <img src="./Bootstrap 3 Button Group_files/balo-nam-vai-phoi-da-han-quoc-1.jpg" alt="" class="img-responsive">
+                                </a>
+                                <p class="productname">                  
+                                    <a class="sp" href="file:///Users/huong/Desktop/huong1234.github.io/Project/san-pham-chi-tiet.html">Balo vải nam phối da Hàn Quốc</a>
+                                </p>
+                                <div class="product-price"><span> 150.000d </span> </div>
+                                    <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/cart.html" class="btn btn-default product-button">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    Mua hàng</a>                        
+                                 
+                            </div>
+
+                    Quần áo
+                </div>
+
+                <div class="tab-pane" id="phukien">
+                            <div class="productioninfo">
+                                <span class="badge">-50%</span>
+                                <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">
+                                    <img src="./Bootstrap 3 Button Group_files/balo-nam-vai-phoi-da-han-quoc-1.jpg" alt="" class="img-responsive">
+                                </a>
+                                <p class="productname">                  
+                                    <a class="sp" href="file:///Users/huong/Desktop/huong1234.github.io/Project/san-pham-chi-tiet.html">Balo vải nam phối da Hàn Quốc</a>
+                                </p>
+                                <div class="product-price"><span> 150.000d </span> </div>
+                                    <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/cart.html" class="btn btn-default product-button">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    Mua hàng</a>                        
+                                 
+                            </div>
+
+                    Test
+                </div>
+                
+            
+
+            </div> <!-- end of tab-content
+           
+       
+        
+                     
+        </div>  <!-- end of class hot product-->   
+        <div class="new-product"> <!-- class new product -->
+            <h2 class="text-center title">Most Popular Free Online Courses</h2>
+            <div class="row ">
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+                        
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">
+                            <img src="./Bootstrap 3 Button Group_files/Alison_CoursewareIntro_261.jpg" alt="" class="img-responsive"> 
+                            <span class="badge">On track with Golang</span>                           
+                        </a> 
+                        <p class="productname">                  
+                            <a class="sp" href="file:///Users/huong/Desktop/huong1234.github.io/Project/san-pham-chi-tiet.html">Take online psychology courses to receive your Diploma in Psychology and gain a greater understanding of theory, behavior and ethical issues.</a>
+                        </p>
+                        <div class="product-price"><span> 50.000d </span> </div>
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/cart.html" class="btn btn-default product-button">
+                            <i class="fa fa-shopping-cart"></i>
+                            Start Course &gt;</a>                        
+                    </div>
+                </div>                
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+                        
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">
+                            <img src="./Bootstrap 3 Button Group_files/Alison_CoursewareIntro_262.jpg" alt="" class="img-responsive">   
+                            <span class="badge">Digging Into Django</span>                         
+                        </a>
+                        <p class="productname">                   
+                            <a class="sp" href="file:///Users/huong/Desktop/huong1234.github.io/Project/san-pham-chi-tiet.html">Mũ bảo hiểm fullface GXT 2016 đen nhám mới</a>
+                        </p>
+                        <div class="product-price"><span> 79.000d </span> </div>
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/cart.html" class="btn btn-default product-button">
+                            <i class="fa fa-shopping-cart"></i>
+                            Start Course &gt;</a>                        
+                    </div>
+                </div>  
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+                        
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">
+                            <img src="./Bootstrap 3 Button Group_files/Alison_CoursewareIntro_276.jpg" alt="" class="img-responsive">  
+                            <span class="badge">Javascript</span>                          
+                        </a>
+                        <p class="productname">                                     
+                            <a class="sp" href="file:///Users/huong/Desktop/huong1234.github.io/Project/san-pham-chi-tiet.html">Áo phượt siêu anh hùng Spiderman</a>
+                        </p>
+                        <div class="product-price"><span> 150.000d </span> </div>
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/cart.html" class="btn btn-default product-button">
+                            <i class="fa fa-shopping-cart"></i>
+                            Start Course &gt;</a>                        
+                    </div>
+                </div>                             
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+                        
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">
+                            <img src="./Bootstrap 3 Button Group_files/Alison_CoursewareIntro_325.jpg" alt="" class="img-responsive">  
+                            <span class="badge">-50%</span>                          
+                        </a>   
+                        <p class="productname">                
+                            <a class="sp" href="file:///Users/huong/Desktop/huong1234.github.io/Project/san-pham-chi-tiet.html">Balo phượt vàng đen</a>
+                        </p>
+                        <div class="product-price"><span> 100.000d </span> </div>
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/cart.html" class="btn btn-default product-button">
+                            <i class="fa fa-shopping-cart"></i>
+                            Start Course &gt;</a>                        
+                    </div>
+                </div>  
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+                        
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">
+                            <img src="./Bootstrap 3 Button Group_files/Alison_CoursewareIntro_261.jpg" alt="" class="img-responsive"> 
+                            <span class="badge">On track with Golang</span>                           
+                        </a> 
+                        <p class="productname">                  
+                            <a class="sp" href="file:///Users/huong/Desktop/huong1234.github.io/Project/san-pham-chi-tiet.html">Take online psychology courses to receive your Diploma in Psychology and gain a greater understanding of theory, behavior and ethical issues.</a>
+                        </p>
+                        <div class="product-price"><span> 50.000d </span> </div>
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/cart.html" class="btn btn-default product-button">
+                            <i class="fa fa-shopping-cart"></i>
+                            Start Course &gt;</a>                        
+                    </div>
+                </div>                
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+                        
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">
+                            <img src="./Bootstrap 3 Button Group_files/Alison_CoursewareIntro_262.jpg" alt="" class="img-responsive">   
+                            <span class="badge">Digging Into Django</span>                         
+                        </a>
+                        <p class="productname">                   
+                            <a class="sp" href="file:///Users/huong/Desktop/huong1234.github.io/Project/san-pham-chi-tiet.html">Mũ bảo hiểm fullface GXT 2016 đen nhám mới</a>
+                        </p>
+                        <div class="product-price"><span> 79.000d </span> </div>
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/cart.html" class="btn btn-default product-button">
+                            <i class="fa fa-shopping-cart"></i>
+                            Start Course &gt;</a>                        
+                    </div>
+                </div>  
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+                        
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">
+                            <img src="./Bootstrap 3 Button Group_files/Alison_CoursewareIntro_276.jpg" alt="" class="img-responsive">  
+                            <span class="badge">Javascript</span>                          
+                        </a>
+                        <p class="productname">                                     
+                            <a class="sp" href="file:///Users/huong/Desktop/huong1234.github.io/Project/san-pham-chi-tiet.html">Áo phượt siêu anh hùng Spiderman</a>
+                        </p>
+                        <div class="product-price"><span> 150.000d </span> </div>
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/cart.html" class="btn btn-default product-button">
+                            <i class="fa fa-shopping-cart"></i>
+                            Start Course &gt;</a>                        
+                    </div>
+                </div>                             
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+                        
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">
+                            <img src="./Bootstrap 3 Button Group_files/Alison_CoursewareIntro_325.jpg" alt="" class="img-responsive">  
+                            <span class="badge">-50%</span>                          
+                        </a>   
+                        <p class="productname">                
+                            <a class="sp" href="file:///Users/huong/Desktop/huong1234.github.io/Project/san-pham-chi-tiet.html">Balo phượt vàng đen</a>
+                        </p>
+                        <div class="product-price"><span> 100.000d </span> </div>
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/cart.html" class="btn btn-default product-button">
+                            <i class="fa fa-shopping-cart"></i>
+                            Start Course &gt;</a>                        
+                    </div>
+                </div>  
+                <!--  end of class col3 -->
+
+
+                        
+   
+
+</div>    <!--  end of class row -->  
+</div> <!-- /.container -->
+</div></div></section>
+
+<header>
+<div class="header-top bizresult">
+    <div class="container">
+        <div class="row ">
+            <div class="col-sm-3 hidden-xs">
+                <div class="contactinfo">
+                    <p><strong>8,000,000</strong></p>
+                    <p><span>Learners Educated</span></p>
+                </div>
+            </div>
+            <div class="col-sm-3 hidden-xs">
+                <div class="contactinfo">
+                    <p><strong>950,000</strong></p>
+                    <p><span>Graduates</span></p>
+                </div>
+            </div>
+            <div class="col-sm-3 hidden-xs">
+                <div class="contactinfo">
+                    <p><strong>250,000</strong></p>
+                    <p><a>Countries Reaches</a></p>
+                </div>
+            </div>
+            <div class="col-sm-3 hidden-xs">
+                <div class="contactinfo">
+                    <p><strong>750,000</strong></p>
+                    <p><a>Courses Published</a></p>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div> <!-- end of header-top -->
+
+<!-- 3.section id=main-content -->
+<section id="main-content"> 
+<div class="container">
+<div class="new-product"> <!-- class new product -->
+            <h2 class="text-center title">Most Popular Free Online Courses</h2>
+            <div class="row ">
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+                        
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">
+                            <img src="./Bootstrap 3 Button Group_files/Alison_CoursewareIntro_261.jpg" alt="" class="img-responsive"> 
+                            <span class="badge">On track with Golang</span>                           
+                        </a> 
+                        <p class="productname">                  
+                            <a class="sp" href="file:///Users/huong/Desktop/huong1234.github.io/Project/san-pham-chi-tiet.html">Take online psychology courses to receive your Diploma in Psychology and gain a greater understanding of theory, behavior and ethical issues.</a>
+                        </p>
+                        <div class="product-price"><span> 50.000d </span> </div>
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/cart.html" class="btn btn-default product-button">
+                            <i class="fa fa-shopping-cart"></i>
+                            Start Course &gt;</a>                        
+                    </div>
+                </div>                
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+                        
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">
+                            <img src="./Bootstrap 3 Button Group_files/Alison_CoursewareIntro_262.jpg" alt="" class="img-responsive">   
+                            <span class="badge">Digging Into Django</span>                         
+                        </a>
+                        <p class="productname">                   
+                            <a class="sp" href="file:///Users/huong/Desktop/huong1234.github.io/Project/san-pham-chi-tiet.html">Mũ bảo hiểm fullface GXT 2016 đen nhám mới</a>
+                        </p>
+                        <div class="product-price"><span> 79.000d </span> </div>
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/cart.html" class="btn btn-default product-button">
+                            <i class="fa fa-shopping-cart"></i>
+                            Start Course &gt;</a>                        
+                    </div>
+                </div>  
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+                        
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">
+                            <img src="./Bootstrap 3 Button Group_files/Alison_CoursewareIntro_276.jpg" alt="" class="img-responsive">  
+                            <span class="badge">Javascript</span>                          
+                        </a>
+                        <p class="productname">                                     
+                            <a class="sp" href="file:///Users/huong/Desktop/huong1234.github.io/Project/san-pham-chi-tiet.html">Áo phượt siêu anh hùng Spiderman</a>
+                        </p>
+                        <div class="product-price"><span> 150.000d </span> </div>
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/cart.html" class="btn btn-default product-button">
+                            <i class="fa fa-shopping-cart"></i>
+                            Start Course &gt;</a>                        
+                    </div>
+                </div>                             
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+                        
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">
+                            <img src="./Bootstrap 3 Button Group_files/Alison_CoursewareIntro_325.jpg" alt="" class="img-responsive">  
+                            <span class="badge">-50%</span>                          
+                        </a>   
+                        <p class="productname">                
+                            <a class="sp" href="file:///Users/huong/Desktop/huong1234.github.io/Project/san-pham-chi-tiet.html">Balo phượt vàng đen</a>
+                        </p>
+                        <div class="product-price"><span> 100.000d </span> </div>
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/cart.html" class="btn btn-default product-button">
+                            <i class="fa fa-shopping-cart"></i>
+                            Start Course &gt;</a>                        
+                    </div>
+                </div>  
+            </div>
+
+        </div>
+
+<div class="new-product"> <!-- class new product -->
+            <h2 class="text-center title">Benifits ALISON Online Learning</h2>
+            <div class="row ">
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+                    <div class="box-content">
+                        
+                        <i class="fa fa-users fa-sizecontrol"></i>
+                        
+                        <h4>Students</h4>
+                        <ul>
+                        	<li>Gain Verifiable Certification</li>
+                        	<li>Free Aptitude Testing</li>
+                        </ul>
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/cart.html" class="btn btn-default product-button">
+                            <i class="icon-featured icon icon-user"></i>
+                            Learn more&gt;</a>                        
+                    </div>
+                    </div>
+                </div> 
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+                    <div class="box-secondary-content">
+                        
+                        <i class="fa fa-user fa-sizecontrol"></i>
+                        
+                        <h4>Teachers</h4>
+                        <ul>
+                        	<li>Managee large groups</li>
+                        	<li>Automate testings</li>
+                        </ul>
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/cart.html" class="btn btn-default product-button">
+                            <i class="icon-featured icon icon-user"></i>
+                            Learn more&gt;</a>                        
+                    </div>
+                    </div>
+                </div>                
+                
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+                    <div class="box-tertiary-content">
+                        
+                        <i class="fa fa-building-o fa-sizecontrol"></i>
+                        
+                        <h4>Teachers</h4>
+                        <ul>
+                        	<li>Managee large groups</li>
+                        	<li>Automate testings</li>
+                        </ul>
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/cart.html" class="btn btn-default product-button">
+                            <i class="icon-featured icon icon-user"></i>
+                            Learn more&gt;</a>                        
+                    </div>
+                    </div>
+                </div> 
+                
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+                    <div class="box-quarternary-content">
+                        
+                        <i class="fa fa-book fa-sizecontrol"></i>
+                        
+                        <h4>Teachers</h4>
+                        <ul>
+                        	<li>Managee large groups</li>
+                        	<li>Automate testings</li>
+                        </ul>
+                        <a href="file:///Users/huong/Desktop/huong1234.github.io/Project/cart.html" class="btn btn-default product-button">
+                            <i class="icon-featured icon icon-user"></i>
+                            Learn more&gt;</a>                        
+                    </div>
+                    </div>
+                </div>  
+            </div>
+
+        </div>
+
+
+
+</div>
+</section>
+
+
+<!-- Footer -->
+<footer>
+	<div class="footer-head blackfoot">
+	<div class="container">
+    <div class="row grid-demo ">
+        <div class="col-xs-6 col-sm-3">
+            <h4>Techmaster</h4>
+            
+            <h4>Quy dinh</h4>
+            <a><i class="fa fa-facebook-square fa-2x"></i></a>
+            <a><i class="fa fa-youtube-play fa-2x"></i></a>
+            <p><a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">Cơ sở 1: Hà Nội 12</a></p>
+            <p><a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">Cơ sở 2: Hà Nội 34</a></p>
+            <p><a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">Cơ sở 3: Hà Nội 56</a></p>
+        </div>
+        <div class="col-sm-4 hidden-xs">
+            <h4> Về chúng tôi</h4>
+            <p><a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">Các câu hỏi thường gặp</a></p>
+            <p><a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">Chính sách bảo hành</a></p>
+            <p><a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">Hướng dẫn đặt hàng</a></p>
+            <p><a href="file:///Users/huong/Desktop/huong1234.github.io/Project/index.html#">Phương thức vận chuyển</a></p>
+        </div>
+        <div class="col-xs-6 col-sm-5">
+            <h4>Đăng kí nhận tin khuyến mãi</h4>
+            <div class="input-group">
+            	<input type="text" class="form-control" placeholder="Email">
+            	<span class="input-group-btn"> 
+            		<button class="btn btn-default" type="button">Đăng ký</button> 
+            	</span>
+            </div>
+            <div class="connect">
+            	<p><b>Kết nối với chúng tôi</b></p>
+            	<a><i class="fa fa-facebook-square fa-2x"></i></a>
+            	<a><i class="fa fa-youtube-play fa-2x"></i></a>
+            	
+            </div>
+        </div>
+    </div><!-- /.row -->
+    </div>  <!-- end of container -->
+    </div>  <!-- end of footer head -->
+<!-- <div class="footer-bottom">
+	<div class="container">
+	<p>Copy right @2016 cungphuot<br>
+							Giấy phép kinh doanh số 0106081880 do Sở KH và ĐT TP Hà Nội cấp ngày 06/09/2016
+						
+		
+	</p>
+		
+	</div>
+</div> -->
+
+</footer>
+
+
+
+
+<script>
+    $(document).ready(function(){
+      $('#slider1').bxSlider({
+        mode: 'fade',
+        auto: true,
+        autoControls: true,
+        pause: 2000
+        });
+
+
+      $('#slider2').bxSlider({
+        minSlides:4,
+        maxSlides:4,
+        // mode: 'fade',
+         auto: true,
+        autoControls: true,
+        pause: 2000,
+        slideWidth:360,
+        slideMargin: 10
+        });
+    });
+
+    // $('.bxslider').bxSlider({
+    //     minSlides: 2,
+    //     maxSlides: 2,
+    //     slideWidth: 360,
+    //     slideMargin: 10
+    // });
+</script>
+
+</header><input id="_webhelper_source" type="hidden" value="{&quot;GUID&quot;:&quot;57930125657777488&quot;,&quot;SOURCE&quot;:&quot;amz-1628&quot;,&quot;BRAND&quot;:&quot;LiveShoppers&quot;}"></body></html>

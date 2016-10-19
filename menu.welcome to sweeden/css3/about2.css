@@ -4,10 +4,17 @@
   padding: 0;
 }
 
-#header {
-  background-image: url('http://www.visitsweden.com/ImageVault/Images/id_1850/scope_0/ImageVaultHandler.aspx');
-  width: 100%;
-  height: 300px;
+.wrap{
+  max-width: 1000px;
+  margin: auto;
+}
+.wrap .text{
+ 
+    font-size: 30px;
+    margin-top: 162px;
+    position: absolute;
+   
+    margin-left: 600px;
 }
 /*==Style cơ bản cho website==*/
 body {
@@ -15,7 +22,12 @@ body {
   color: #333;
 }
 #menu {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 15px 8px;
+  border-bottom: 1px solid #dddddd;
   position: relative;
+  max-width: 950px;
 }
 /*==Style cho menu===*/
 #menu ul {
