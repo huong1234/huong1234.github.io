@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+    <!-- https://lion5893.github.io/shopphuot/index.html# -->
+    <!-- http://kimdotcom.us/user.html -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap 3 Button Group</title>
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
+
+  
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+
+
+
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> -->    
+    <script src="js/jquery.min.js"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+
+    
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+
+
+    <!-- bxSlider Javascript file -->
+    <script src="jquery.bxslider/jquery.bxslider.min.js"></script>
+
+
+    <!-- bxSlider CSS file -->
+    <link href="jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+
+
+    <style type="text/css">
+        .example{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<header>
+<div class="header-top">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 hidden-xs">
+				<div class="contactinfo">
+					<ul class="nav nav-pills">
+						<li><a><i class="fa fa-phone"></i>+84.123 456 789</a></li>
+						<li><a><i class="fa fa-envelope"></i>info@domain.com</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-6 hidden-xs">
+				<div class="social-icon">
+					<ul class="nav nav-pills pull-right">
+						<li><a><i class="fa fa-phone"></i></a></li>
+						<li><a><i class="fa fa-youtube-play"></i></a></li>
+						<li><a><i class="fa fa-google-plus"></i></a></li>
+						<li><a><i class="fa fa-instagram"></i></a></li>
+						
+					</ul>					
+				</div>				
+			</div>
+		</div>
+	</div>	
+</div> <!-- end of header-top -->
+    
+
+<div class="header-bottom">
+<nav class="navbar navbar-default">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="logo text-center">
+                    <a href="index.html">
+                        <img src="images/logo.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-10">
+                
+            
+
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"></a>
+        </div>
+
+
+
+            <!-- Collect the nav links, forms, and other content for toggling  -->
+       
+        <div class="collapse navbar-collapse pull-right" id="menu">
+
+            <ul class="nav navbar-nav">
+                    <li><a href="listofcourses.html">Khóa học</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICES<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="detail.html">Workforce Re-entry</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">For Students</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">For employees</a></li> 
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">For teachers</a></li> 
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">For Professionals</a></li>                           
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">COMMUNITY <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Our story</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Our inspiration</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Blogs</a></li>                            
+                        </ul>
+                    </li>
+
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal">LOGIN</a></li>
+                    <!-- <li><a href="register.html">LOGIN</a></li> -->
+                    <li><a href="register2.html" >REGISTER</a></li>
+
+            </ul>
+        </div>
+
+        </div> <!-- end of class col-10 -->
+    </div> <!-- end of class container -->
+</nav>
+</div> <!-- end of class header bottom -->
+</header> <!-- end of 1.header -->
+
+
+<!-- 3.section id=main-content -->
+<section id="main-content"> 
+<div class="container">
+    <form class="form_register" action="account.html">    
+        <ul>
+            <li>
+                <h2>Đăng ký thành viên </h2>
+                <span class="req_notification">* Bắt buộc </span>
+            </li>
+            <li>
+                <label for="name">Họ tên<span class="req">*</span></label>
+                <input type="text" name="name" placeholder="Họ tên" id="name"><span class="error1"></span>
+            </li>
+            <li>
+                <label for="password">Mật khẩu<span class="req">*</span></label>
+                <input type="password" name="password" placeholder="Mật khẩu">
+            </li>
+            <li>
+                <label for="password">Xác nhận mật khẩu<span class="req">*</span></label>
+                <input type="password" name="password" placeholder="Nhập lại mật khẩu">
+            </li>
+            <li>
+                <label for="password">Ngày sinh<span class="req">*</span></label>
+                <input type="password" name="password" placeholder="Ngày sinh">
+            </li>
+            <li>
+                <label for="password">Giới tính<span class="req">*</span></label>
+               
+            </li>
+            <li>
+                <label for="password">Địa chỉ<span class="req">*</span></label>
+                <input type="password" name="password" placeholder="Địa chỉ">
+            </li>
+            <li>
+                <label for="telephone">Số điện thoại<span class="req">*</span></label>
+                <input type="text" name="telephone" id="telephone" ><span class="error1"></span>
+            </li>
+            <li>
+                
+                <button class="submit" type="submit" >Đăng ký </button>
+            </li>
+            
+
+        </ul>
+    </form>                            
+</div> <!-- /.container -->
+</section>
+
+
+
+
+<!-- Footer -->
+<footer>
+	<div class="footer-head blackfoot">
+	<div class="container">
+    <div class="row grid-demo ">
+        <div class="col-xs-6 col-sm-3">
+            <h4>Techmaster</h4>
+            
+            <h4>Quy dinh</h4>
+            <a><i class="fa fa-facebook-square fa-3x"></i></a>
+            <a><i class="fa fa-youtube-play fa-3x"></i></a>
+            <a><i class="fa fa-github-alt fa-3x"></i></a>
+
+        </div>
+        <div class="col-sm-2 hidden-xs">
+            <h4> Về chúng tôi</h4>
+            <p><a href="#">Việc làm</a></p>
+            <p><a href="#">Về chúng tôi</a></p>
+            <p><a href="#">Giảng viên</a></p>
+            <p><a href="#">Cơ sở vật chất</a></p>
+        </div>
+                <div class="col-sm-3 hidden-xs">
+            <h4> Contact</h4>
+            <p><a href="#">Mr Cường: 090.220.9011</a></p>
+            <p><a href="#">Mr Nghĩa: 096.440.7993</a></p>
+            <p><a href="#">cuong@techmaster.vn</a></p>
+            
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <h4>Địa chỉ</h4>
+            <p><a href="#">Số 14, ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội</a></p>
+            <p><a href="#">Mở cửa: 9:00 đến 18:00</a></p>
+            <p><a href="#" style="font:italic;">Phòng 2304, tầng 23, toà nhà Ocean Bank (StarCity), 81 Lê Văn Lương, Nhân Chính, Thanh Xuân, Hà Nội</a></p>
+
+            <!-- <div class="input-group">
+            	<input type="text" class="form-control" placeholder="Email">
+            	<span class="input-group-btn"> 
+            		<button class="btn btn-default" type="button" >Đăng ký</button> 
+            	</span>
+            </div>
+            <div class="connect">
+            	<p><b>Kết nối với chúng tôi</b></p>
+            	<a><i class="fa fa-facebook-square fa-2x"></i></a>
+            	<a><i class="fa fa-youtube-play fa-2x"></i></a>
+            	
+            </div> -->
+        </div>
+    </div><!-- /.row -->
+    </div>  <!-- end of container -->
+    </div>  <!-- end of footer head -->
+<!-- <div class="footer-bottom">
+	<div class="container">
+	<p>Copy right @2016 cungphuot<br>
+							Giấy phép kinh doanh số 0106081880 do Sở KH và ĐT TP Hà Nội cấp ngày 06/09/2016
+						
+		
+	</p>
+		
+	</div>
+</div> -->
+
+</footer>
+
+
+
+
+<script>
+    $(document).ready(function(){
+      $('#slider1').bxSlider({
+        mode: 'fade',
+        auto: true,
+        autoControls: true,
+        pause: 2000
+        });
+
+
+      $('#slider2').bxSlider({
+        minSlides:4,
+        maxSlides:4,
+        // mode: 'fade',
+         auto: true,
+        autoControls: true,
+        pause: 2000,
+        slideWidth:360,
+        slideMargin: 10
+        });
+    });
+
+    // $('.bxslider').bxSlider({
+    //     minSlides: 2,
+    //     maxSlides: 2,
+    //     slideWidth: 360,
+    //     slideMargin: 10
+    // });
+</script>
+</body>
+</html>

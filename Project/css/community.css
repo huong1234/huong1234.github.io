@@ -1,0 +1,24 @@
+.table-bordered>thead>tr>th, .table-bordered>thead>tr>td {
+    border-bottom-width: 2px;
+    color: #999999;
+    letter-spacing: 0.1px;
+    font-size: 13px;
+    padding: 16px;
+}
+tr {
+    color: rgb(77, 77, 77);
+    letter-spacing: 0.1px;
+    font-size: 13px;
+}
+.nav-tabs li a {
+    font-size: 13px;
+    padding: 23px;
+    letter-spacing: 0.1px;
+}
+.table-striped>tbody>tr>td:first-child {
+    width: 100px;
+
+}
+.table-striped>tbody>tr>td:nth-child(3) {
+    width: 150px;
+}

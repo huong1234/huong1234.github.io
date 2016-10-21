@@ -41,39 +41,35 @@
 </head>
 <body>
 <header>
+<div class="header-top">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 hidden-xs">
+				<div class="contactinfo">
+					<ul class="nav nav-pills">
+						<li><a><i class="fa fa-phone"></i>back to ScienceAlert.com</a></li>
+						<li><a><i class="fa fa-envelope"></i>Learn All Things Raspberry Pi with This $19 Course </a></li>						
+					</ul>
+				</div>
+			</div>
+            
 
-	<div class="row">
-        <div class="col-sm-2">
-            <div class="logo text-center">
-                <a href="index.html">
-                    <img src="images/logo.jpg">
-                </a>
-            </div>
-        </div>
-        <div class="col-sm-6">
-            <div class="input-group">
-                <input type="text" class="form-control search" placeholder="Tìm kiếm khóa học...">
-                <span class="input-group-btn">
-                <button class="btn btn-default" type="button">Go!</button>
-                </span>
-            </div><!-- /input-group -->
-        </div><!-- /.col-lg-6 -->
-       
-         <div class="col-sm-4 hidden-xs">
-            <div class="sign-in pull-right">
-                                
-                <ul class="nav nav-pills">
-                    <li><a><i class="fa fa-shopping-cart fa-2x"></i></a></li>   
-                    <li><a href="#" data-toggle="modal" data-target="#myModal">LOGIN</a></li>
-                    <!-- <li><a href="register.html">LOGIN</a></li> -->
-                    <li><a href="#" data-toggle="modal" data-target="#myModalRegister">REGISTER</a></li>
-                        
-                </ul>
-                
-            </div>
-        </div>
-    </div>
-<!-- </div> --> <!-- end of header-top -->
+
+            
+			<div class="col-sm-6 hidden-xs">
+				<div class="social-icon">
+					<ul class="nav nav-pills pull-right">
+						<li><a><i class="fa fa-phone"></i></a></li>
+						<li><a><i class="fa fa-youtube-play"></i></a></li>
+						<li><a><i class="fa fa-google-plus"></i></a></li>
+						<li><a><i class="fa fa-instagram"></i></a></li>
+						
+					</ul>					
+				</div>				
+			</div>
+		</div>
+	</div>	
+</div> <!-- end of header-top -->
 
        
 <!-- <div class="header-bottom">
@@ -159,6 +155,13 @@
     <div class="container">
 
         <div class="row">
+            <div class="col-sm-2">
+                <div class="logo pull-leftL20">
+                    <a href="index.html">
+                        <img src="images/logo.jpg">
+                    </a>
+                </div>
+            </div>
             <div class="col-sm-6">          
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
@@ -172,7 +175,18 @@
                 <!-- Collect the nav links, forms, and other content for toggling  -->       
                 <div class="collapse navbar-collapse pull-right" id="menu">
                     <ul class="nav navbar-nav">
-                        <li><a href="listofcourses.html">Khóa học</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">COURSES <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Giới thiệu hạt cafe</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">7 ngày vs cà phê giả</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Quy trình Rang Cà phê</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Phòng Nghiên Cứu Cà phê</a></li>                         
+                            </ul>
+                        </li>
 
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICES<span class="caret"></span></a>
@@ -232,31 +246,15 @@
         <div class="new-product detailpage"> <!-- class new product -->
             <h2>From 0 to 1: Raspberry Pi and the Internet of Things</h2>
             <h5>Use This Handy Microprocessor to Configure & Execute Home Automatron Projects</h5>
-            <div class="product-review">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star fa-star-half-o"></i>
-                <span> 4.6 (512 ratings) </span>
-                <p class="productname">                   
-                            <a class="sp" href="#">Giảng viên: Đặng Quang Huy</a>
-                            <a class="sp" href="#"> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  IT & Software/ IT Certification</a>
-                </p>
-
-            </div>
-
             
             <div class="row ">
                 <div class="col-sm-7">
                     <div class="productioninfo" >
                         
-                        <!-- <a href="#"> -->
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/oe-S_5oPZfs" frameborder="0" allowfullscreen></iframe>
-                            <!-- <img src="https://images.stackcommerce.com/assets/productshot-wide-image/17794/691ea5cb2c0ea876194695d5b3ba52614fe33cc1_main_hero_image.jpg" alt class="img-responsive" > --> 
-                        </div>                            
-                        <!-- </a>  -->
+                        <a href="#">
+                            <img src="https://images.stackcommerce.com/assets/productshot-wide-image/17794/691ea5cb2c0ea876194695d5b3ba52614fe33cc1_main_hero_image.jpg" alt class="img-responsive" > 
+                                                   
+                        </a> 
                      
                         
                     </div>
@@ -391,50 +389,28 @@
                 <div class="col-sm-5">
                     <div class="productioninfo">
                         
-                         <div  class="product-price"><span style="font-size: 20px"> 350.000VNĐ </span> </div>
-                         <span class="is-strike" >$39</span>
-                         
-
-                        <button type="submit" class="btn btn-success btn-block">Mua hàng 
-                        </button>                
-                               
-                        <a href="cart.html" class="btn btn-default btn-detail">
+                         <div  class="product-price"><span> $19 </span> </div>
+                         <div class="is-strike" >$39</div>
+                         <div class="product-review">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <p class="productname">                   
+                            <a class="sp" href="san-pham-chi-tiet.html">Instructor: DX QUANG HUY</a>
+                        </p>
+                       
+                        <a href="cart.html" class="btn btn-default product-button">
                             <i class="fa fa-shopping-cart"></i>
-                            Cho vào giỏ hàng </a>                        
+                            ADD TO CART ></a>                        
                     </div>
 
                   
             
                     <div class="left-sidebar">
                         <div class="courseoutline">
-                            <table class="table  table-bordered table-hover ">
-                     
-                                <tbody>
-                                    <tr>
-                                        <td>Số bài giảng</td>
-                                        <td>102 </td>
-                                        
-                                       
-                                        
-                                    </tr>
-
-                                    <tr>
-                                        <td>Thời lượng</td>
-                                        <td>17 giờ </td> 
-                                    </tr>
-                                    <tr>
-                                        <td>Chính sách</td>
-                                        <td>Lifetime access </br> Đảm bảo 30 ngày hoàn tiền nếu chương trình có lỗi</td> 
-                                    </tr>
-                                    <tr>
-                                        <td>Trình độ</td>
-                                        <td>Cơ bản </td>
-                                        
-                                        
-                                    </tr>
-                                    
-                                </tbody>
-                            </table>
                             <h3>Course outline</h3>
                         </div>
           

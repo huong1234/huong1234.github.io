@@ -28,8 +28,7 @@
     <script src="jquery.bxslider/jquery.bxslider.min.js"></script>
 
 
-    <!-- bxSlider CSS file -->
-    <link href="jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+    
 
 
     <style type="text/css">
@@ -211,13 +210,22 @@
                             <li><a href="#">For Professionals</a></li>                           
                         </ul>
                     </li>
-                    <li><a href="community.html">Cộng đồng</a></li>
-                    
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">COMMUNITY <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Our story</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Our inspiration</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Blogs</a></li>                            
+                        </ul>
+                    </li>
 
                     <li><a href="#">ABOUT US</a></li>
                     <li><a href="#" data-toggle="modal" data-target="#myModal">LOGIN</a></li>
                     <!-- <li><a href="register.html">LOGIN</a></li> -->
-                    <li><a href="#" data-toggle="modal" data-target="#myModalRegister">REGISTER</a></li>
+                    <li><a href="register2.html" >REGISTER</a></li>
 
             </ul>
         </div>
@@ -235,47 +243,35 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-lock"> Đăng nhập tài khoản Techmaster</i></h4>
+        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-lock"> Đăng nhập</i></h4>
       </div>
-      <div class="modal-body" style="padding: 5px 20px;">
+      <div class="modal-body" style="padding: 40px 50px;">
         <form role="form">
         <div class="form-group">
-            <!-- <label for="usrname">
+            <label for="usrname">
                 <span class="glyphicon glyphicon-home"></span>"Tài khoản"
-            </label> -->
-            <input type="email" class="form-control" id="usrname" placeholder="Email" required>
+            </label>
+            <input type="email" class="form-control" id="usrname" placeholder="Điền email" required>
         </div>
         <div class="form-group">
-            <!-- <label for="psw">
+            <label for="psw">
                 <span class="glyphicon glyphicon-eye-open"></span>"Mật khẩu"    
-            </label> -->
-            <input type="password" class="form-control" id="psw" placeholder="Mật khẩu" required>
+            </label>
+            <input type="password" class="form-control" id="psw" placeholder="Điền mật khẩu" required>
         </div>
-      <!--   <div class="checkbox">
+        <div class="checkbox">
             <label>
             <input type="checkbox" value checked>"Remember me" 
             </label>
-        </div> -->
+        </div>
         <button type="submit" class="btn btn-sucess btn-block">
             <span class="glyphicon glyphicon-off"></span>"Đăng nhập"  
         </button>
         </form>
       </div>
-      <div class="or-spacer">
-          <div class="mask"></div>
-          <span><i>hoặc</i></span>
-      </div>
-
       <div class="modal-footer">
-        <button type="submit" class="btn  btn-sucess btn-block facebook" data-dismiss="modal">
-            Đăng nhập bằng Facebook</button>
-
-        <button type="submit" class="btn  btn-sucess btn-block google" data-dismiss="modal">
-            Đăng nhập bằng Google</button>    
-
-
-        <!-- <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
-            <span class="glyphicon glyphicon-remove"></span> Hủy bỏ</button> -->
+        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Hủy bỏ</button>
         <p> 
             Bạn chưa là thành viên? 
             <a href="register2.html" class="register-link">Đăng ký</a>
@@ -283,63 +279,6 @@
         <p>
             <a href="#" class="forgot-password">Quên mật khẩu</a> 
         </p>
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="myModalRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content register">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-lock"> Đăng ký thành viên Techmaster</i></h4>
-      </div>
-      <div class="modal-body" style="padding: 5px 20px;">
-        <form role="form">
-        <div class="form-group">
-            <input type="text" class="form-control" id="name" placeholder="Họ tên" required>
-        </div>
-        <div class="form-group">
-            <input type="email" class="form-control" id="usrname" placeholder="Email" required>
-        </div>
-        <div class="form-group">
-            <input type="password" class="form-control" id="psw" placeholder="Mật khẩu" required>
-        </div>
-        <div class="checkbox">
-            <label>
-            <input type="checkbox" value checked > Nhận email về khóa học hot & ưu đãi
-            </label>
-        </div>
-        <button type="submit" class="btn btn-sucess btn-block">
-            <span class="glyphicon glyphicon-off"></span>"Đăng nhập"  
-        </button>
-        </form>
-      </div>
-      <div class="or-spacer">
-          <div class="mask"></div>
-          <span><i>hoặc</i></span>
-      </div>
-
-      <div class="modal-footer">
-        <button type="submit" class="btn  btn-sucess btn-block facebook" data-dismiss="modal">
-            Đăng nhập bằng Facebook</button>
-
-        <button type="submit" class="btn  btn-sucess btn-block google" data-dismiss="modal">
-            Đăng nhập bằng Google</button>    
-
-
-        <!-- <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
-            <span class="glyphicon glyphicon-remove"></span> Hủy bỏ</button> -->
-        <p> 
-            Bạn đã là thành viên? 
-            <a href="register2.html" class="register-link">Đăng ký</a>
-        </p>
-        
         
       </div>
     </div>
@@ -366,27 +305,7 @@
 </section> -->
 <!-- end of 2.section class=slider -->
 
-<div class="header-top bizresult" >
-    <div class="container">
-        <div class="row ">
-            <div class="col-sm-6 hidden-xs">
-                <div class="contactinfo">
-                    <p><strong>Learn Web Design,</strong></p>
-                    <p><strong> Coding & Much More</strong></p>
-                    <p><span>Treehouse offers a full-access free trial to our course library! Choose from 1,000s of hours of content, from JavaScript to Python to iOS. Learn to code and get the skills you need to launch a new career</span></p>
-                </div>
-            </div>
 
-            <div class="col-sm-6 hidden-xs">
-                <div class="contactinfo">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/trCJsv5oMjo" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
-
-        </div>
-    </div>  
-</div> 
-<!-- end of header-top
 
 
 <!-- 2b. menu cungphuot.vn hien ra -->
@@ -398,7 +317,18 @@
   <ul class="dropdown-menu " aria-labelledby="dropdownMenu1">
 
 <!-- <ul class="nav navbar-nav"> -->
-                    <li><a href="listofcourses.html">Khóa học</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">COURSES <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Giới thiệu hạt cafe</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">7 ngày vs cà phê giả</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Quy trình Rang Cà phê</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Phòng Nghiên Cứu Cà phê</a></li>                         
+                        </ul>
+                    </li>
 
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICES<span class="caret"></span></a>
@@ -464,7 +394,7 @@
     
         
         <div class="product-hot">
-            <h2 class="text-center title">Khóa học HOT</h2>            
+                      
             <ul class="nav nav-tabs">
                 <li><a href="#balo" data-toggle="tab">TẤT CẢ KHÓA HỌC</a></li>
                 <li><a href="#mu" data-toggle="tab">CƠ BẢN</a></li>
@@ -482,7 +412,7 @@
                                     <img src="https://phuotstore.net/upload/store/2016-09/balo-nam-vai-phoi-da-han-quoc-1.jpg" alt class="img-responsive">
                                 </a>
                                 <p class="productname">                  
-                                    <a class="sp" href="san-pham-chi-tiet.html">Balo vải nam phối da Hàn Quốc</a>
+                                    <a class="sp" href="detail.html">Balo vải nam phối da Hàn Quốc</a>
                                 </p>
                                 <div  class="product-price"><span> 150.000VNĐ </span> </div>
                                 <div class="is-strike" >250.000VNĐ</div>
@@ -506,7 +436,7 @@
                                     <img src="https://phuotstore.net/upload/store/2016-09/balo-nam-vai-phoi-da-han-quoc-1.jpg" alt class="img-responsive">
                                 </a>
                                 <p class="productname">                  
-                                    <a class="sp" href="san-pham-chi-tiet.html">Balo vải nam phối da Hàn Quốc</a>
+                                    <a class="sp" href="detail.html">Balo vải nam phối da Hàn Quốc</a>
                                 </p>
                                 <div  class="product-price"><span> 150.000VNĐ </span> </div>
                                 <div class="is-strike" >250.000VNĐ</div>
@@ -530,7 +460,7 @@
                                     <img src="https://phuotstore.net/upload/store/2016-09/balo-nam-vai-phoi-da-han-quoc-1.jpg" alt class="img-responsive">
                                 </a>
                                 <p class="productname">                  
-                                    <a class="sp" href="san-pham-chi-tiet.html">Balo vải nam phối da Hàn Quốc</a>
+                                    <a class="sp" href="detail.html">Balo vải nam phối da Hàn Quốc</a>
                                 </p>
                                 <div  class="product-price"><span> 150.000VNĐ </span> </div>
                                 <div class="is-strike" >250.000VNĐ</div>
@@ -554,7 +484,7 @@
                                     <img src="https://phuotstore.net/upload/store/2016-09/balo-nam-vai-phoi-da-han-quoc-1.jpg" alt class="img-responsive">
                                 </a>
                                 <p class="productname">                  
-                                    <a class="sp" href="san-pham-chi-tiet.html">Balo vải nam phối da Hàn Quốc</a>
+                                    <a class="sp" href="detail.html">Balo vải nam phối da Hàn Quốc</a>
                                 </p>
                                 <div  class="product-price"><span> 150.000VNĐ </span> </div>
                                 <div class="is-strike" >250.000VNĐ</div>
@@ -584,7 +514,7 @@
                                     <img src="https://phuotstore.net/upload/store/2016-09/balo-nam-vai-phoi-da-han-quoc-1.jpg" alt class="img-responsive">
                                 </a>
                                 <p class="productname">                  
-                                    <a class="sp" href="san-pham-chi-tiet.html">Balo vải nam phối da Hàn Quốc</a>
+                                    <a class="sp" href="detail.html">Balo vải nam phối da Hàn Quốc</a>
                                 </p>
                                 <div  class="product-price"><span> 150.000VNĐ </span> </div>
                                 <div class="is-strike" >250.000VNĐ</div>
@@ -608,7 +538,7 @@
                                     <img src="https://phuotstore.net/upload/store/2016-09/balo-nam-vai-phoi-da-han-quoc-1.jpg" alt class="img-responsive">
                                 </a>
                                 <p class="productname">                  
-                                    <a class="sp" href="san-pham-chi-tiet.html">Balo vải nam phối da Hàn Quốc</a>
+                                    <a class="sp" href="detail.html">Balo vải nam phối da Hàn Quốc</a>
                                 </p>
                                 <div  class="product-price"><span> 150.000VNĐ </span> </div>
                                 <div class="is-strike" >250.000VNĐ</div>
@@ -632,7 +562,7 @@
                                     <img src="https://phuotstore.net/upload/store/2016-09/balo-nam-vai-phoi-da-han-quoc-1.jpg" alt class="img-responsive">
                                 </a>
                                 <p class="productname">                  
-                                    <a class="sp" href="san-pham-chi-tiet.html">Balo vải nam phối da Hàn Quốc</a>
+                                    <a class="sp" href="detail.html">Balo vải nam phối da Hàn Quốc</a>
                                 </p>
                                 <div  class="product-price"><span> 150.000VNĐ </span> </div>
                                 <div class="is-strike" >250.000VNĐ</div>
@@ -656,7 +586,7 @@
                                     <img src="https://phuotstore.net/upload/store/2016-09/balo-nam-vai-phoi-da-han-quoc-1.jpg" alt class="img-responsive">
                                 </a>
                                 <p class="productname">                  
-                                    <a class="sp" href="san-pham-chi-tiet.html">Balo vải nam phối da Hàn Quốc</a>
+                                    <a class="sp" href="detail.html">Balo vải nam phối da Hàn Quốc</a>
                                 </p>
                                 <div  class="product-price"><span> 150.000VNĐ </span> </div>
                                 <div class="is-strike" >250.000VNĐ</div>
@@ -686,7 +616,7 @@
                                     <img src="https://phuotstore.net/upload/store/2016-09/balo-nam-vai-phoi-da-han-quoc-1.jpg" alt class="img-responsive">
                                 </a>
                                 <p class="productname">                  
-                                    <a class="sp" href="san-pham-chi-tiet.html">Balo vải nam phối da Hàn Quốc</a>
+                                    <a class="sp" href="detail.html">Balo vải nam phối da Hàn Quốc</a>
                                 </p>
                                 <div  class="product-price"><span> 150.000VNĐ </span> </div>
                                 <div class="is-strike" >250.000VNĐ</div>
@@ -713,7 +643,7 @@
                                     <img src="https://phuotstore.net/upload/store/2016-09/balo-nam-vai-phoi-da-han-quoc-1.jpg" alt class="img-responsive">
                                 </a>
                                 <p class="productname">                  
-                                    <a class="sp" href="san-pham-chi-tiet.html">Balo vải nam phối da Hàn Quốc</a>
+                                    <a class="sp" href="detail.html">Balo vải nam phối da Hàn Quốc</a>
                                 </p>
                                 <div  class="product-price"><span> 150.000VNĐ </span> </div>
                                 <div class="is-strike" >250.000VNĐ</div>
@@ -752,7 +682,7 @@
                             <span class="badge">On track with Golang</span>                           
                         </a> 
                         <p class="productname">                  
-                            <a class="sp" href="san-pham-chi-tiet.html">Take online psychology courses to receive your Diploma in Psychology and gain a greater understanding of theory, behavior and ethical issues.</a>
+                            <a class="sp" href="detail.html">Take online psychology courses to receive your Diploma in Psychology and gain a greater understanding of theory, behavior and ethical issues.</a>
                         </p>
                         <div  class="product-price"><span> 150.000VNĐ </span> </div>
                                 <div class="is-strike" >250.000VNĐ</div>
@@ -776,7 +706,7 @@
                             <span class="badge">Digging Into Django</span>                         
                         </a>
                         <p class="productname">                   
-                            <a class="sp" href="san-pham-chi-tiet.html">Improve your business entrepreneurship skills and receive your Diploma of Business Management and Entrepreneurship.</a>
+                            <a class="sp" href="detail.html">Improve your business entrepreneurship skills and receive your Diploma of Business Management and Entrepreneurship.</a>
                         </p>
                         <div  class="product-price"><span> 150.000VNĐ </span> </div>
                                 <div class="is-strike" >250.000VNĐ</div>
@@ -800,7 +730,7 @@
                             <span class="badge">Javascript</span>                          
                         </a>
                         <p class="productname">                                     
-                            <a class="sp" href="san-pham-chi-tiet.html">Learn the most important responsibilities of a human resource manager</a>
+                            <a class="sp" href="detail.html">Learn the most important responsibilities of a human resource manager</a>
                         </p>
                         <div  class="product-price"><span> 150.000VNĐ </span> </div>
                                 <div class="is-strike" >250.000VNĐ</div>
@@ -824,7 +754,7 @@
                             <span class="badge">Diploma in Computer Networking</span>                          
                         </a>   
                         <p class="productname">                
-                            <a class="sp" href="san-pham-chi-tiet.html">Learn about different types of LANs and WANs, and the network architecture and protocols used in network security.</a>
+                            <a class="sp" href="detail.html">Learn about different types of LANs and WANs, and the network architecture and protocols used in network security.</a>
                         </p>
                         <div  class="product-price"><span> 150.000VNĐ </span> </div>
                                 <div class="is-strike" >250.000VNĐ</div>
@@ -848,7 +778,7 @@
                             <span class="badge">On track with Golang</span>                           
                         </a> 
                         <p class="productname">                  
-                            <a class="sp" href="san-pham-chi-tiet.html">Take online psychology courses to receive your Diploma in Psychology and gain a greater understanding of theory, behavior and ethical issues.</a>
+                            <a class="sp" href="detail.html">Take online psychology courses to receive your Diploma in Psychology and gain a greater understanding of theory, behavior and ethical issues.</a>
                         </p>
                         <div  class="product-price"><span> 150.000VNĐ </span> </div>
                                 <div class="is-strike" >250.000VNĐ</div>
@@ -872,7 +802,7 @@
                             <span class="badge">Digging Into Django</span>                         
                         </a>
                         <p class="productname">                   
-                            <a class="sp" href="san-pham-chi-tiet.html">Mũ bảo hiểm fullface GXT 2016 đen nhám mới</a>
+                            <a class="sp" href="detail.html">Mũ bảo hiểm fullface GXT 2016 đen nhám mới</a>
                         </p>
                         <div  class="product-price"><span> 150.000VNĐ </span> </div>
                                 <div class="is-strike" >250.000VNĐ</div>
@@ -896,7 +826,7 @@
                             <span class="badge">Javascript</span>                          
                         </a>
                         <p class="productname">                                     
-                            <a class="sp" href="san-pham-chi-tiet.html">Áo phượt siêu anh hùng Spiderman</a>
+                            <a class="sp" href="detail.html">Áo phượt siêu anh hùng Spiderman</a>
                         </p>
                         <div  class="product-price"><span> 150.000VNĐ </span> </div>
                                 <div class="is-strike" >250.000VNĐ</div>
@@ -920,7 +850,7 @@
                             <span class="badge">-50%</span>                          
                         </a>   
                         <p class="productname">                
-                            <a class="sp" href="san-pham-chi-tiet.html">Balo phượt vàng đen</a>
+                            <a class="sp" href="detail.html">Balo phượt vàng đen</a>
                         </p>
                         <div  class="product-price"><span> 150.000VNĐ </span> </div>
                                 <div class="is-strike" >250.000VNĐ</div>
@@ -946,7 +876,7 @@
 </div> <!-- /.container -->
 </section>
 
-
+<header>
 <div class="header-top bizresult">
     <div class="container">
         <div class="row ">
@@ -992,7 +922,7 @@
                             <span class="badge">On track with Golang</span>                           
                         </a> 
                         <p class="productname">                  
-                            <a class="sp" href="san-pham-chi-tiet.html">Take online psychology courses to receive your Diploma in Psychology and gain a greater understanding of theory, behavior and ethical issues.</a>
+                            <a class="sp" href="detail.html">Take online psychology courses to receive your Diploma in Psychology and gain a greater understanding of theory, behavior and ethical issues.</a>
                         </p>
                         <div  class="product-price"><span> 150.000VNĐ </span> </div>
                                 <div class="is-strike" >250.000VNĐ</div>
@@ -1016,7 +946,7 @@
                             <span class="badge">Digging Into Django</span>                         
                         </a>
                         <p class="productname">                   
-                            <a class="sp" href="san-pham-chi-tiet.html">Mũ bảo hiểm fullface GXT 2016 đen nhám mới</a>
+                            <a class="sp" href="detail.html">Mũ bảo hiểm fullface GXT 2016 đen nhám mới</a>
                         </p>
                         <div  class="product-price"><span> 150.000VNĐ </span> </div>
                                 <div class="is-strike" >250.000VNĐ</div>
@@ -1040,7 +970,7 @@
                             <span class="badge">Javascript</span>                          
                         </a>
                         <p class="productname">                                     
-                            <a class="sp" href="san-pham-chi-tiet.html">Áo phượt siêu anh hùng Spiderman</a>
+                            <a class="sp" href="detail.html">Áo phượt siêu anh hùng Spiderman</a>
                         </p>
                         <div  class="product-price"><span> 150.000VNĐ </span> </div>
                                 <div class="is-strike" >250.000VNĐ</div>
@@ -1064,7 +994,7 @@
                             <span class="badge">-50%</span>                          
                         </a>   
                         <p class="productname">                
-                            <a class="sp" href="san-pham-chi-tiet.html">Balo phượt vàng đen</a>
+                            <a class="sp" href="detail.html">Balo phượt vàng đen</a>
                         </p>
                        <div  class="product-price"><span> 150.000VNĐ </span> </div>
                                 <div class="is-strike" >250.000VNĐ</div>
@@ -1167,52 +1097,31 @@
 </section>
 
 
-<!-- Chia sẻ cảm nhận của học viên- top comment -->
-<div class="header-top bizresult">
-    <div class="container">
-        <div class="row ">
-
-            <div class="col-md-4 col-xs-12">
-                <div class="news-7day clearfix">
-                    <img src="http://7dayscoffee.vn/uploads/banner/20150814140541_PmEw2PHamp.jpg" alt="Giới thiệu 1 không gia cafe hoàn toàn mới" class="img-circle">            
-                    <div class="padT20">            "
-                    
-                        - Bám khá sát với các xu hướng thực tế của thị trường mobile-application, tuy nhiên có một số ngẫu hứng trong quá trình giảng dạy nên bài giảng thực tế có đi lệch một chút so với khung giáo trình "                               
-                    <p class="text-right">
-                        <a href="http://7dayscoffee.vn/vn/su-kien/khong-gian-ca-phe-dam-chat-han-9.html">(Chi tiết)</a>
-                    </p>
-                </div>
-            </div>
-            </div>
-            <div class="col-md-4 col-xs-12">
-                <div class="news-7day clearfix">
-                    <img src="http://7dayscoffee.vn/uploads/banner/20150814140541_PmEw2PHamp.jpg" alt="Giới thiệu 1 không gia cafe hoàn toàn mới" class="img-circle">            
-                    <div class="padT20">            "
-                    Nội dung bao quát, có tính thực tế cao. - Bài giảng mới, theo sát công nghệ + thay đổi của Apple. - Được thực hành nhiều" "- Có trình độ, chuyên nghiệp - Khả năng diễn đạt thuyết trình tốt "                               
-                    <p class="text-right">
-                        <a href="http://7dayscoffee.vn/vn/su-kien/khong-gian-ca-phe-dam-chat-han-9.html">(Chi tiết)</a>
-                    </p>
-                </div>
-            </div>
-            </div>
-            <div class="col-md-4 col-xs-12">
-                <div class="news-7day clearfix">
-                    <img src="http://7dayscoffee.vn/uploads/banner/20150814140541_PmEw2PHamp.jpg" alt="Giới thiệu 1 không gia cafe hoàn toàn mới" class="img-circle">            
-                    <div class="padT20">            "
-                    Nội dung đơn giản , dễ hiểu , sát với thực tế. Giảng viên chuyên nghiệp , hướng dẫn nhiệt tình và rất vui tính ^^ Chưa đi xin việc vì còn đang là sinh viên Techmaster nên có thêm người trợ "                               
-                    <p class="text-right">
-                        <a href="http://7dayscoffee.vn/vn/su-kien/khong-gian-ca-phe-dam-chat-han-9.html">(Chi tiết)</a>
-                    </p>
-                </div>
-            </div>
-            </div>
+<!-- Phân trang -->
+<nav aria-label="Page navigation">
+  <ul class="pagination pull-right">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+        <span class="sr-only">Previous</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">4</a></li>
+    <li class="page-item"><a class="page-link" href="#">5</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+        <span class="sr-only">Next</span>
+      </a>
+    </li>
+  </ul>
+</nav>
 
 
-        </div>
-    </div>  
-</div> <!-- end of header-top -->
-
-
+</br></br></br>
 <!-- Footer -->
 <footer>
 	<div class="footer-head blackfoot">
