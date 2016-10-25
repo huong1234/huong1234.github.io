@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/register.css">
 
 
 
@@ -40,8 +41,8 @@
             margin: 20px;
         }
        
-        #editor { 
-            margin: 0;
+        #editor, #editor1, #editor2, #editor3 { 
+            margin-top:43px;
             position: absolute;
             top: 0;
             right: 0;
@@ -104,7 +105,7 @@
 
         <div class="row">
         <div class="col-sm-7">
-          <span style="text-align: left">N </span>      
+          <span style="text-align: left"></span>      
             
 
         <div class="navbar-header ">
@@ -185,10 +186,10 @@
 
         </div> <!-- end of class col-10 -->
         <div class="col-sm-2 ">
-            <ul class="nav navbar-nav">
+            <!-- <ul class="nav navbar-nav">
                 <li><a href="#" data-toggle="modal" data-target="#myModal">LOGIN</a></li>
                 <li><a href="register.html">SIGN UP</a></li>
-            </ul>
+            </ul> -->
         </div>
 
 
@@ -289,45 +290,107 @@
 <section id="main-content section3"> 
 
     <div class="row">
-         <div class="col-sm-2 test">
+        <div class="col-sm-2 test">
             <div class="accordition-container first"> <!-- class new product -->
                 <!-- x=<input type="text" id="text-name"/> </br> -->
-                <p> name=<b id="text-name"></b></p>
+                <p> Bài tập <b id="text-name"></b></p>
                 <!-- <textarea  class="first" rows= "22" cols="28" > -->
 
                     <p style="text-align: left">
 
-                    "    We've added some HTML, but still haven't seen any results in the web browser to the right. Why is that?"</p>
+               
 
-                <p>"   Before we can add content that a browser will display, we have to add a body to the HTML file. Once the file has a body, many different types of content can be added within the body, like text, images, buttons, and much more."</p>
+                        Thiết kế 1 website theo chủ đề tùy chọn. Được phép sử dụng thư viện tùy ý.
+
+                        <ul>    
+
+                        <li>Yêu cầu</li>
+
+                        <li>- Tối thiểu 3 trang trở lên, có liên kết giữa các trang.</li>
+
+                        - Giao diện đẹp, sáng sủa, dễ dùng.
+
+                        <li>- Theo đúng chuẩn HTML5 + Responsive design</li>
+
+                        <li>- Nộp bài trên github static page.</li>
+
+                        </ul>
+
+                    </p>
             <!-- </textarea> -->
                 
             </div>
         </div>
-        <div class="col-sm-10 test">
-            <div class="form-group accordition-container secondary"> <!-- class new product -->
-                <textarea rows= "10" class="form-group">                     
-                </textarea> 
-                <div id="editor"> 
-                    function(foo){
-                        editor.setTheme("ace/theme/twilight");
-                        var x = "All this is syntax highlighted";
-                         var x = "All this is syntax highlighted";
-                          var x = "All this is syntax highlighted";
-                           var x = "All this is syntax highlighted";
-                        return x;
-                    }
+        <div class="col-sm-10">
+        <div class="row">
+        <div class="col-sm-6 test">
+            <div class="form-group accordition-container secondary code-input"> <!--  new product -->
+                <div class="product-hot">          
+                    <ul class="nav nav-tabs">
+                        <li><a href="#html" data-toggle="tab">HTML</a></li>
+                        <li><a href="#css" data-toggle="tab">CSS</a></li>
+                        <li><a href="#js" data-toggle="tab">Javascript</a></li>
+                    </ul>
+
+                    <!-- Tab pane -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="html">
+                            <textarea name id="input-html" row="10" class="form-control innerbox html-input" required="required" placeholder="Code HTML" style="display: none;">                               
+                            </textarea> 
+                            <div id="editor"> 
+                   </div>                                     
+                            
+                            <!-- </div> -->
+                        </div>
+                        <div class="tab-pane" id="css">
+                           <!--  <textarea name id="input-html" row="10" class="form-control innerbox html-input" required="required" placeholder="Code HTML" style="display: none;">                               
+                            </textarea>  -->
+                            <div id="editor1"> 
+
+                            </div>                                     
+                        </div>
+                        <div class="tab-pane" id="js">
+                            <textarea name id="input-html" row="10" class="form-control innerbox html-input" required="required" placeholder="Code HTML" style="display: none;">                               
+                            </textarea> 
+                            <div id="editor2"> 
+                            </div>                                     
+                        </div>
+                    </div>
                 </div>
+
+            </div>
+        
+        </div>  <!-- end of class col6 -->
+        <div class="col-sm-6 test">
+            <div class="test">
+
+               
+                <div class="product-hot">
+                    <!-- <a href="cart.html" class="btn btn-default product-button">
+                            RESULT </a>   -->              
+                    <!-- <ul class="nav nav-tabs">
+                        <li><a href="#result" data-toggle="tab"><input type="button" onclick="run()">RESULT</input></a></li> -->
+                    <span class="input-group-btn registerpage"> 
+                        <button class="btn btn-default" type="button" onclick="run()" >RESULT</button> 
+                    </span>
+                    
+                       
+                    </ul>
+
+                    <!-- Tab pane -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="result">
+                            <textarea name id="input-html" row="10" class="form-control innerbox html-input" required="required" placeholder="Code HTML" style="display: none;">                               
+                            </textarea> 
+                            <div id="editor"> 
+                                
+                                <iframe width="300" height="400" scrolling="auto"></iframe>
+                            </div>   
             </div>
         </div>
 
-        <div class="col-sm-10 inputdata">
-                x=<input type="text" style="text-align: left" id="text-name"/> </br>
         </div>
-        <div class="col-sm-10 console">
-            <p> This is console window </p>
-               
-        </div>
+       </div> <!-- end of class row -->
     </div>
 
          
@@ -386,10 +449,10 @@
             <h4>Techmaster</h4>
             
             <h4>Quy dinh</h4>
-            <a><i class="fa fa-facebook-square fa-3x"></i></a>
+            <!-- <a><i class="fa fa-facebook-square fa-3x"></i></a>
             <a><i class="fa fa-youtube-play fa-3x"></i></a>
             <a><i class="fa fa-github-alt fa-3x"></i></a>
-
+ -->
         </div>
         <div class="col-sm-2 hidden-xs">
             <h4> Về chúng tôi</h4>
@@ -436,6 +499,20 @@
     editor.setTheme("ace/theme/monokai");
     editor.getSession().setMode("ace/mode/javascript");
 
+    var editor1 = ace.edit("editor1");
+   
+    editor1.setTheme("ace/theme/monokai");
+    editor1.getSession().setMode("ace/mode/javascript");
+
+    var editor2 = ace.edit("editor2");
+   
+    editor2.setTheme("ace/theme/monokai");
+    editor2.getSession().setMode("ace/mode/javascript");
+    var editor3 = ace.edit("editor3");
+   
+    editor3.setTheme("ace/theme/monokai");
+    editor3.getSession().setMode("ace/mode/javascript");
+
     function find(){
         var needle = document.getElementById('text-name').value ;
         editor.find(needle,false, false,false,false,false);
@@ -458,8 +535,13 @@
         x = document.getElementById('text-name').value ;
         editor.gotoLine(x);
     }
-
+    function run(){
+        console.log("RUN");
+        $('iframe').contents().find('html').html('<style>'+editor1.getValue() + '</style>'+(editor.getValue()));
+                                document.getElementById('inlineFrame').contentWindow.eval(editor2.getValue());
     
+    }
+
 </script>
 </body>
 </html>

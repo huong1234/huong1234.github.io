@@ -1,0 +1,35 @@
+span.req_notification{
+	color: #d45252;
+    float: right;
+    margin-top: -36px;
+}
+.form_register label{
+	width: 180px;
+
+    padding: 18px;
+}
+.form_register li{
+	list-style-type: none;
+    border-bottom: 1px solid #eee;
+}
+span.req{
+	color:#d45252;
+}
+
+button.submit{
+	background: green;
+    color: white;
+    margin-left: 120px;
+    padding: 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.form_register  li:last-child {
+    border-bottom: 1px solid #795548;
+}
+form.form_register {
+    width: 700px;
+}
+i.fa.fa-angle-down.fa-2x {
+    padding: 1px;
+}
