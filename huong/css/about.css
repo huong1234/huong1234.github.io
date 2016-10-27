@@ -14,10 +14,7 @@ body {
 	margin-top: 10px;
 
 }
-.header-top {
-    background: #4CAF50;
-    border-color: green;
-}
+
 ul.nav.navbar-nav {
     margin-bottom: 0px;
 }
@@ -191,7 +188,7 @@ i.fa.fa-shopping-cart{
 .row.grid-demo p a{
 	color:#777;
 }
-.header-top.bizresult.listcourse {
+.bizresult.listcourse {
     background-color: #4CAF50;
     border-color: green;
     color: white;
@@ -199,7 +196,7 @@ i.fa.fa-shopping-cart{
     text-align: center;
     margin-bottom: 25px;
 }
-.header-top .contactinfo ul.nav.nav-pills>li>a{
+.contactinfo ul.nav.nav-pills>li>a{
 	font-size: 14px;
 	color:white;
 
@@ -324,9 +321,9 @@ i.fa.fa-youtube-play.fa-2x{
     /*margin-left: 26px*/
     margin: auto;
 }
-.header-top .bizresult{
+/*.header-top .bizresult{
 	background-color:grey;
-}
+}*/
 
 .box-quarternary-content i.fa.fa-sizecontrol{
 	font-size: 45px;
@@ -668,6 +665,8 @@ section#main-content2 {
     margin-top: 25px;
     margin-bottom: 35px;
 }
+
+
 .header-top {
     background: #4CAF50;
     border-color: green;
