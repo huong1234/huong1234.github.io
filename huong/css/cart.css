@@ -1,0 +1,14 @@
+.alert {
+    padding: 8px;
+    border-radius: 0;
+}
+.alert .alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+.row.shopping-cart-item {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
