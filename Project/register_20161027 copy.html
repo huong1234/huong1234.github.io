@@ -1,7 +1,15 @@
 <!DOCTYPE html>
+    <!-- https://lion5893.github.io/shopphuot/index.html# -->
+    <!-- http://kimdotcom.us/user.html -->
+    <!-- https://www.khanacademy.org/computing/computer-programming/programming/coloring/p/challenge-sunny-snowy-day -->
+    <!-- https://almsaeedstudio.com/themes/AdminLTE/index2.html -->
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Bootstrap 3 Button Group</title>
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
+
+  
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -14,6 +22,13 @@
     <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
     <script src="ace-master/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
     <script src="/ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<!--     <style type="text/css" media="screen">
+        .example{
+            margin: 20px;
+        }       
+
+
+    </style> -->
 </head>
 <body>
 
@@ -101,7 +116,7 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Edit<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a onkeypress="" =gotoline() data-toggle="modal" data-target="#modalInput"> Go to Line</a></li>
+                            <li><a OnClick=gotoline() data-toggle="modal" data-target="#Modal-line"> Go to Line</a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="#">Fold</a></li>
                             <li><a href="#">Unfold</a></li>
@@ -114,12 +129,12 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Find<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a OnClick=setFontSize() data-toggle="modal" data-target="#modalInput"> Set the font-size</a></li>
+                            <li><a OnClick=setFontSize()> Set the font-size</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a OnClick=find() data-toggle="modal" data-target="#modalInput">Find</a></li>
+                            <li><a OnClick=find()>Find</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a onClick=findNext() data-toggle="modal" data-target="#modalInput">Find Next</a></li> 
-                            <li><a onClick=findPrevious() data-toggle="modal" data-target="#modalInput">Find Previous</a></li> 
+                            <li><a onClick=findNext()>Find Next</a></li> 
+                            <li><a onClick=findPrevious()>Find Previous</a></li> 
                             <li><a href="#">Select Next</a></li> 
                             <li role="separator" class="divider"></li>
                             <li><a href="#">Replace</a></li> 
@@ -150,7 +165,7 @@
 <!-- Modal -->
 <div class="modal fade" id="modalSaveas" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
-    <div class="modal-content saveas">
+    <div class="modal-content">
      
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -175,33 +190,6 @@
   </div>
 </div>
 
-<div class="modal fade" id="modalInput" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content saveas">
-     
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-lock"> User-input Dialog</i></h4>
-      </div>
-      
-      <div class="modal-body" style="padding: 20px 20px;">
-        <form role="form">
-        <div class="form-group">
-            <label for="usrname">
-                <span class="glyphicon glyphicon-home"></span>"Điền số :"
-            </label>
-            x=<input type="text" class="form-control" style="text-align: left" id="text-name"/>
-            <!-- <input type="email" class="form-control" id="usrname" placeholder="Input number" required> -->
-        </div>
-        </form>
-      </div>
-
-        
-    </div>
-  </div>
-</div>
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -258,10 +246,9 @@
 <!-- 3.section id=main-content -->
 <section id="main-content section3"> 
 
-    <div class="row row-fixHeightHolder" style="height: 430px;">
-
-        <div class="col-xs-2" style="padding: 0; height: 430px">
-            <div class="accordition-container first" style="height: 430px"> <!-- class new product 
+    <div class="row">
+        <div class="col-sm-2 test">
+            <div class="accordition-container first"> <!-- class new product -->
                 <!-- x=<input type="text" id="text-name"/> </br> -->
                 <p> Bài tập<b id="text-name"></b></p>
                 <!-- <textarea  class="first" rows= "22" cols="28" > -->
@@ -278,51 +265,85 @@
                     </p>                
             </div>
         </div>
-        <div class="col-xs-10 test" style="height: 430px">
-           <!--  <div class="row"> -->
-                <!-- <div class="col-sm-12 test"> -->
-                    <div class="form-group accordition-container  code-input" style="height: 410px"> <!--  new product -->
-                        <div class="product-hot">          
-                            <ul class="nav nav-tabs">
-                                <li><a href="#contact_01" data-toggle="tab">HTML</a><span>x</span></li>
-                                <li><a href="#contact_02" data-toggle="tab">CSS</a><span>x</span></li>
-                                <li><a href="#contact_03" data-toggle="tab">Javascript</a><span>x</span></li>
-                                <li><a href="#" class="add-contact" data-toggle="tab">+Add contact</a></li>
+        <div class="col-sm-10">
+        <div class="row">
+        <div class="col-sm-6 test">
+            <div class="form-group accordition-container secondary code-input"> <!--  new product -->
+                <div class="product-hot">          
+                    <ul class="nav nav-tabs">
+                        <li><a href="#contact_01" data-toggle="tab">HTML</a><span>x</span></li>
+                        <li><a href="#contact_02" data-toggle="tab">CSS</a><span>x</span></li>
+                        <li><a href="#contact_03" data-toggle="tab">Javascript</a><span>x</span></li>
+                        <li><a href="#" class="add-contact" data-toggle="tab">+Add contact</a></li>
 
-                            </ul>
+                    </ul>
 
-                            <!-- Tab pane -->
-                            <div class="tab-content">
-                                <div class="tab-pane active" id="contact_01">
-
-                                    <div id="editor1" class="editor"> 
-                                    </div>                                     
-                                </div>
-                                <div class="tab-pane" id="contact_02">
-                                    <div id="editor2" class="editor"> 
-
-                                    </div>                                     
-                                </div>
-                                <div class="tab-pane" >
-                                    <div id="editor3" class="editor"> 
-                                    </div>                                     
-                                </div>
-                            </div>
+                    <!-- Tab pane -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="contact_01">
+                           <!--  <textarea name id="input-html" row="10" class="form-control innerbox html-input" required="required" placeholder="Code HTML" style="display: none;">                               
+                            </textarea>  -->
+                            <div id="editor1" class="editor"> 
+                            </div>                                     
+                            
+                            
                         </div>
+                        <div class="tab-pane" id="contact_02">
+                           <!--  <textarea name id="input-html" row="10" class="form-control innerbox html-input" required="required" placeholder="Code HTML" style="display: none;">                               
+                            </textarea>  -->
+                            <div id="editor2" class="editor"> 
+
+                            </div>                                     
+                        </div>
+                        <div class="tab-pane" >
+                            <div id="editor3" class="editor"> 
+                            </div>                                     
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        
+        </div>  <!-- end of class col6 -->
+        <div class="col-sm-6 test">
+            <div class="test">
+
+               
+                <div class="product-hot">
+                    <!-- <a href="cart.html" class="btn btn-default product-button">
+                            RESULT </a>   -->              
+                    <!-- <ul class="nav nav-tabs">
+                        <li><a href="#result" data-toggle="tab"><input type="button" onclick="run()">RESULT</input></a></li> -->
+                    <span class="input-group-btn registerpage"> 
+                        <button class="btn btn-default" type="button" onclick="run()" >RESULT</button> 
+                    </span>
+                    
                        
+                    </ul>
 
-                    </div>
-                    <div class="info">
-                        <h4>This is the console window</h4>
-                    </div>
+                    <!-- Tab pane -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="result">
+                            <textarea name id="input-html" row="10" class="form-control innerbox html-input" required="required" placeholder="Code HTML" style="display: none;">                               
+                            </textarea> 
+                            <div id="editor"> 
+                                
+                                <iframe width="300" height="400" scrolling="auto"></iframe>
+                            </div>   
+            </div>
+        </div>
 
-                <!-- </div>  end of class col6 -->
-            <!-- </div> -->
-        </div> <!-- end of class row --> 
-        <!-- <div class="product-hot">
-                            <h4>test</h4>
-        </div>  -->     
+        </div>
+       </div> <!-- end of class row -->
+       <div class="test">
+       </div>
     </div>
+
+         
+
+
+
+
 </section>
 
 
@@ -416,11 +437,8 @@
    
     function setFontSize()
     {
-        console.log('test');
-      
         x   = document.getElementById('text-name').value ;       
         x = x+'px';
-          console.log(x);
         document.getElementById('editor').style.fontSize=x; 
     }
     function gotoline(){

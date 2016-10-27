@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <title>Bootstrap 3 Button Group</title>
+    <title>Bootstrap 3 Button Group</title>   
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/about.css">
     <link rel="stylesheet" type="text/css" href="css/register.css">
-    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> -->    
-    <script src="js/jquery.min.js"></script>
-    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->    
+    <script src="js/jquery.min.js"></script>   
     <script src="js/bootstrap.min.js"></script>
-    <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
     <script src="ace-master/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
     <script src="/ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
 </head>
@@ -24,8 +21,7 @@
 				<div class="contactinfo">
 					<ul class="nav nav-pills">
 						<li><a style="text-align: left"><img class="logo" src="images/logo.jpg"></a></li>
-						<li><a><i class="fa fa-envelope"></i>info@domain.com</a></li>
-						
+						<li><a><i class="fa fa-envelope"></i>huongdt.sgd@gmail.com</a></li>						
 					</ul>
 				</div>
 			</div>
@@ -34,7 +30,6 @@
                     <ul class="nav nav-pills">
                         <li><a style="text-align: center;">Learn HTML CSS Javascript</a></li>
                         <li><a>Part I</a></li>
-                        
                     </ul>
                 </div>
             </div>
@@ -58,16 +53,11 @@
 		</div>
 		
 </div> <!-- end of header-top -->
-
 <div class="header-bottom">
 <nav class="navbar navbar-default">
-
-
-        <div class="row">
+    <div class="row">
         <div class="col-sm-7">
-          <span style="text-align: left"></span>      
-            
-
+          <span style="text-align: left"></span>                 
         <div class="navbar-header ">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
@@ -101,7 +91,7 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Edit<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a onkeypress="" =gotoline() data-toggle="modal" data-target="#modalInput"> Go to Line</a></li>
+                            <li><a OnClick=gotoline() data-toggle="modal" data-target="#Modal-line"> Go to Line</a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="#">Fold</a></li>
                             <li><a href="#">Unfold</a></li>
@@ -114,12 +104,12 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Find<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a OnClick=setFontSize() data-toggle="modal" data-target="#modalInput"> Set the font-size</a></li>
+                            <li><a OnClick=setFontSize()> Set the font-size</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a OnClick=find() data-toggle="modal" data-target="#modalInput">Find</a></li>
+                            <li><a OnClick=find()>Find</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a onClick=findNext() data-toggle="modal" data-target="#modalInput">Find Next</a></li> 
-                            <li><a onClick=findPrevious() data-toggle="modal" data-target="#modalInput">Find Previous</a></li> 
+                            <li><a onClick=findNext()>Find Next</a></li> 
+                            <li><a onClick=findPrevious()>Find Previous</a></li> 
                             <li><a href="#">Select Next</a></li> 
                             <li role="separator" class="divider"></li>
                             <li><a href="#">Replace</a></li> 
@@ -135,22 +125,19 @@
 
             </ul>
         </div>
-
         </div> <!-- end of class col-10 -->
-        <div class="col-sm-2 ">
-            <!-- <ul class="nav navbar-nav">
+  <!--       <div class="col-sm-2 ">
+            <ul class="nav navbar-nav">
                 <li><a href="#" data-toggle="modal" data-target="#myModal">LOGIN</a></li>
                 <li><a href="register.html">SIGN UP</a></li>
-            </ul> -->
-        </div>
+            </ul>
+        </div> -->
 
-
- 
 </nav>
 <!-- Modal -->
 <div class="modal fade" id="modalSaveas" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
-    <div class="modal-content saveas">
+    <div class="modal-content">
      
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -166,34 +153,6 @@
                 <span class="glyphicon glyphicon-home"></span>"Tên file lưu:"
             </label>
             <input type="email" class="form-control" id="usrname" placeholder="Điền tên file" required>
-        </div>
-        </form>
-      </div>
-
-        
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="modalInput" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content saveas">
-     
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-lock"> User-input Dialog</i></h4>
-      </div>
-      
-      <div class="modal-body" style="padding: 20px 20px;">
-        <form role="form">
-        <div class="form-group">
-            <label for="usrname">
-                <span class="glyphicon glyphicon-home"></span>"Điền số :"
-            </label>
-            x=<input type="text" class="form-control" style="text-align: left" id="text-name"/>
-            <!-- <input type="email" class="form-control" id="usrname" placeholder="Input number" required> -->
         </div>
         </form>
       </div>
@@ -257,15 +216,14 @@
 
 <!-- 3.section id=main-content -->
 <section id="main-content section3"> 
+    <div class="row">
+        <h2 class="text-center">Trang web lập trình trực tuyến </h2>
+        <div class="row fixHeightFolder" style="height: 439px;">
 
-    <div class="row row-fixHeightHolder" style="height: 430px;">
-
-        <div class="col-xs-2" style="padding: 0; height: 430px">
-            <div class="accordition-container first" style="height: 430px"> <!-- class new product 
-                <!-- x=<input type="text" id="text-name"/> </br> -->
-                <p> Bài tập<b id="text-name"></b></p>
-                <!-- <textarea  class="first" rows= "22" cols="28" > -->
-
+            <div class="test" style="height: 439px; margin-left:0px;">
+                <div class="accordition-container first"> <!-- class new product -->
+                    <!-- x=<input type="text" id="text-name"/> </br> -->
+                    <p> Bài tập<b id="text-name"></b></p>
                     <p style="text-align: left">              
                         Thiết kế 1 website theo chủ đề tùy chọn. Được phép sử dụng thư viện tùy ý.
                         <ul>    
@@ -276,53 +234,47 @@
                             <li>- Nộp bài trên github static page.</li>
                         </ul>
                     </p>                
+                </div>
             </div>
-        </div>
-        <div class="col-xs-10 test" style="height: 430px">
-           <!--  <div class="row"> -->
-                <!-- <div class="col-sm-12 test"> -->
-                    <div class="form-group accordition-container  code-input" style="height: 410px"> <!--  new product -->
-                        <div class="product-hot">          
-                            <ul class="nav nav-tabs">
-                                <li><a href="#contact_01" data-toggle="tab">HTML</a><span>x</span></li>
-                                <li><a href="#contact_02" data-toggle="tab">CSS</a><span>x</span></li>
-                                <li><a href="#contact_03" data-toggle="tab">Javascript</a><span>x</span></li>
-                                <li><a href="#" class="add-contact" data-toggle="tab">+Add contact</a></li>
+            <!-- <div class="code-terminal" style="height: 439px;" > -->
+            <div class="form-group accordition-container secondary code-input" style="height: 439px;"> 
+                <div class="product-hot">           
+                    <ul class="nav nav-tabs">
+                        <li><a href="#contact_01" data-toggle="tab">HTML</a><span>x</span></li>
+                        <li><a href="#contact_02" data-toggle="tab">CSS</a><span>x</span></li>
+                        <li><a href="#contact_03" data-toggle="tab">Javascript</a><span>x</span></li>
+                        <li><a href="#" class="add-contact" data-toggle="tab">+Add contact</a></li>
 
-                            </ul>
+                    </ul>
 
-                            <!-- Tab pane -->
-                            <div class="tab-content">
-                                <div class="tab-pane active" id="contact_01">
-
-                                    <div id="editor1" class="editor"> 
-                                    </div>                                     
-                                </div>
-                                <div class="tab-pane" id="contact_02">
-                                    <div id="editor2" class="editor"> 
-
-                                    </div>                                     
-                                </div>
-                                <div class="tab-pane" >
-                                    <div id="editor3" class="editor"> 
-                                    </div>                                     
-                                </div>
-                            </div>
+                    <!-- Tab pane -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="contact_01">
+                           <!--  <textarea name id="input-html" row="10" class="form-control innerbox html-input" required="required" placeholder="Code HTML" style="display: none;">                               
+                            </textarea>  -->
+                            <div id="editor1" class="editor"> </div> 
+                                                                
+                            
+                            
                         </div>
-                       
+                        <div class="tab-pane" id="contact_02">
+                           <!--  <textarea name id="input-html" row="10" class="form-control innerbox html-input" required="required" placeholder="Code HTML" style="display: none;">                               
+                            </textarea>  -->
+                            <div id="editor2" class="editor"> </div> 
 
+                                                                
+                        </div>
+                        <div class="tab-pane" >
+                            <div id="editor3" class="editor"> </div>  
+                                                               
+                        </div>
                     </div>
-                    <div class="info">
-                        <h4>This is the console window</h4>
-                    </div>
+                </div>
 
-                <!-- </div>  end of class col6 -->
-            <!-- </div> -->
-        </div> <!-- end of class row --> 
-        <!-- <div class="product-hot">
-                            <h4>test</h4>
-        </div>  -->     
-    </div>
+            </div>
+        
+        </div>  <!-- end of row fixHeightFolder-->      
+    </div> <!-- end of class row -->
 </section>
 
 
@@ -416,11 +368,8 @@
    
     function setFontSize()
     {
-        console.log('test');
-      
         x   = document.getElementById('text-name').value ;       
         x = x+'px';
-          console.log(x);
         document.getElementById('editor').style.fontSize=x; 
     }
     function gotoline(){

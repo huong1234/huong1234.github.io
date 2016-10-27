@@ -1,8 +1,14 @@
 <!DOCTYPE html>
-<html>
+    <!-- https://stacksocial.com/sales/from-0-to-1-raspberry-pi-and-the-internet-of-things -->
+    <!-- https://www.sololearn.com/Course/CPlusPlus/ -->
+
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bootstrap 3 Button Group</title>  
+    <title>Bootstrap 3 Button Group</title>
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
+
+  
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -12,13 +18,31 @@
 
     <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> -->    
     <script src="js/jquery.min.js"></script>
-    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->    
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+
+    
     <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+
+
+    <!-- bxSlider Javascript file -->
+    <script src="jquery.bxslider/jquery.bxslider.min.js"></script>
+
+
+    <!-- bxSlider CSS file -->
+    <link href="jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+
+
+    <style type="text/css">
+        .example{
+            margin: 20px;
+        }
+    </style>
 </head>
 <body>
 <header>
 
-	<div class="row detail">
+	<div class="row">
         <div class="col-sm-2">
             <div class="logo text-center">
                 <a href="index.html">
@@ -49,7 +73,155 @@
             </div>
         </div>
     </div>
-      
+<!-- </div> --> <!-- end of header-top -->
+
+       
+<!-- <div class="header-bottom">
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="logo text-center">
+                        <a href="index.html">
+                            <img src="images/logo.jpg">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"></a>
+                    </div> 
+                </div>
+                
+                <div class="collapse navbar-collapse pull-right" id="menu">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">COURSES <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Giới thiệu hạt cafe</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">7 ngày vs cà phê giả</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Quy trình Rang Cà phê</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Phòng Nghiên Cứu Cà phê</a></li>                         
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICES<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="file:///Users/huong/Desktop/huong1234.github.io/blog/test/menu.html">Workforce Re-entry</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">For Students</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">For employees</a></li> 
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">For teachers</a></li> 
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">For Professionals</a></li>                           
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">COMMUNITY <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Our story</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Our inspiration</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Blogs</a></li>                            
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4 hidden-xs">
+                    <div class="sign-in pull-right">                         
+                        <ul class="nav nav-pills">
+                            <li><a data-toggle="modal" data-target="#myModal"><i class="fa fa-lock">Đăng nhập</i></a></li>
+                            <li><a href="register.html"><i class="fa fa-registered">Đăng ký</i></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+    </nav>
+</div>  -->
+
+<div class="header-bottom">
+<nav class="navbar navbar-default">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-6">          
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling  -->       
+                <div class="collapse navbar-collapse pull-right" id="menu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="listofcourses.html">Khóa học</a></li>
+
+                        <!-- <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICES<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="detail.html">Workforce Re-entry</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">For Students</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">For employees</a></li> 
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">For teachers</a></li> 
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">For Professionals</a></li>                           
+                            </ul>
+                        </li> -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">COMMUNITY <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Our story</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Our inspiration</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Blogs</a></li>                            
+                            </ul>
+                        </li>
+  <!--                       <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#myModal">SIGN UP</a></li>
+                        <li><a href="register.html">LOGIN</a></li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                  
+                        <ul class="nav navbar-nav">
+                            <li><a href="#" data-toggle="modal" data-target="#myModal">SIGN UP</a></li>
+                            <li><a href="register.html">LOGIN</a></li>
+                        </ul>
+                    
+                
+            </div>
+ 
+              
+
+        </div> <!-- end of class col-10 -->
+    </div> <!-- end of class container -->
+</nav>
+</div>
+
+<!-- end of class header bottom -->
 </header> <!-- end of 1.header -->
 
 
@@ -58,16 +230,15 @@
 <section id="main-content"> 
 <div class="container">         
         <div class="new-product detailpage"> <!-- class new product -->
-            <h3>From 0 to 1: Raspberry Pi and the Internet of Things</h3>
-            <!-- <h5>Use This Handy Microprocessor to Configure & Execute Home Automatron Projects</h5> -->
+            <h2>From 0 to 1: Raspberry Pi and the Internet of Things</h2>
+            <h5>Use This Handy Microprocessor to Configure & Execute Home Automatron Projects</h5>
             <div class="product-review">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star fa-star-half-o"></i>
-                <p> 4.6 (512 ratings) </p>
-              
+                <span> 4.6 (512 ratings) </span>
                 <p class="productname">                   
                             <a class="sp" href="#">Giảng viên: Đặng Quang Huy</a>
                             <a class="sp" href="#"> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  IT & Software/ IT Certification</a>
@@ -93,50 +264,38 @@
                     <div class="product-hot">
                                  
                         <ul class="nav nav-tabs">
-                            <li class="active"><a href="#desc" data-toggle="tab">Giáo trình</a></li>
-                            <li><a href="#ins" data-toggle="tab">Giảng viên</a></li>
+                            <li><a href="#desc" data-toggle="tab">Description</a></li>
+                            <li><a href="#ins" data-toggle="tab">Instructor</a></li>
                             <li><a href="#specs" data-toggle="tab">Specs</a></li>
                         </ul>
                         <div class="tab-content">
                             <div class="tab-pane" id="desc">      
                                 <p class="productname">                  
-                                    HTML, CSS và Javascript là ngôn ngữ cơ bản thiết yếu cho web developer. Dù bạn muốn xây dựng nên một trang web đơn giản hay phức tạp đều không thể thiếu chúng. Khóa học này xây dựng trên phương pháp thực hành giúp bạn xây dựng một trang web có ứng dụng thực tiễn.
+                                    Remember those sci-fi movies about smart homes with remotely controlled lights and sensors? Those flicks aren't so far-fetched anymore, because the future is here, and its name is Raspberry Pi. Understand how to tinker with this microcomputer's physical parts, and master the Python programming required to complete home automation projects such as flashing LEDs and remote-controlled sensors.
                                 </p>
                                 <ul>
-                                <li>Dành cho người mới bắt đầu, chưa học lập trình hoặc cho những ai muốn ôn lại kiến thức căn bản về lập trình web.</li>
-                                <li>Dễ học, dễ thực hành, ví dụ trực quan thú vị, không yêu cầu cao về máy móc hay phần mềm đi kèm.</li>
-                                <li>Cần thiết cho tất cả dự án web trên mọi công nghệ, mọi nền tảng.
-                                Ví dụ mẫu nhiều, trực qua</li>
-                            </ul>                 
+                                    <li>Master physical computing using Raspberry Pi w/ over 6 hours of content</li>
+                                    <li>Understand what the Internet of Things is & how the Raspberry Pi fits into it</li>
+                                    <li>Tinker w/ the Raspberry Pi's physical components</li>
+                                </ul>               
                             </div>
                             <div class="tab-pane" id="ins">
 
                              <p>
-                                Lập trình viên web tại Techmaster. Đã tham gia nhiều dự án gia công trên nền tảng PHP, Nodejs. Là một thành viên trong nhóm phát triển dự án techmaster.vn và dự án mã nguồn mở ArrowCMS
+                                Loonycorn is comprised of four individuals--Janani Ravi, Vitthal Srinivasan, Swetha Kolalapudi and Navdeep Singh--who have honed their tech expertises at Google and Flipkart. The team believes it has distilled the instruction of complicated tech concepts into funny, practical, engaging courses, and is excited to be sharing its content with eager students. For more details on the course and instructor, click here. This course is hosted by StackSkills, the premier eLearning destination for discovering top-shelf courses on everything from coding—to business—to fitness, and beyond!
                             </p>
-                            <ul>
-                                <li>Dành cho người mới bắt đầu, chưa học lập trình hoặc cho những ai muốn ôn lại kiến thức căn bản về lập trình web.</li>
-                                <li>Dễ học, dễ thực hành, ví dụ trực quan thú vị, không yêu cầu cao về máy móc hay phần mềm đi kèm.</li>
-                                <li>Cần thiết cho tất cả dự án web trên mọi công nghệ, mọi nền tảng.
-                                Ví dụ mẫu nhiều, trực qua</li>
-                            </ul>   
 
                         </div>
 
 
                         <div class="tab-pane" id="specs">
                             <p class="productname">                  
-                                Dành cho người mới bắt đầu, chưa học lập trình hoặc cho những ai muốn ôn lại kiến thức căn bản về lập trình web.
-                                Dễ học, dễ thực hành, ví dụ trực quan thú vị, không yêu cầu cao về máy móc hay phần mềm đi kèm.
-                                Sử dụng HTML5, CSS3, thiết kế theo chuẩn SEO, responsive, tối ưu hóa cho các công cụ tìm kiếm.
-                                Cần thiết cho tất cả dự án web trên mọi công nghệ, mọi nền tảng.
-                                Ví dụ mẫu nhiều, trực quan
+                                Remember those sci-fi movies about smart homes with remotely controlled lights and sensors? Those flicks aren't so far-fetched anymore, because the future is here, and its name is Raspberry Pi. Understand how to tinker with this microcomputer's physical parts, and master the Python programming required to complete home automation projects such as flashing LEDs and remote-controlled sensors.
                             </p>
                             <ul>
-                                <li>Dành cho người mới bắt đầu, chưa học lập trình hoặc cho những ai muốn ôn lại kiến thức căn bản về lập trình web.</li>
-                                <li>Dễ học, dễ thực hành, ví dụ trực quan thú vị, không yêu cầu cao về máy móc hay phần mềm đi kèm.</li>
-                                <li>Cần thiết cho tất cả dự án web trên mọi công nghệ, mọi nền tảng.
-                                Ví dụ mẫu nhiều, trực qua</li>
+                                <li>Master physical computing using Raspberry Pi w/ over 6 hours of content</li>
+                                <li>Understand what the Internet of Things is & how the Raspberry Pi fits into it</li>
+                                <li>Tinker w/ the Raspberry Pi's physical components</li>
                             </ul>                   
                         </div>
                     </div> 
@@ -156,7 +315,7 @@
                         </div>
 
                         <div class="col-sm-7">
-                            Khóa học Front-end cơ bản  chuẩn HTML7
+                            The Ultimate Front End Development Bundle 
                             <div  class="product-price"><span> 350.000VNĐ </span> </div>
                             <div class="is-strike" >650.000VNĐ </div>
                             <div class="product-review">
@@ -182,7 +341,7 @@
                         </div>
 
                         <div class="col-sm-7">
-                            Khóa học về máy tính cơ bản 
+                            The Complete Computer Science Bundle 
                             <div  class="product-price"><span> 990.000VNĐ </span> </div>
                             <div class="is-strike" >1990.000VNĐ</div>
                             <div class="product-review">
@@ -208,7 +367,7 @@
                         </div>
 
                         <div class="col-sm-7">
-                            Khóa học về tư duy giải thuật lập trình  
+                            Dive into This Foundational Language to Build a Solid Programming Skill Set 
                             <div  class="product-price"><span> 550.000VNĐ </span> </div>
                             <div class="is-strike" >950.000VNĐ</div>
                             <div class="product-review">
@@ -279,7 +438,7 @@
                                     
                                 </tbody>
                             </table>
-                            <h3>Giáo trình</h3>
+                            <h3>Course outline</h3>
                         </div>
           
                         <div class="panel panel-default">
@@ -619,5 +778,37 @@
 
 </footer>
 
+
+
+
+<script>
+    $(document).ready(function(){
+      $('#slider1').bxSlider({
+        mode: 'fade',
+        auto: true,
+        autoControls: true,
+        pause: 2000
+        });
+
+
+      $('#slider2').bxSlider({
+        minSlides:4,
+        maxSlides:4,
+        // mode: 'fade',
+         auto: true,
+        autoControls: true,
+        pause: 2000,
+        slideWidth:360,
+        slideMargin: 10
+        });
+    });
+
+    // $('.bxslider').bxSlider({
+    //     minSlides: 2,
+    //     maxSlides: 2,
+    //     slideWidth: 360,
+    //     slideMargin: 10
+    // });
+</script>
 </body>
 </html>
