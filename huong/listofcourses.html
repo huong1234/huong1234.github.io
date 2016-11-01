@@ -15,21 +15,30 @@
 <div class="header-top">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6 hidden-xs">
+			<div class="col-sm-3 hidden-xs">
 				<div class="contactinfo">
 					<ul class="nav nav-pills">
 						<li><a><i class="fa fa-phone"></i>+84.0936.066.330</a></li>
-                        <li><a><i class="fa fa-envelope"></i>huongdt.sgd@gmail.com</a></li>						
-					</ul>
-				</div>
-			</div>
-			<div class="col-sm-6 hidden-xs">
-				<div class="social-icon">
-					<ul class="nav nav-pills pull-right">
-						<li><a><i class="fa fa-phone"></i></a></li>
-						<li><a><i class="fa fa-youtube-play"></i></a></li>
-						<li><a><i class="fa fa-google-plus"></i></a></li>
-						<li><a><i class="fa fa-instagram"></i></a></li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 hidden-xs">
+                <div class="contactinfo">
+                    <ul class="nav nav-pills">
+                        <li><a>Lập trình  project chuyên sâu- KM 10% Noel 2016</a></li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3 hidden-xs">
+                <div class="social-icon">
+                    <ul class="nav nav-pills pull-right">
+                        <li><a><i class="fa fa-facebook "></i></a></li>
+                        <li><a><i class="fa fa-youtube-play  "></i></a></li>
+                        <li><a><i class="fa fa-google-plus"></i></a></li>
 						
 					</ul>					
 				</div>				
@@ -65,7 +74,7 @@
                     <ul class="nav navbar-nav">
                         <li><a href="listofcourses.html" >Khóa học</a></li>
 
-                        <li class="dropdown">
+                       <!--  <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">COMMUNITY <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Our story</a></li>
@@ -74,17 +83,140 @@
                                 <li role="separator" class="divider"></li>
                                 <li><a href="#">Blogs</a></li>                            
                             </ul>
-                        </li>
-                        <li><a href="#">ABOUT US</a></li>
-                        <li><a href="#" data-toggle="modal" data-target="#myModal">LOGIN</a></li>
+                        </li> -->
+                        <li><a href="community.html">Chúng tôi</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#myModal">Đăng nhập</a></li>
                         <!-- <li><a href="register.html">LOGIN</a></li> -->
-                        <li><a href="register2.html" >REGISTER</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#myModalRegister" >Đăng ký</a></li>
                     </ul>
                 </div>
             </div> <!-- end of class col-10 -->
         </div> <!-- end of class container -->
     </div>
 </nav>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-lock"> Đăng nhập tài khoản Techmaster</i></h4>
+      </div>
+      <div class="modal-body" style="padding: 5px 20px;">
+        <form role="form">
+        <div class="form-group">
+            <!-- <label for="usrname">
+                <span class="glyphicon glyphicon-home"></span>"Tài khoản"
+            </label> -->
+            <input type="email" class="form-control" id="usrname" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+            <!-- <label for="psw">
+                <span class="glyphicon glyphicon-eye-open"></span>"Mật khẩu"    
+            </label> -->
+            <input type="password" class="form-control" id="psw" placeholder="Mật khẩu" required>
+        </div>
+      <!--   <div class="checkbox">
+            <label>
+            <input type="checkbox" value checked>"Remember me" 
+            </label>
+        </div> -->
+        <button type="submit" class="btn btn-sucess btn-block">
+            Đăng nhập  
+        </button>
+        </form>
+      </div>
+      <div class="or-spacer">
+          <div class="mask"></div>
+          <span><i>hoặc</i></span>
+      </div>
+
+      <div class="modal-footer">
+        <button type="submit" class="btn  btn-sucess btn-block facebook" data-dismiss="modal">
+
+            <i  class="fa fa-facebook fa-2x"> </i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Đăng nhập bằng Facebook</button>
+
+        <button type="submit" class="btn  btn-sucess btn-block google" data-dismiss="modal">
+            <i class="fa fa-google-plus-square fa-2x"></i>
+           &nbsp;&nbsp;&nbsp; &nbsp; Đăng nhập bằng Google</button>    
+
+
+        <!-- <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Hủy bỏ</button> -->
+        <p> 
+            Bạn chưa là thành viên? 
+            <a href="register2.html" class="register-link">Đăng ký</a>
+        </p>
+        <p>
+            <a href="#" class="forgot-password">Quên mật khẩu</a> 
+        </p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModalRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content register">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-lock"> Đăng ký thành viên Techmaster</i></h4>
+      </div>
+      <div class="modal-body" style="padding: 5px 20px;">
+        <form role="form">
+        <div class="form-group">
+            <input type="text" class="form-control" id="name" placeholder="Họ tên" required>
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" id="usrname" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" id="psw" placeholder="Mật khẩu" required>
+        </div>
+        <div class="checkbox">
+            <label>
+            <input type="checkbox" value checked > Nhận email về khóa học hot & ưu đãi
+            </label>
+        </div>
+        <button type="submit" class="btn btn-sucess btn-block">
+           Đăng nhập
+        </button>
+        </form>
+      </div>
+      <div class="or-spacer">
+          <div class="mask"></div>
+          <span><i>hoặc</i></span>
+      </div>
+
+      <div class="modal-footer">
+        <button type="submit" class="btn  btn-sucess btn-block facebook" data-dismiss="modal">
+            <i  class="fa fa-facebook fa-2x"> </i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Đăng nhập bằng Facebook</button>
+
+        <button type="submit" class="btn  btn-sucess btn-block google" data-dismiss="modal">
+            <i class="fa fa-google-plus-square fa-2x"></i>
+           &nbsp;&nbsp;&nbsp; &nbsp; Đăng nhập bằng Google</button>    
+
+
+        <!-- <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Hủy bỏ</button> -->
+        <p> 
+            Bạn đã là thành viên? 
+            <a href="register2.html" class="register-link">Đăng ký</a>
+        </p>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div> <!-- end of header middle -->
 </div> <!-- end of header-bottom -->
 </header> <!-- end of 1.header -->
 
@@ -732,34 +864,34 @@
                 <div class="col-md-3 col-sm-3 col-xs-6">
                     <div class="productioninfo" >
                     <div class="box-content">
-                        
-                        <i class="fa fa-users fa-sizecontrol"></i>
-                        
-                        <h4>Students</h4>
+                        <a href="#">    
+                            <i class="fa fa-users fa-sizecontrol"></i>
+                        </a>   
+                        <h4 style="color:#E05048">Học nhóm</h4>
                         <ul>
                         	<li>Gain Verifiable Certification</li>
                         	<li>Free Aptitude Testing</li>
                         </ul>
                         <a href="cart.html" class="btn btn-default product-button">
                             <i class="icon-featured icon icon-user"></i>
-                            Learn more</a>                        
+                            Tìm hiểu thêm</a>                        
                     </div>
                     </div>
                 </div> 
                 <div class="col-md-3 col-sm-3 col-xs-6">
                     <div class="productioninfo" >
                     <div class="box-secondary-content">
-                        
-                        <i class="fa fa-user fa-sizecontrol"></i>
-                        
-                        <h4>Teachers</h4>
+                        <a href="#">
+                            <i class="fa fa-user fa-sizecontrol"></i>
+                        </a>
+                        <h4 style="color:#08c">Sinh viên lẻ</h4>
                         <ul>
                         	<li>Managee large groups</li>
                         	<li>Automate testings</li>
                         </ul>
                         <a href="cart.html" class="btn btn-default product-button">
                             <i class="icon-featured icon icon-user"></i>
-                            Learn more</a>                        
+                            Tìm hiểu thêm</a>                        
                     </div>
                     </div>
                 </div>                
@@ -767,17 +899,17 @@
                 <div class="col-md-3 col-sm-3 col-xs-6">
                     <div class="productioninfo" >
                     <div class="box-tertiary-content">
-                        
-                        <i class="fa fa-building-o fa-sizecontrol"></i>
-                        
-                        <h4>Teachers</h4>
+                        <a href="#">
+                            <i class="fa fa-building-o fa-sizecontrol"></i>
+                        </a>
+                        <h4 style="color:#4EB25C">Công ty</h4>
                         <ul>
                         	<li>Managee large groups</li>
                         	<li>Automate testings</li>
                         </ul>
                         <a href="cart.html" class="btn btn-default product-button">
                             <i class="icon-featured icon icon-user"></i>
-                            Learn more</a>                        
+                            Tìm hiểu thêm</a>                        
                     </div>
                     </div>
                 </div> 
@@ -785,17 +917,17 @@
                 <div class="col-md-3 col-sm-3 col-xs-6">
                     <div class="productioninfo" >
                     <div class="box-quarternary-content">
-                        
-                        <i class="fa fa-book fa-sizecontrol"></i>
-                        
-                        <h4>Teachers</h4>
+                        <a href="#">
+                            <i class="fa fa-book fa-sizecontrol"></i>
+                        </a>
+                        <h4 style="color:#734BA9">Ngưởi đi làm</h4>
                         <ul>
                         	<li>Managee large groups</li>
                         	<li>Automate testings</li>
                         </ul>
                         <a href="cart.html" class="btn btn-default product-button">
                             <i class="icon-featured icon icon-user"></i>
-                            Learn more</a>                        
+                            Tìm hiểu thêm</a>                        
                     </div>
                     </div>
                 </div>  
@@ -839,12 +971,12 @@
 	<div class="container">
     <div class="row grid-demo ">
         <div class="col-xs-6 col-sm-3">
-            <h4>Techmaster</h4>
-            
-            <h4>Quy dinh</h4>
-            <a><i class="fa fa-facebook-square fa-3x"></i></a>
-            <a><i class="fa fa-youtube-play fa-3x"></i></a>
-            <a><i class="fa fa-github-alt fa-3x"></i></a>
+            <h4>Techmaster connect</h4>
+            <ul id="ketnoi-footer" class="list-unstyled nav-list">
+                <li><img src="images/fb.jpg"></li>
+                <li><img src="images/g.jpg"></li>
+                <li><img src="images/twt.jpg"></li>
+            </ul>
 
         </div>
         <div class="col-sm-2 hidden-xs">

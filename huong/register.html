@@ -296,6 +296,68 @@
                                 <div class="tab-pane active" id="contact_01">
 
                                     <div id="editor1" class="editor"> 
+<html>
+    <body>
+        <div id="TOP">
+            Xin chào các bạn!  
+        </div>
+       
+        <input type="button" value="Append" id="btn-append"/>
+       
+        <script language="javascript">
+          // Lấy button
+          var button = document.getElementById("btn-append");
+           
+          // Thêm sự kiện click cho button
+          button.addEventListener("click", function(){
+            // Tạo mới một thẻ h1
+            var h1 = document.createElement("h1");
+ 
+            // Thêm nội dung HTML vào thẻ h1
+            h1.innerHTML = "Học DOM Nodes tại freetuts.net"
+ 
+            // Đưa thẻ h1 vào trong thẻ div có id=TOP
+            document.getElementById('TOP').appendChild(h1);
+          });
+        </script>
+    </body>
+</html>
+
+ 
+<html>
+    <body>
+        <div id="content">
+            <h5>Xin chào các bạn</h5>          
+            <h5>chúc vui vẻ khi học bài</h5>
+        </div>
+       
+        <input type="button" value="View" id="btn-view"/>
+       
+        <script language="javascript">
+          // Lấy button
+          var button = document.getElementById("btn-view");
+           
+          // Thêm sự kiện click cho button
+          button.addEventListener("click", function(){
+            // Tạo mới một thẻ h1
+            var h1 = document.createElement("h1");
+ 
+            // Thêm nội dung HTML vào thẻ h1
+            h1.innerHTML = "Chào mừng bạn đến với freetuts.net"
+ 
+            // Lấy thẻ ngoài cùng
+            var element = document.getElementById("content");
+             
+            // Lấy thẻ cần isertBefore
+            var element_child = document.getElementsByTagName("h5")[1];
+             
+            // Insert Before
+            element.insertBefore(h1, element_child);
+          });
+        </script>
+    </body>
+</html>
+
                                     </div>                                     
                                 </div>
                                 <div class="tab-pane" id="contact_02">
@@ -372,7 +434,7 @@
     <div class="row grid-demo ">
         <div class="col-xs-6 col-sm-3">
             <h4>Techmaster</h4>
-            <h4>Quy dinh</h4>
+            
         </div>
         <div class="col-sm-2 hidden-xs">
             <h4> Về chúng tôi</h4>
@@ -395,9 +457,9 @@
             <p><a href="#" style="font:italic;">Phòng 2304, tầng 23, toà nhà Ocean Bank (StarCity), 81 Lê Văn Lương, Nhân Chính, Thanh Xuân, Hà Nội</a></p>
 
         </div>
-    </div><!-- /.row -->
-    </div>  <!-- end of container -->
-</div>  <!-- end of footer head -->
+    </div>
+    </div>  
+</div>  
 </footer>
 
 

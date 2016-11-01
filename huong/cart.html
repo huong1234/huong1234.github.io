@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-    <!-- https://lion5893.github.io/shopphuot/index.html# -->
-    <!-- http://kimdotcom.us/user.html -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,41 +23,36 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
 
-
-    <!-- bxSlider Javascript file -->
-    <script src="jquery.bxslider/jquery.bxslider.min.js"></script>
-
-
-    <!-- bxSlider CSS file -->
-    <link href="jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
-
-
-    <style type="text/css">
-        .example{
-            margin: 20px;
-        }
-    </style>
 </head>
 <body>
 <header>
 <div class="header-top">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-8 hidden-xs">
+			<div class="col-sm-3 hidden-xs">
 				<div class="contactinfo">
 					<ul class="nav nav-pills">
-						<li><a><i class="fa fa-phone"></i>+84.123 456 789</a></li>
-						<li><a><i class="fa fa-envelope"></i>info@domain.com</a></li>
+						<li><a><i class="fa fa-phone"></i>+0936.066.330</a></li>
+						
 						
 					</ul>
 				</div>
 			</div>
+            <div class="col-sm-5 hidden-xs">
+                <div class="contactinfo">
+                    <ul class="nav nav-pills">
+                        <li><a>Lập trình chuyên sâu- KM 10% Noel 2016</a></li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
             <div class="col-sm-4 hidden-xs pull-left">
                 <div class="social-icon">
                     <ul class="nav nav-pills pull-left">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                <img class="circle avatar" style="width:45px;vertical-align: middle" src="Images/avatar.jpg">
+                                <img class="circle avatar" style="width:45px;vertical-align: middle" src="images/avatar.jpg">
                             </a>
                             <ul class="dropdown-menu">
                                 <li style="width:100%"><a href="#">Khóa học của tôi</a></li>
@@ -88,7 +81,7 @@
             </div>
         </div>
         <div class="col-sm-6">
-        	<div class="input-group">
+        	<div class="input-group searchbox">
             	<input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm, thương hiệu...">
             	<span class="input-group-btn"> 
             		<button class="btn btn-default" type="button" >Search</button> 
@@ -109,7 +102,13 @@
 
 <!-- 3.section id=main-content -->
 <section id="main-content"> 
-<div class="container">       
+<div class="container"> 
+    <ol class="breadcrumb">
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Giỏ hàng</a></li>
+    </ol>
+
+
     <div class="alert alert-sucess">
         <a href="#" class="close">x</a>Khóa học HTML/CSS/JS đơn giản đã được thêm vào giỏ hàng thành công
     </div>
@@ -125,12 +124,12 @@
                 </div>
                 <div class="col-sm-9">
                     <div class="name">
-                        <a href="#">Khóa học Alison </a>
+                        <a href="#">Khóa học HTML/CSS/JS đơn giản </a>
                     </div>
                     <div class="row">
                         <div class="col-xs-6">
                             <div class="price">200.000VNĐ</div>
-                            <div class="price2">499.000VNĐ</div>
+                            <div class="is-strike">499.000VNĐ</div>
                         </div>
                         <div class="col-xs-4">
                             <div class="dropdown">
@@ -154,7 +153,7 @@
                 <div class="col-sm-3">
                     <p class="image">
                         <a href="">
-                            <img src="https://cdn.alison.com/images/crs/25/262/Alison_CoursewareIntro_262.jpg" class="img-responsive">
+                            <img src="https://cdn.alison.com/images/crs/25/261/Alison_CoursewareIntro_261.jpg" class="img-responsive">
                         </a>
                     </p>
                 </div>
@@ -164,8 +163,8 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-6">
-                            <div class="price">200.000VNĐ</div>
-                            <div class="price2">499.000VNĐ</div>
+                            <div class="price">390.000VNĐ</div>
+                            <div class="is-strike">790.000VNĐ</div>
                         </div>
                         <div class="col-xs-4">
                             <div class="dropdown">
@@ -187,17 +186,28 @@
             </div>
         </div>
         <div class="col-sm-4">
-            <div class="panel panel-default coupon">
+            <div class="panel coupon">
                 <div class="panel-heading">
-                    <h4 class="panel-heading">Mã giảm giá </h4>
+                    <h5 class="panel-title">Mã giảm giá </h4>
                 </div>
                 <div class="panel-body">
                     <div class="input-group">
-                        <input type="text" name="form-control">
-                        <button class="btn btn-default" type="button" >Đồng ý</button>
+                        <input type="text" name="form-control" placeholder="Nhập mã">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button" >Đồng ý</button>
+                        </span>
                     </div>
                 </div>
             </div>
+            <div class="panel fee">
+                <div class="panel-body">
+                    <p class="total">Tổng tiền <span>1.289.000VNĐ</span>
+                    <p class="discount">Giảm giá <span>699.000VNĐ</span></p>
+                    <p class="total2">Thành tiền <span>590.000VNĐ</span></p>
+
+                </div>
+            </div>
+            <button type="button" class="btn btn-sucess btn-block">Tiến hành đặt hàng</button>
         </div>
     </div>
   
@@ -214,12 +224,12 @@
 	<div class="container">
     <div class="row grid-demo ">
         <div class="col-xs-6 col-sm-3">
-            <h4>Techmaster</h4>
-            
-            <h4>Quy dinh</h4>
-            <a><i class="fa fa-facebook-square fa-3x"></i></a>
-            <a><i class="fa fa-youtube-play fa-3x"></i></a>
-            <a><i class="fa fa-github-alt fa-3x"></i></a>
+            <h4>Techmaster connect</h4>
+            <ul id="ketnoi-footer" class="list-unstyled nav-list">
+                <li><img src="images/fb.jpg"></li>
+                <li><img src="images/g.jpg"></li>
+                <li><img src="images/twt.jpg"></li>
+            </ul>
 
         </div>
         <div class="col-sm-2 hidden-xs">
