@@ -1,5 +1,3 @@
-/*http://www.colorcombos.com/color-schemes/162/ColorCombo162.html*/
-
 body { 
 	padding-top: 0px; 
 	line-height: 22.8px;
@@ -222,13 +220,7 @@ i.fa.fa-shopping-cart{
     text-decoration: none;
     background-color: #4CAF50;
 }
-#ketnoi-footer li {
-    float: left;
-    padding-right: 10px;
-}
-#ketnoi-footer li img {
-    width: 37px;
-}
+
 .detail .nav>li>a{
     color:grey;
 }
@@ -698,4 +690,11 @@ section#main-content2 {
 }
 .bizresult {
     background: #F0F0ED;
+}
+#ketnoi-footer li {
+    float: left;
+    padding-right: 10px;
+}
+#ketnoi-footer li img {
+    width: 37px;
 }
