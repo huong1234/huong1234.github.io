@@ -37,3 +37,6 @@ input.newjob.ui-sortable-handle {
 section.container {
     margin-top: 20px;
 }
+input.newjob.ui-sortable-handle {
+    background-color: gainsboro;
+}
