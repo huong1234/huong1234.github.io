@@ -9,7 +9,7 @@ h5 {
 }
 .card{
 	border-radius: 2px;
-   
+    height: 350px;
     margin-right: 30px;
   
     border: 1px solid #777;
@@ -54,7 +54,6 @@ label.active {
 }
 input#new_job_done {
     padding-left: 20px;
-    width: 90%;
 }
 .input-field label {
     left: 12px;

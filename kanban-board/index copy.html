@@ -23,19 +23,13 @@
     		<div class="col m4">
     			<div class="card">
     				<h5>TODO(4)</h5>
-    				<div class="collection sorted-list" id ="todo">
+    				<div class="collection sorted-list">
     					<a href="#!" class="collection-item">Soạn giáo án <i class="fa fa-trash-o pull-right" aria-hidden="true"></i> </a>
     					<a href="#!" class="collection-item">Chuẩn bị ví dụ mẫu <i class="fa fa-trash-o pull-right" aria-hidden="true"></i></a>
     					<a href="#!" class="collection-item">Chuẩn bị quiz <i class="fa fa-trash-o pull-right" aria-hidden="true"></i></a>
-    					<a href="#!" class="collection-item">Chuẩn bi bài tập <span class="badge"><i class="tiny material-icons">delete </i></span></a>
+    					<a href="#!" class="collection-item">Chuẩn bi bài tập <i class="fa fa-trash-o pull-right" aria-hidden="true"></i></a>
 
-    					
-    				</div>
-    				<div class="action">
-    					<div class="input-field">
-    						<input id="new_job_done" type="text" onkeydown="app.newJob(event, 'todo', this)" >
-    						<label for="new_job_done"  >New job...</label>
-    					</div>
+    					<input  type="text" class="newjob" name="text1"  placeholder="New job..."><!-- <i class="fa fa-plus-circle" aria-hidden="true"></i> -->
     				</div>
     			</div>
     		</div>
@@ -43,7 +37,7 @@
     		<div class="col m4">
     			<div class="card">
     				<h5>DOING(1)</h5>
-    				<div class="collection sorted-list" id="doing">
+    				<div class="collection sorted-list">
     					<a href="#!" class="collection-item">Quay Vlog <i class="fa fa-trash-o pull-right" aria-hidden="true"></i></a>
     				</div>
     				<div class="action">
@@ -58,16 +52,13 @@
     		<div class="col m4">
     			<div class="card">
     				<h5>DONE(3)</h5>
-    				<div class="collection sorted-list" id="done">
+    				<div class="collection sorted-list">
     					<a href="#!" class="collection-item">Tìm kiếm tài liệu<i class="fa fa-trash-o pull-right" aria-hidden="true"></i></a>
     					<a href="#!" class="collection-item">Tìm kiếm hình ảnh<i class="fa fa-trash-o pull-right" aria-hidden="true"></i></a>
     					<a href="#!" class="collection-item">Cài đặt công cụ<i class="fa fa-trash-o pull-right" aria-hidden="true"></i></a>
-    				</div>
-    				<div class="action">
-    					<div class="input-field">
-    						<input id="new_job_done" type="text" onkeydown="app.newJob(event, 'done', this)" >
-    						<label for="new_job_done"  >New job...</label>
-    					</div>
+    					
+
+    					<input type="text" class="newjob" name="text1" placeholder ="New job...">
     				</div>
     			</div>
     		</div>
