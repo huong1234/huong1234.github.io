@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 3 Button Group</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> -->    
+    <script src="js/jquery.min.js"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->    
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+    <script src="ace-master/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+
+<header>
+<div class="header-top">
+		<div class="row">
+			<div class="col-sm-4 hidden-xs">
+				<div class="contactinfo">
+					<ul class="nav nav-pills">
+						<li><a style="text-align: left" href="index.html"><img class="logo"  src="images/logo.jpg"></a></li>
+						<li><a><i class="fa fa-envelope"></i>info@domain.com</a></li>
+						
+					</ul>
+				</div>
+			</div>
+            <div class="col-sm-4 hidden-xs">
+                <div class="contactinfo">
+                    <ul class="nav nav-pills">
+                        <li><a style="text-align: center;">Learn HTML CSS Javascript</a></li>
+                        <li><a>Part I</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+			<div class="col-sm-4 hidden-xs pull-left">
+				<div class="social-icon">
+					<ul class="nav nav-pills pull-left">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <img class="circle avatar" style="width:45px;vertical-align: middle" src="images/avatar.jpg">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li style="width:100%"><a href="#">Khóa học của tôi</a></li>
+                                <li style="width:100%"><a href="#" data-toggle="modal" data-target="#modalSaveas">Hồ sơ cá nhân</a></li>
+                                <li style="width:100%"><a href="#">Đăng xuất</a></li>                       
+                            </ul>
+                        </li>                       
+						<li><a><i class="fa fa-bell fa-2x"></i></a></li>						
+					</ul>					
+				</div>				
+			</div>
+		</div>
+		
+</div> <!-- end of header-top -->
+
+<div class="header-bottom">
+<nav class="navbar navbar-default">
+
+
+        <div class="row">
+        <div class="col-sm-7">
+          <span style="text-align: left"></span>      
+            
+
+        <div class="navbar-header ">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"></a>
+        </div>
+
+
+
+            <!-- Collect the nav links, forms, and other content for toggling  -->
+       
+        <div class="collapse navbar-collapse pull-left" id="menu">
+
+            <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">File <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">New</a></li>
+                            <li><a href="#" data-toggle="modal" data-target="#modalSaveas">Save as...</a></li>
+                            
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Refresh Tree</a></li>
+                            <li><a href="#">Go to File</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Close</a></li>                         
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Edit<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a onkeypress="" =gotoline() data-toggle="modal" data-target="#modalInput"> Go to Line</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Fold</a></li>
+                            <li><a href="#">Unfold</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Toggle Comment</a></li> 
+                            <li><a href="#">Split Selection into Lines</a></li> 
+                       </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Find<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a OnClick=setFontSize() data-toggle="modal" data-target="#modalInput"> Set the font-size</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a OnClick=find() data-toggle="modal" data-target="#modalInput">Find</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a onClick=findNext() data-toggle="modal" data-target="#modalInput">Find Next</a></li> 
+                            <li><a onClick=findPrevious() data-toggle="modal" data-target="#modalInput">Find Previous</a></li> 
+                            <li><a href="#">Select Next</a></li> 
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Replace</a></li> 
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Find in Files</a></li> 
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Reveal in sidebar</a></li> 
+                        </ul>
+                    </li>
+                    <li><a href="#">GO TO</a></li>
+                    <li><a href="#">TOOLS</a></li>                    
+                    <li><a href="#">HELP</a></li>
+
+            </ul>
+        </div>
+
+        </div> <!-- end of class col-10 -->
+        <div class="col-sm-2 ">
+            <!-- <ul class="nav navbar-nav">
+                <li><a href="#" data-toggle="modal" data-target="#myModal">LOGIN</a></li>
+                <li><a href="register.html">SIGN UP</a></li>
+            </ul> -->
+        </div>
+
+
+ 
+</nav>
+<!-- Modal -->
+<div class="modal fade" id="modalSaveas" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content saveas">
+     
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-lock"> Save As Dialog</i></h4>
+      </div>
+      
+      <div class="modal-body" style="padding: 20px 20px;">
+        <form role="form">
+        <div class="form-group">
+            <label for="usrname">
+                <span class="glyphicon glyphicon-home"></span>"Tên file lưu:"
+            </label>
+            <input type="email" class="form-control" id="usrname" placeholder="Điền tên file" required>
+        </div>
+        </form>
+      </div>
+
+        
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalInput" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content saveas">
+     
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-lock"> User-input Dialog</i></h4>
+      </div>
+      
+      <div class="modal-body" style="padding: 20px 20px;">
+        <form role="form">
+        <div class="form-group">
+            <label for="usrname">
+                <span class="glyphicon glyphicon-home"></span>"Điền số :"
+            </label>
+            x=<input type="text" class="form-control" style="text-align: left" id="text-name"/>
+            <!-- <input type="email" class="form-control" id="usrname" placeholder="Input number" required> -->
+        </div>
+        </form>
+      </div>
+
+        
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-lock"> Đăng nhập</i></h4>
+      </div>
+      <div class="modal-body" style="padding: 40px 50px;">
+        <form role="form">
+        <div class="form-group">
+            <label for="usrname">
+                <span class="glyphicon glyphicon-home"></span>"Tài khoản"
+            </label>
+            <input type="email" class="form-control" id="usrname" placeholder="Điền email" required>
+        </div>
+        <div class="form-group">
+            <label for="psw">
+                <span class="glyphicon glyphicon-eye-open"></span>"Mật khẩu"    
+            </label>
+            <input type="password" class="form-control" id="psw" placeholder="Điền mật khẩu" required>
+        </div>
+        <div class="checkbox">
+            <label>
+            <input type="checkbox" value checked>"Remember me" 
+            </label>
+        </div>
+        <button type="submit" class="btn btn-sucess btn-block">
+            <span class="glyphicon glyphicon-off"></span>"Đăng nhập"  
+        </button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Hủy bỏ</button>
+        <p> 
+            Bạn chưa là thành viên? 
+            <a href="register.html" class="register-link">Đăng ký</a>
+        </p>
+        <p>
+            <a href="#" class="forgot-password">Quên mật khẩu</a> 
+        </p>
+        
+      </div>
+    </div>
+  </div>
+</div> 
+</div> <!-- end of header middle -->
+</div> <!-- end of class header bottom -->
+
+<!-- 3.section id=main-content -->
+<section id="main-content section3"> 
+
+    <div class="row row-fixHeightHolder" style="height: 430px;">
+
+        <div class="col-xs-2" style="padding: 0; height: 430px">
+            <div class="accordition-container first" style="height: 430px"> <!-- class new product 
+                <!-- x=<input type="text" id="text-name"/> </br> -->
+                <p> Bài tập<b id="text-name"></b></p>
+                <!-- <textarea  class="first" rows= "22" cols="28" > -->
+
+                    <p style="text-align: left">              
+                        Thiết kế 1 website theo chủ đề tùy chọn. Được phép sử dụng thư viện tùy ý.
+                        <ul>    
+                            <li>Yêu cầu</li>
+                            <li>- Tối thiểu 3 trang trở lên, có liên kết giữa các trang.</li>
+                            - Giao diện đẹp, sáng sủa, dễ dùng.
+                            <li>- Theo đúng chuẩn HTML5 + Responsive design</li>
+                            <li>- Nộp bài trên github static page.</li>
+                        </ul>
+                    </p>                
+            </div>
+        </div>
+        <div class="col-xs-10 test" style="height: 430px">
+           <!--  <div class="row"> -->
+                <!-- <div class="col-sm-12 test"> -->
+                    <div class="form-group accordition-container  code-input" style="height: 410px"> <!--  new product -->
+                        <div class="product-hot">          
+                            <ul class="nav nav-tabs">
+                                <li><a href="#contact_01" data-toggle="tab">hello.js</a><span>x</span></li>
+                                <li><a href="#contact_02" data-toggle="tab">about.css</a><span>x</span></li>
+                                <li><a href="#contact_03" data-toggle="tab">index.html</a><span>x</span></li>
+                                <li><a href="#" class="add-contact" data-toggle="tab">+Add file</a></li>
+
+                            </ul>
+
+                            <!-- Tab pane -->
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="contact_01">
+
+                                    <div id="editor1" class="editor"> 
+<html>
+    <body>
+        <div id="TOP">
+            Xin chào các bạn!  
+        </div>
+       
+        <input type="button" value="Append" id="btn-append"/>
+       
+        <script language="javascript">
+          // Lấy button
+          var button = document.getElementById("btn-append");
+           
+          // Thêm sự kiện click cho button
+          button.addEventListener("click", function(){
+            // Tạo mới một thẻ h1
+            var h1 = document.createElement("h1");
+ 
+            // Thêm nội dung HTML vào thẻ h1
+            h1.innerHTML = "Học DOM Nodes tại freetuts.net"
+ 
+            // Đưa thẻ h1 vào trong thẻ div có id=TOP
+            document.getElementById('TOP').appendChild(h1);
+          });
+        </script>
+    </body>
+</html>
+
+ 
+<html>
+    <body>
+        <div id="content">
+            <h5>Xin chào các bạn</h5>          
+            <h5>chúc vui vẻ khi học bài</h5>
+        </div>
+       
+        <input type="button" value="View" id="btn-view"/>
+       
+        <script language="javascript">
+          // Lấy button
+          var button = document.getElementById("btn-view");
+           
+          // Thêm sự kiện click cho button
+          button.addEventListener("click", function(){
+            // Tạo mới một thẻ h1
+            var h1 = document.createElement("h1");
+ 
+            // Thêm nội dung HTML vào thẻ h1
+            h1.innerHTML = "Chào mừng bạn đến với freetuts.net"
+ 
+            // Lấy thẻ ngoài cùng
+            var element = document.getElementById("content");
+             
+            // Lấy thẻ cần isertBefore
+            var element_child = document.getElementsByTagName("h5")[1];
+             
+            // Insert Before
+            element.insertBefore(h1, element_child);
+          });
+        </script>
+    </body>
+</html>
+
+                                    </div>                                     
+                                </div>
+                                <div class="tab-pane" id="contact_02">
+                                    <div id="editor2" class="editor"> 
+
+                                    </div>                                     
+                                </div>
+                                <div class="tab-pane" >
+                                    <div id="editor3" class="editor"> 
+                                    </div>                                     
+                                </div>
+                            </div>
+                        </div>
+                       
+
+                    </div>
+                    <div class="info">
+                        <h4>This is the console window</h4>
+                    </div>
+
+                <!-- </div>  end of class col6 -->
+            <!-- </div> -->
+        </div> <!-- end of class row --> 
+        <!-- <div class="product-hot">
+                            <h4>test</h4>
+        </div>  -->     
+    </div>
+</section>
+
+
+<!-- Footer -->
+<footer>
+	
+<div class="footer-bottom">
+<div class="row">
+            <div class="col-sm-4 hidden-xs">
+                <div class="contactinfo">
+                    <ul class="nav nav-pills">
+                        <li><a style="text-align: left">Part 8. The body</a></li>
+                        <li><a><i class="fa fa-envelope"></i>info@domain.com</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4 hidden-xs">
+                <div class="contactinfo">
+                    <ul class="nav nav-pills">
+                        <li><a style="text-align: left;" class="btn btn-default product-button">Next</a></li>
+                        <li><a style="text-align: center;" class="btn btn-default product-button">Previous</a></li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4 hidden-xs">
+                <div class="social-icon">
+                    <ul class="nav nav-pills pull-right">
+                        <li><a style="text-align: right;" class="btn btn-default product-button">Get Help</a></li>
+                        <li><a><i class="fa fa-bell"></i></a></li>
+                        <li><a><i class="fa fa-google-plus"></i></a></li>
+                        <li><a><i class="fa fa-instagram"></i></a></li>
+                        
+                    </ul>                   
+                </div>              
+            </div>
+        </div>
+</div>
+
+
+
+
+<div class="footer-head blackfoot">
+    <div class="container">
+    <div class="row grid-demo ">
+        <div class="col-xs-6 col-sm-3">
+            <h4>Techmaster</h4>
+            
+        </div>
+        <div class="col-sm-2 hidden-xs">
+            <h4> Về chúng tôi</h4>
+            <p><a href="#">Việc làm</a></p>
+            <p><a href="#">Về chúng tôi</a></p>
+            <p><a href="#">Giảng viên</a></p>
+            <p><a href="#">Cơ sở vật chất</a></p>
+        </div>
+                <div class="col-sm-3 hidden-xs">
+            <h4> Contact</h4>
+            <p><a href="#">Mr Cường: 090.220.9011</a></p>
+            <p><a href="#">Mr Nghĩa: 096.440.7993</a></p>
+            <p><a href="#">cuong@techmaster.vn</a></p>
+            
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <h4>Địa chỉ</h4>
+            <p><a href="#">Số 14, ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội</a></p>
+            <p><a href="#">Mở cửa: 9:00 đến 18:00</a></p>
+            <p><a href="#" style="font:italic;">Phòng 2304, tầng 23, toà nhà Ocean Bank (StarCity), 81 Lê Văn Lương, Nhân Chính, Thanh Xuân, Hà Nội</a></p>
+
+        </div>
+    </div>
+    </div>  
+</div>  
+</footer>
+
+
+<script >
+    function find(){
+        var needle = document.getElementById('text-name').value ;
+        editor.find(needle,false, false,false,false,false);
+    }
+
+    function findNext(){
+        editor.findNext();
+    } 
+    function findPrevious(){
+         editor.findPrevious();
+    }
+   
+    function setFontSize()
+    {
+        console.log('test');
+      
+        x   = document.getElementById('text-name').value ;       
+        x = x+'px';
+          console.log(x);
+        document.getElementById('editor').style.fontSize=x; 
+    }
+    function gotoline(){
+        x = document.getElementById('text-name').value ;
+        editor.gotoLine(x);
+    }
+    function run(){
+        console.log("RUN");
+        $('iframe').contents().find('html').html('<style>'+editor1.getValue() + '</style>'+(editor.getValue()));
+        document.getElementById('inlineFrame').contentWindow.eval(editor2.getValue());
+    
+    }
+
+
+$(document).ready(function(){
+
+    var editor1 = ace.edit("editor1");   
+    editor1.setTheme("ace/theme/monokai");
+    editor1.getSession().setMode("ace/mode/javascript");
+    var editor2 = ace.edit("editor2");   
+    editor2.setTheme("ace/theme/monokai");
+    editor2.getSession().setMode("ace/mode/javascript");
+       
+
+    
+    $(".nav-tabs").on("click", "a", function(e){
+        e.preventDefault();
+        $(this).tab('show');
+    })
+  	.on("click", "span", function () {
+        var anchor = $(this).siblings('a');
+        $(anchor.attr('href')).remove();
+        $(this).parent().remove();
+        $(".nav-tabs li").children('a').first().click();
+    });
+    $('.add-contact').click(function(e){
+       
+        e.preventDefault();
+        var id=$(".nav-tabs").children().length;
+        $(this).closest('li').before('<li><a href="#contact_'+id+'">New Tab</a><span>x</span></li>'); 
+        $('.tab-content').append('<div class="tab-pane" id="contact_'+id+'"> <div id="editor'+id+'" class="editor"></div></div>'); 
+        var editor_newtab = ace.edit('editor'+id);
+        editor_newtab.setTheme("ace/theme/monokai");
+        editor_newtab.getSession().setMode("ace/mode/javascript");
+    
+    });
+
+});
+</script>
+</body>
+</html>

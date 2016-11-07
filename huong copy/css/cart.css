@@ -1,0 +1,64 @@
+.alert {
+    padding: 8px;
+    border-radius: 0;
+}
+
+.row.shopping-cart-item {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.input-group.searchbox {
+    margin-top: 15px;
+}
+.searchbox input.form-control {
+    height: 34px;
+}
+.row i.fa.fa-shopping-cart{
+	margin-top:16px;
+}
+.alert.alert-sucess {
+    /* color: green; */
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+.name {
+    font-weight: 700;
+    margin-bottom: 5px;
+
+}
+a {
+    color: inherit;
+    cursor: pointer;
+}
+.price {
+    color: green;
+    font-size: 14px;
+    font-weight: 700;
+}
+.panel.coupon {
+    border: 1px solid #ddd;
+    margin-top: -9px;
+    font-size: 13px;
+}
+.coupon .btn {
+    background: green;
+    color: #fff;
+}
+.panel.fee {
+    border: 1px solid #ddd;
+    margin-top: 4px;
+    font-size: 13px;
+}
+input[type="text"] {
+    margin-top: 2px;
+    /*width: 54px;*/
+}
+.fee span {
+    float: right;
+}
+p.total2 {
+    border-top: 2px solid green;
+    padding-top: 12px;
+}

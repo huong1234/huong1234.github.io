@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 3 Button Group</title>  
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">   
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<header>
+<div class="header-top">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3 hidden-xs">
+				<div class="contactinfo">
+					<ul class="nav nav-pills">
+						<li><a><i class="fa fa-phone"></i>+84.0936.066.330</a></li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 hidden-xs">
+                <div class="contactinfo">
+                    <ul class="nav nav-pills">
+                        <li><a>Lập trình  project chuyên sâu- KM 10% Noel 2016</a></li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3 hidden-xs">
+                <div class="social-icon">
+                    <ul class="nav nav-pills pull-right">
+                        <li><a><i class="fa fa-facebook "></i></a></li>
+                        <li><a><i class="fa fa-youtube-play  "></i></a></li>
+                        <li><a><i class="fa fa-google-plus"></i></a></li>
+						
+					</ul>					
+				</div>				
+			</div>
+		</div>
+	</div>	
+</div> <!-- end of header-top -->
+          
+
+<div class="header-bottom">
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="logo text-center">
+                    <a href="index.html">
+                        <img src="images/logo.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-10">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling  -->       
+                <div class="collapse navbar-collapse pull-right" id="menu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="listofcourses.html" >Khóa học</a></li>
+
+                       <!--  <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">COMMUNITY <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Our story</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Our inspiration</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Blogs</a></li>                            
+                            </ul>
+                        </li> -->
+                        <li><a href="community.html">Chúng tôi</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#myModal">Đăng nhập</a></li>
+                        <!-- <li><a href="register.html">LOGIN</a></li> -->
+                        <li><a href="#" data-toggle="modal" data-target="#myModalRegister" >Đăng ký</a></li>
+                    </ul>
+                </div>
+            </div> <!-- end of class col-10 -->
+        </div> <!-- end of class container -->
+    </div>
+</nav>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-lock"> Đăng nhập tài khoản Techmaster</i></h4>
+      </div>
+      <div class="modal-body" style="padding: 5px 20px;">
+        <form role="form">
+        <div class="form-group">
+            <!-- <label for="usrname">
+                <span class="glyphicon glyphicon-home"></span>"Tài khoản"
+            </label> -->
+            <input type="email" class="form-control" id="usrname" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+            <!-- <label for="psw">
+                <span class="glyphicon glyphicon-eye-open"></span>"Mật khẩu"    
+            </label> -->
+            <input type="password" class="form-control" id="psw" placeholder="Mật khẩu" required>
+        </div>
+      <!--   <div class="checkbox">
+            <label>
+            <input type="checkbox" value checked>"Remember me" 
+            </label>
+        </div> -->
+        <button type="submit" class="btn btn-sucess btn-block">
+            Đăng nhập  
+        </button>
+        </form>
+      </div>
+      <div class="or-spacer">
+          <div class="mask"></div>
+          <span><i>hoặc</i></span>
+      </div>
+
+      <div class="modal-footer">
+        <button type="submit" class="btn  btn-sucess btn-block facebook" data-dismiss="modal">
+
+            <i  class="fa fa-facebook fa-2x"> </i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Đăng nhập bằng Facebook</button>
+
+        <button type="submit" class="btn  btn-sucess btn-block google" data-dismiss="modal">
+            <i class="fa fa-google-plus-square fa-2x"></i>
+           &nbsp;&nbsp;&nbsp; &nbsp; Đăng nhập bằng Google</button>    
+
+
+        <!-- <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Hủy bỏ</button> -->
+        <p> 
+            Bạn chưa là thành viên? 
+            <a href="register2.html" class="register-link">Đăng ký</a>
+        </p>
+        <p>
+            <a href="#" class="forgot-password">Quên mật khẩu</a> 
+        </p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModalRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content register">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-lock"> Đăng ký thành viên Techmaster</i></h4>
+      </div>
+      <div class="modal-body" style="padding: 5px 20px;">
+        <form role="form">
+        <div class="form-group">
+            <input type="text" class="form-control" id="name" placeholder="Họ tên" required>
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" id="usrname" placeholder="Email" required>
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" id="psw" placeholder="Mật khẩu" required>
+        </div>
+        <div class="checkbox">
+            <label>
+            <input type="checkbox" value checked > Nhận email về khóa học hot & ưu đãi
+            </label>
+        </div>
+        <button type="submit" class="btn btn-sucess btn-block">
+           Đăng nhập
+        </button>
+        </form>
+      </div>
+      <div class="or-spacer">
+          <div class="mask"></div>
+          <span><i>hoặc</i></span>
+      </div>
+
+      <div class="modal-footer">
+        <button type="submit" class="btn  btn-sucess btn-block facebook" data-dismiss="modal">
+            <i  class="fa fa-facebook fa-2x"> </i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Đăng nhập bằng Facebook</button>
+
+        <button type="submit" class="btn  btn-sucess btn-block google" data-dismiss="modal">
+            <i class="fa fa-google-plus-square fa-2x"></i>
+           &nbsp;&nbsp;&nbsp; &nbsp; Đăng nhập bằng Google</button>    
+
+
+        <!-- <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Hủy bỏ</button> -->
+        <p> 
+            Bạn đã là thành viên? 
+            <a href="register2.html" class="register-link">Đăng ký</a>
+        </p>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div> <!-- end of header middle -->
+</div> <!-- end of header-bottom -->
+</header> <!-- end of 1.header -->
+
+<!-- 2b. menu hien ra -->
+<div class="dropdown">
+    <button type="button" class="navbar-toggle" id="menu" role="dialog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">    
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu " aria-labelledby="dropdownMenu1">
+    <!-- <ul class="nav navbar-nav"> -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">COURSES <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Giới thiệu hạt cafe</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">7 ngày vs cà phê giả</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Quy trình Rang Cà phê</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Phòng Nghiên Cứu Cà phê</a></li>                         
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERVICES<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="detail.html">Workforce Re-entry</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">For Students</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">For employees</a></li> 
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">For teachers</a></li> 
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">For Professionals</a></li>                           
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">COMMUNITY <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Our story</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Our inspiration</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Blogs</a></li>                            
+                        </ul>
+                    </li>
+
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal">LOGIN</a></li>
+                    <!-- <li><a href="#" data-toggle="modal" data-target="#myModal">SIGN UP</a></li> -->
+                    <li><a href="#" data-toggle="modal" data-target="#myModalRegister">REGISTER</a></li>
+    
+  </ul>
+</div>
+
+<!-- 3.section id=main-content -->
+<section id="main-content" class="listofcourses"> 
+<div class="container">            
+    <div class="detail product-hot">          
+        <ul class="nav nav-tabs">
+            <li><a href="#tatca" data-toggle="tab">TẤT CẢ KHÓA HỌC (88)</a></li>
+            <li><a href="#coban" data-toggle="tab">CƠ BẢN (4)</a></li>
+            <li><a href="#quanao" data-toggle="tab">WEB & DATABASE (3)</a></li>
+            <li><a href="#phukien" data-toggle="tab">MOBILE IOS (2)</a></li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane active" id="tatca">           
+            <!-- <h2 class="text-center title">Most Popular Free Online Courses</h2> -->
+            <div class="row ">
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo" >
+                        <a href="detail.html">
+                            <img src="https://cdn.alison.com/images/crs/25/261/Alison_CoursewareIntro_261.jpg" alt class="img-responsive" > 
+                            <span class="badge">On track with Golang</span>                           
+                        </a> 
+                        <p class="productname">                  
+                            <a class="sp" href="detail.html">Golang qua các dự án thực tế</a>
+                        </p>
+                        
+
+                        <div class="product-review">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star fa-star-half-o"></i>
+                        </div>
+                        <div class="is-strike" >350.000VNĐ</div>
+                        <div  class="product-price"><span> 250.000VNĐ </span> </div>
+
+                    </div>
+                </div>                
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+
+                        <a href="detail.html">
+                            <img src="https://cdn.alison.com/images/crs/25/262/Alison_CoursewareIntro_262.jpg" alt class="img-responsive" >   
+                            <span class="badge">Digging Into Django</span>                         
+                        </a>
+                        <p class="productname">                   
+                            <a class="sp" href="detail.html">Lập trình Djando qua 10 thí dụ thực tế</a>
+                        </p>
+                        <div class="product-review">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star fa-star-half-o"></i>
+                        </div>
+                        <div class="is-strike" >950.000VNĐ</div>
+                        <div  class="product-price"><span> 650.000VNĐ </span> </div>
+
+                    </div>
+                </div>  
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+
+                        <a href="detail.html">
+                            <img src="https://cdn.alison.com/images/crs/25/276/Alison_CoursewareIntro_276.jpg" alt class="img-responsive" >  
+                            <span class="badge">Javascript</span>                          
+                        </a>
+                        <p class="productname">                                     
+                            <a class="sp" href="detail.html">Java cơ bản qua dự án thực tế</a>
+                        </p>
+                        <div class="product-review">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star fa-star-half-o"></i>
+                        </div>
+                        <div class="is-strike" >1850.000VNĐ</div>
+                        <div  class="product-price"><span> 850.000VNĐ </span> </div>
+
+                    </div>
+                </div>                             
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+
+                        <a href="detail.html">
+                            <img src="https://cdn.alison.com/images/crs/25/325/Alison_CoursewareIntro_325.jpg" alt class="img-responsive" >  
+                            <span class="badge">-50%</span>                          
+                        </a>   
+                        <p class="productname">                
+                            <a class="sp" href="detail.html">Cấu trúc dữ liệu giải thuật thực tế - dễ học</a>
+                        </p>
+                        <div class="product-review">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star fa-star-half-o"></i>
+                        </div>
+                        <div class="is-strike" >1.500.000VNĐ</div>
+                        <div  class="product-price"><span> 750.000VNĐ </span> </div>
+
+                    </div>
+                </div>  
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo" >
+
+                        <a href="detail.html">
+                            <img src="https://cdn.alison.com/images/crs/25/261/Alison_CoursewareIntro_261.jpg" alt class="img-responsive" > 
+                            <span class="badge">On track with Golang</span>                           
+                        </a> 
+                        <p class="productname">                  
+                            <a class="sp" href="detail.html">Golang qua các dự án thực tế</a>
+                        </p>
+                        
+
+                        <div class="product-review">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star fa-star-half-o"></i>
+                        </div>
+                        <div class="is-strike" >350.000VNĐ</div>
+                        <div  class="product-price"><span> 250.000VNĐ </span> </div>
+
+                    </div>
+                </div>                
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+
+                        <a href="detail.html">
+                            <img src="https://cdn.alison.com/images/crs/25/262/Alison_CoursewareIntro_262.jpg" alt class="img-responsive" >   
+                            <span class="badge">Digging Into Django</span>                         
+                        </a>
+                        <p class="productname">                   
+                            <a class="sp" href="detail.html">Lập trình Djando qua 10 thí dụ thực tế</a>
+                        </p>
+                        <div class="product-review">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star fa-star-half-o"></i>
+                        </div>
+                        <div class="is-strike" >950.000VNĐ</div>
+                        <div  class="product-price"><span> 650.000VNĐ </span> </div>
+
+                    </div>
+                </div>  
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+
+                        <a href="detail.html">
+                            <img src="https://cdn.alison.com/images/crs/25/276/Alison_CoursewareIntro_276.jpg" alt class="img-responsive" >  
+                            <span class="badge">Javascript</span>                          
+                        </a>
+                        <p class="productname">                                     
+                            <a class="sp" href="detail.html">Java cơ bản qua dự án thực tế</a>
+                        </p>
+                        <div class="product-review">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star fa-star-half-o"></i>
+                        </div>
+                        <div class="is-strike" >1850.000VNĐ</div>
+                        <div  class="product-price"><span> 850.000VNĐ </span> </div>
+
+                    </div>
+                </div>                             
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+
+                        <a href="detail.html">
+                            <img src="https://cdn.alison.com/images/crs/25/325/Alison_CoursewareIntro_325.jpg" alt class="img-responsive" >  
+                            <span class="badge">-50%</span>                          
+                        </a>   
+                        <p class="productname">                
+                            <a class="sp" href="detail.html">Cấu trúc dữ liệu giải thuật thực tế - dễ học</a>
+                        </p>
+                        <div class="product-review">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star fa-star-half-o"></i>
+                        </div>
+                        <div class="is-strike" >1.500.000VNĐ</div>
+                        <div  class="product-price"><span> 750.000VNĐ </span> </div>
+
+                    </div>
+                </div>  
+            </div> <!-- end of row -->
+        </div>                
+        <div class="tab-pane" id="coban">
+            <div class="row ">
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo" >
+                        
+                        <a href="detail.html">
+                            <img src="https://cdn.alison.com/images/crs/25/261/Alison_CoursewareIntro_261.jpg" alt class="img-responsive" > 
+                            <span class="badge">On track with Golang</span>                           
+                        </a> 
+                        <p class="productname">                  
+                            <a class="sp" href="detail.html">Golang qua các dự án thực tế</a>
+                        </p>
+                        
+                               
+                        <div class="product-review">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star fa-star-half-o"></i>
+                        </div>
+                        <div class="is-strike" >350.000VNĐ</div>
+                        <div  class="product-price"><span> 250.000VNĐ </span> </div>
+                                               
+                    </div>
+                </div>                
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+                        
+                        <a href="detail.html">
+                            <img src="https://cdn.alison.com/images/crs/25/262/Alison_CoursewareIntro_262.jpg" alt class="img-responsive" >   
+                            <span class="badge">Digging Into Django</span>                         
+                        </a>
+                        <p class="productname">                   
+                            <a class="sp" href="detail.html">Lập trình Djando qua 10 thí dụ thực tế</a>
+                        </p>
+                        <div class="product-review">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star fa-star-half-o"></i>
+                        </div>
+                        <div class="is-strike" >950.000VNĐ</div>
+                        <div  class="product-price"><span> 650.000VNĐ </span> </div>
+                                              
+                    </div>
+                </div>  
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+                        
+                        <a href="detail.html">
+                            <img src="https://cdn.alison.com/images/crs/25/276/Alison_CoursewareIntro_276.jpg" alt class="img-responsive" >  
+                            <span class="badge">Javascript</span>                          
+                        </a>
+                        <p class="productname">                                     
+                            <a class="sp" href="detail.html">Java cơ bản qua dự án thực tế</a>
+                        </p>
+                        <div class="product-review">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star fa-star-half-o"></i>
+                        </div>
+                        <div class="is-strike" >1850.000VNĐ</div>
+                        <div  class="product-price"><span> 850.000VNĐ </span> </div>
+                                              
+                    </div>
+                </div>                             
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+                        
+                        <a href="detail.html">
+                            <img src="https://cdn.alison.com/images/crs/25/325/Alison_CoursewareIntro_325.jpg" alt class="img-responsive" >  
+                            <span class="badge">-50%</span>                          
+                        </a>   
+                        <p class="productname">                
+                            <a class="sp" href="detail.html">Cấu trúc dữ liệu giải thuật thực tế - dễ học</a>
+                        </p>
+                       <div class="product-review">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star fa-star-half-o"></i>
+                        </div>
+                        <div class="is-strike" >1.500.000VNĐ</div>
+                        <div  class="product-price"><span> 750.000VNĐ </span> </div>
+                                               
+                    </div>
+                </div>  
+            </div>
+           </div>
+                    
+
+        <div class="tab-pane" id="quanao">
+            <div class="col-sm-3 col-xs-6">
+                <div class="productioninfo" >
+                    <a href="#">
+                            <img src="https://cdn.alison.com/images/crs/25/261/Alison_CoursewareIntro_261.jpg" alt class="img-responsive" > 
+                            <span class="badge">On track with Golang</span>                           
+                        </a> 
+                        <p class="productname">                  
+                            <a class="sp" href="detail.html">Take online psychology courses to receive your Diploma in Psychology and gain a greater understanding of theory, behavior and ethical issues.</a>
+                        </p>
+                        <div  class="product-price"><span> 150.000VNĐ </span> </div>
+                                <div class="is-strike" >250.000VNĐ</div>
+                                <div class="product-review">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star fa-star-half-o"></i>
+                                </div>
+                        <!-- <a href="cart.html" class="btn btn-default product-button">
+                            <i class="fa fa-shopping-cart"></i>
+                            Start Course </a>   -->                      
+                    </div>
+                </div>                
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+                        
+                        <a href="#">
+                            <img src="https://cdn.alison.com/images/crs/25/262/Alison_CoursewareIntro_262.jpg" alt class="img-responsive" >   
+                            <span class="badge">Digging Into Django</span>                         
+                        </a>
+                        <p class="productname">                   
+                            <a class="sp" href="detail.html">Improve your business entrepreneurship skills and receive your Diploma of Business Management and Entrepreneurship.</a>
+                        </p>
+                        <div  class="product-price"><span> 150.000VNĐ </span> </div>
+                                <div class="is-strike" >250.000VNĐ</div>
+                                <div class="product-review">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star fa-star-half-o"></i>
+                                </div>
+                        <!-- <a href="cart.html" class="btn btn-default product-button">
+                            <i class="fa fa-shopping-cart"></i>
+                            Start Course </a>   -->                      
+                    </div>
+                </div>  
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+                        
+                        <a href="#">
+                            <img src="https://cdn.alison.com/images/crs/25/276/Alison_CoursewareIntro_276.jpg" alt class="img-responsive" >  
+                            <span class="badge">Javascript</span>                          
+                        </a>
+                        <p class="productname">                                     
+                            <a class="sp" href="detail.html">Learn the most important responsibilities of a human resource manager</a>
+                        </p>
+                        <div  class="product-price"><span> 150.000VNĐ </span> </div>
+                                <div class="is-strike" >250.000VNĐ</div>
+                                <div class="product-review">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star fa-star-half-o"></i>
+                                </div>
+                        <!-- <a href="cart.html" class="btn btn-default product-button">
+                            <i class="fa fa-shopping-cart"></i>
+                            Start Course</a>  -->                       
+                    </div>
+                </div>  
+                </div>
+
+                <div class="tab-pane" id="phukien">
+                            <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo" >
+                        
+                        <a href="#">
+                            <img src="https://cdn.alison.com/images/crs/25/261/Alison_CoursewareIntro_261.jpg" alt class="img-responsive" > 
+                            <span class="badge">On track with Golang</span>                           
+                        </a> 
+                        <p class="productname">                  
+                            <a class="sp" href="detail.html">Take online psychology courses to receive your Diploma in Psychology and gain a greater understanding of theory, behavior and ethical issues.</a>
+                        </p>
+                        <div  class="product-price"><span> 150.000VNĐ </span> </div>
+                                <div class="is-strike" >250.000VNĐ</div>
+                                <div class="product-review">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star fa-star-half-o"></i>
+                                </div>
+                        <!-- <a href="cart.html" class="btn btn-default product-button">
+                            <i class="fa fa-shopping-cart"></i>
+                            Start Course </a>   -->                      
+                    </div>
+                </div>                
+                 
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+                        
+                        <a href="#">
+                            <img src="https://cdn.alison.com/images/crs/25/276/Alison_CoursewareIntro_276.jpg" alt class="img-responsive" >  
+                            <span class="badge">Javascript</span>                          
+                        </a>
+                        <p class="productname">                                     
+                            <a class="sp" href="detail.html">Learn the most important responsibilities of a human resource manager</a>
+                        </p>
+                        <div  class="product-price"><span> 150.000VNĐ </span> </div>
+                        <div class="is-strike" >250.000VNĐ</div>
+                        <div class="product-review">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star fa-star-half-o"></i>
+                        </div>
+                        <!-- <a href="cart.html" class="btn btn-default product-button">
+                            <i class="fa fa-shopping-cart"></i>
+                            Start Course</a>   -->                      
+                        </div>
+                    </div>  
+                </div>
+                
+
+
+            </div> <!-- end of tab-content-->                                               
+        </div>  <!-- end of class hot product-->               
+</div> 
+</section>
+
+
+
+
+<!-- end of header-top -->
+
+<!-- 3.section id=main-content -->
+<section id="main-content"> 
+<div class="container">
+<div class="new-product"> <!-- class new product -->
+        <h2 class="text-center">
+            <span style="font-weight:bold; color:#007abf; text-align:center">Khóa học</span>
+                TECHMASTER  <span style="font-weight:bold; color:#007abf;">miễn phí</span>
+        </h2>
+            <!-- <h2 class="text-center title">Most Popular Free Online Courses</h2> -->
+        <div class="row ">
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo" >
+                        
+                        <a href="#">
+                            <img src="https://cdn.alison.com/images/crs/25/261/Alison_CoursewareIntro_261.jpg" alt class="img-responsive" > 
+                            <span class="badge">On track with Golang</span>                           
+                        </a> 
+                        <p class="productname">                  
+                            <a class="sp" href="detail.html">Take online psychology courses to receive your Diploma in Psychology and gain a greater understanding of theory, behavior and ethical issues.</a>
+                        </p>
+                        <div  class="product-price"><span> 150.000VNĐ </span> </div>
+                                <div class="is-strike" >250.000VNĐ</div>
+                                <div class="product-review">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star fa-star-half-o"></i>
+                                </div>
+                        <!-- <a href="cart.html" class="btn btn-default product-button">
+                            <i class="fa fa-shopping-cart"></i>
+                            Start Course ></a>  -->                      
+                    </div> 
+                </div>                
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+                        
+                        <a href="#">
+                            <img src="https://cdn.alison.com/images/crs/25/262/Alison_CoursewareIntro_262.jpg" alt class="img-responsive" >   
+                            <span class="badge">Digging Into Django</span>                         
+                        </a>
+                        <p class="productname">                   
+                            <a class="sp" href="detail.html">Django</a>
+                        </p>
+                        <div  class="product-price"><span> 150.000VNĐ </span> </div>
+                                <div class="is-strike" >250.000VNĐ</div>
+                                <div class="product-review">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star fa-star-half-o"></i>
+                                </div>
+                        <!-- <a href="cart.html" class="btn btn-default product-button">
+                            <i class="fa fa-shopping-cart"></i>
+                            Start Course ></a> -->                        
+                    </div>
+                </div>  
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+                        
+                        <a href="#">
+                            <img src="https://cdn.alison.com/images/crs/25/276/Alison_CoursewareIntro_276.jpg" alt class="img-responsive" >  
+                            <span class="badge">Javascript</span>                          
+                        </a>
+                        <p class="productname">                                     
+                            <a class="sp" href="detail.html">Javascript</a>
+                        </p>
+                        <div  class="product-price"><span> 150.000VNĐ </span> </div>
+                                <div class="is-strike" >250.000VNĐ</div>
+                                <div class="product-review">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star fa-star-half-o"></i>
+                                </div>
+                        <!-- <a href="cart.html" class="btn btn-default product-button">
+                            <i class="fa fa-shopping-cart"></i>
+                            Start Course ></a>    -->                     
+                    </div>
+                </div>                             
+                <div class="col-sm-3 col-xs-6">
+                    <div class="productioninfo">
+                        
+                        <a href="#">
+                            <img src="https://cdn.alison.com/images/crs/25/325/Alison_CoursewareIntro_325.jpg" alt class="img-responsive" >  
+                            <span class="badge">-50%</span>                          
+                        </a>   
+                        <p class="productname">                
+                            <a class="sp" href="detail.html">Ai cũng có thể trở thành giảng viên lập trình giỏi nếu</a>
+                        </p>
+                       <div  class="product-price"><span> 150.000VNĐ </span> </div>
+                                <div class="is-strike" >250.000VNĐ</div>
+                                <div class="product-review">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star fa-star-half-o"></i>
+                                </div>
+                        <!-- <a href="cart.html" class="btn btn-default product-button">
+                            <i class="fa fa-shopping-cart"></i>
+                            Start Course ></a>    -->                     
+                    </div>
+                </div>  
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="main-content">
+<div class="header-top bizresult listcourse">
+    <div class="container">
+        <div class="row ">
+            <div class="col-sm-3 hidden-xs">
+                <div class="contactinfo">
+                    <p><strong>8,000,000</strong></p>
+                    <p><span>Views on YouTube </span></p>
+                </div>
+            </div>
+            <div class="col-sm-3 hidden-xs">
+                <div class="contactinfo">
+                    <p><strong>950,000</strong></p>
+                    <p><span>Likes</span></p>
+                </div>
+            </div>
+            <div class="col-sm-3 hidden-xs">
+                <div class="contactinfo">
+                    <p><strong>250,000</strong></p>
+                    <p><span>Visited per Month</a></span>
+                </div>
+            </div>
+            <div class="col-sm-3 hidden-xs">
+                <div class="contactinfo">
+                    <p><strong>100 </strong></p>
+                    <p><span>Courses Published</a></span>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div> 
+</div>
+
+
+<div class="container">
+<div class="new-product "> <!-- class new product -->
+
+    
+
+    <h2 class="text-center" style="font-size: 20px">
+            <span style="font-weight:bold; color:#007abf; text-align:center">Lợi ích</span>
+                TECHMASTER  <span style="font-weight:bold; color:#007abf;">Online</span>
+    </h2>
+            <!-- <h2 class="text-center title">Benifits Online Learning</h2> -->
+            <div class="row benifit">
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="productioninfo" >
+                    <div class="box-content">
+                        <a href="#">    
+                            <i class="fa fa-users fa-sizecontrol"></i>
+                        </a>   
+                        <h4 style="color:#E05048">Học nhóm</h4>
+                        <ul>
+                        	<li>Gain Verifiable Certification</li>
+                        	<li>Free Aptitude Testing</li>
+                        </ul>
+                        <a href="cart.html" class="btn btn-default product-button">
+                            <i class="icon-featured icon icon-user"></i>
+                            Tìm hiểu thêm</a>                        
+                    </div>
+                    </div>
+                </div> 
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="productioninfo" >
+                    <div class="box-secondary-content">
+                        <a href="#">
+                            <i class="fa fa-user fa-sizecontrol"></i>
+                        </a>
+                        <h4 style="color:#08c">Sinh viên lẻ</h4>
+                        <ul>
+                        	<li>Managee large groups</li>
+                        	<li>Automate testings</li>
+                        </ul>
+                        <a href="cart.html" class="btn btn-default product-button">
+                            <i class="icon-featured icon icon-user"></i>
+                            Tìm hiểu thêm</a>                        
+                    </div>
+                    </div>
+                </div>                
+                
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="productioninfo" >
+                    <div class="box-tertiary-content">
+                        <a href="#">
+                            <i class="fa fa-building-o fa-sizecontrol"></i>
+                        </a>
+                        <h4 style="color:#4EB25C">Công ty</h4>
+                        <ul>
+                        	<li>Managee large groups</li>
+                        	<li>Automate testings</li>
+                        </ul>
+                        <a href="cart.html" class="btn btn-default product-button">
+                            <i class="icon-featured icon icon-user"></i>
+                            Tìm hiểu thêm</a>                        
+                    </div>
+                    </div>
+                </div> 
+                
+                <div class="col-md-3 col-sm-3 col-xs-6">
+                    <div class="productioninfo" >
+                    <div class="box-quarternary-content">
+                        <a href="#">
+                            <i class="fa fa-book fa-sizecontrol"></i>
+                        </a>
+                        <h4 style="color:#734BA9">Ngưởi đi làm</h4>
+                        <ul>
+                        	<li>Managee large groups</li>
+                        	<li>Automate testings</li>
+                        </ul>
+                        <a href="cart.html" class="btn btn-default product-button">
+                            <i class="icon-featured icon icon-user"></i>
+                            Tìm hiểu thêm</a>                        
+                    </div>
+                    </div>
+                </div>  
+
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- Phân trang -->
+<nav aria-label="Page navigation">
+<div class="text-center">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+        <span class="sr-only">Previous</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item active"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">4</a></li>
+    <li class="page-item"><a class="page-link" href="#">5</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+        <span class="sr-only">Next</span>
+      </a>
+    </li>
+  </ul>
+</div>
+</nav>
+
+
+</br></br></br>
+<!-- Footer -->
+<footer>
+	<div class="footer-head blackfoot">
+	<div class="container">
+    <div class="row grid-demo ">
+        <div class="col-xs-6 col-sm-3">
+            <h4>Techmaster connect</h4>
+            <ul id="ketnoi-footer" class="list-unstyled nav-list">
+                <li><img src="images/fb.jpg"></li>
+                <li><img src="images/g.jpg"></li>
+                <li><img src="images/twt.jpg"></li>
+            </ul>
+
+        </div>
+        <div class="col-sm-2 hidden-xs">
+            <h4> Về chúng tôi</h4>
+            <p><a href="#">Việc làm</a></p>
+            <p><a href="#">Về chúng tôi</a></p>
+            <p><a href="#">Giảng viên</a></p>
+            <p><a href="#">Cơ sở vật chất</a></p>
+        </div>
+                <div class="col-sm-3 hidden-xs">
+            <h4> Contact</h4>
+            <p><a href="#">Mr Cường: 090.220.9011</a></p>
+            <p><a href="#">Mr Nghĩa: 096.440.7993</a></p>
+            <p><a href="#">cuong@techmaster.vn</a></p>
+            
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <h4>Địa chỉ</h4>
+            <p><a href="#">Số 14, ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội</a></p>
+            <p><a href="#">Mở cửa: 9:00 đến 18:00</a></p>
+            <p><a href="#" style="font:italic;">Phòng 2304, tầng 23, toà nhà Ocean Bank (StarCity), 81 Lê Văn Lương, Nhân Chính, Thanh Xuân, Hà Nội</a></p>
+
+            <!-- <div class="input-group">
+            	<input type="text" class="form-control" placeholder="Email">
+            	<span class="input-group-btn"> 
+            		<button class="btn btn-default" type="button" >Đăng ký</button> 
+            	</span>
+            </div>
+            <div class="connect">
+            	<p><b>Kết nối với chúng tôi</b></p>
+            	<a><i class="fa fa-facebook-square fa-2x"></i></a>
+            	<a><i class="fa fa-youtube-play fa-2x"></i></a>
+            	
+            </div> -->
+        </div>
+    </div><!-- /.row -->
+    </div>  <!-- end of container -->
+    </div>  <!-- end of footer head -->
+<!-- <div class="footer-bottom">
+	<div class="container">
+	<p>Copy right @2016 cungphuot<br>
+							Giấy phép kinh doanh số 0106081880 do Sở KH và ĐT TP Hà Nội cấp ngày 06/09/2016
+						
+		
+	</p>
+		
+	</div>
+</div> -->
+
+</footer>
+
+
+
+</body>
+</html>

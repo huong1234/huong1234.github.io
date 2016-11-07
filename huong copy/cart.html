@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 3 Button Group</title>
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
+
+  
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/cart.css">
+
+
+
+
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> -->    
+    <script src="js/jquery.min.js"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+
+    
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> -->
+
+</head>
+<body>
+<header>
+<div class="header-top">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3 hidden-xs">
+				<div class="contactinfo">
+					<ul class="nav nav-pills">
+						<li><a><i class="fa fa-phone"></i>+0936.066.330</a></li>
+						
+						
+					</ul>
+				</div>
+			</div>
+            <div class="col-sm-5 hidden-xs">
+                <div class="contactinfo">
+                    <ul class="nav nav-pills">
+                        <li><a>Lập trình chuyên sâu- KM 10% Noel 2016</a></li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4 hidden-xs pull-left">
+                <div class="social-icon">
+                    <ul class="nav nav-pills pull-left">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <img class="circle avatar" style="width:45px;vertical-align: middle" src="images/avatar.jpg">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li style="width:100%"><a href="#">Khóa học của tôi</a></li>
+                                <li style="width:100%"><a href="#" data-toggle="modal" data-target="#modalSaveas">Hồ sơ cá nhân</a></li>
+                                <li style="width:100%"><a href="#">Đăng xuất</a></li>                       
+                            </ul>
+                        </li>                       
+                        <li><a><i class="fa fa-bell fa-2x"></i></a></li>                        
+                    </ul>                   
+                </div>              
+            </div>
+		</div>
+	</div>	
+</div> <!-- end of header-top -->
+
+
+<!-- beginning of header middle -->
+<div class="header_middle">
+<div class="container">
+    <div class="row">
+    	<div class="col-sm-2">
+            <div class="logo text-center">
+                <a href="index.html">
+                    <img src="images/logo.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-6">
+        	<div class="input-group searchbox">
+            	<input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm, thương hiệu...">
+            	<span class="input-group-btn"> 
+            		<button class="btn btn-default" type="button" >Search</button> 
+            	</span>
+            </div>
+        </div>
+        <div class="col-sm-1">
+        	<div class="cart">
+        		<a><i class="fa fa-shopping-cart fa-2x"></i></a>       		
+        	</div>        	
+        </div>
+        
+    </div>
+</div> 
+</div>
+
+</br></br></br></br>
+
+<!-- 3.section id=main-content -->
+<section id="main-content"> 
+<div class="container"> 
+    <ol class="breadcrumb">
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Giỏ hàng</a></li>
+    </ol>
+
+
+    <div class="alert alert-sucess">
+        <a href="#" class="close">x</a>Khóa học HTML/CSS/JS đơn giản đã được thêm vào giỏ hàng thành công
+    </div>
+    <div class="row">
+        <div class="col-sm-8">
+            <div class="row shopping-cart-item">
+                <div class="col-sm-3">
+                    <p class="image">
+                        <a href="">
+                            <img src="https://cdn.alison.com/images/crs/25/262/Alison_CoursewareIntro_262.jpg" class="img-responsive">
+                        </a>
+                    </p>
+                </div>
+                <div class="col-sm-9">
+                    <div class="name">
+                        <a href="#">Khóa học HTML/CSS/JS đơn giản </a>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="price">200.000VNĐ</div>
+                            <div class="is-strike">499.000VNĐ</div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" id="dropdownMenu1" type="button" aria-haspopup="true" >    1 
+                                    <span class="caret"></span>                           
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-2">
+                            <a href="#" class="delete">Xóa </a>                            
+                        </div>                        
+                    </div>                  
+                </div>
+
+            </div>
+            <div class="row shopping-cart-item">
+                <div class="col-sm-3">
+                    <p class="image">
+                        <a href="">
+                            <img src="https://cdn.alison.com/images/crs/25/261/Alison_CoursewareIntro_261.jpg" class="img-responsive">
+                        </a>
+                    </p>
+                </div>
+                <div class="col-sm-9">
+                    <div class="name">
+                        <a href="#">Khóa học Alison </a>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="price">390.000VNĐ</div>
+                            <div class="is-strike">790.000VNĐ</div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" id="dropdownMenu1" type="button" aria-haspopup="true" >    1 
+                                    <span class="caret"></span>                           
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-2">
+                            <a href="#" class="delete">Xóa </a>                            
+                        </div>                        
+                    </div>                  
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="panel coupon">
+                <div class="panel-heading">
+                    <h5 class="panel-title">Mã giảm giá </h4>
+                </div>
+                <div class="panel-body">
+                    <div class="input-group">
+                        <input type="text" name="form-control" placeholder="Nhập mã">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button" >Đồng ý</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="panel fee">
+                <div class="panel-body">
+                    <p class="total">Tổng tiền <span>1.289.000VNĐ</span>
+                    <p class="discount">Giảm giá <span>699.000VNĐ</span></p>
+                    <p class="total2">Thành tiền <span>590.000VNĐ</span></p>
+
+                </div>
+            </div>
+            <button type="button" class="btn btn-sucess btn-block">Tiến hành đặt hàng</button>
+        </div>
+    </div>
+  
+</div> 
+</section>
+
+
+
+
+</br></br></br>
+<!-- Footer -->
+<footer>
+	<div class="footer-head blackfoot">
+	<div class="container">
+    <div class="row grid-demo ">
+        <div class="col-xs-6 col-sm-3">
+            <h4>Techmaster connect</h4>
+            <ul id="ketnoi-footer" class="list-unstyled nav-list">
+                <li><img src="images/fb.jpg"></li>
+                <li><img src="images/g.jpg"></li>
+                <li><img src="images/twt.jpg"></li>
+            </ul>
+
+        </div>
+        <div class="col-sm-2 hidden-xs">
+            <h4> Về chúng tôi</h4>
+            <p><a href="#">Việc làm</a></p>
+            <p><a href="#">Về chúng tôi</a></p>
+            <p><a href="#">Giảng viên</a></p>
+            <p><a href="#">Cơ sở vật chất</a></p>
+        </div>
+                <div class="col-sm-3 hidden-xs">
+            <h4> Contact</h4>
+            <p><a href="#">Mr Cường: 090.220.9011</a></p>
+            <p><a href="#">Mr Nghĩa: 096.440.7993</a></p>
+            <p><a href="#">cuong@techmaster.vn</a></p>
+            
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <h4>Địa chỉ</h4>
+            <p><a href="#">Số 14, ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội</a></p>
+            <p><a href="#">Mở cửa: 9:00 đến 18:00</a></p>
+            <p><a href="#" style="font:italic;">Phòng 2304, tầng 23, toà nhà Ocean Bank (StarCity), 81 Lê Văn Lương, Nhân Chính, Thanh Xuân, Hà Nội</a></p>
+
+            <!-- <div class="input-group">
+            	<input type="text" class="form-control" placeholder="Email">
+            	<span class="input-group-btn"> 
+            		<button class="btn btn-default" type="button" >Đăng ký</button> 
+            	</span>
+            </div>
+            <div class="connect">
+            	<p><b>Kết nối với chúng tôi</b></p>
+            	<a><i class="fa fa-facebook-square fa-2x"></i></a>
+            	<a><i class="fa fa-youtube-play fa-2x"></i></a>
+            	
+            </div> -->
+        </div>
+    </div><!-- /.row -->
+    </div>  <!-- end of container -->
+    </div>  <!-- end of footer head -->
+<!-- <div class="footer-bottom">
+	<div class="container">
+	<p>Copy right @2016 cungphuot<br>
+							Giấy phép kinh doanh số 0106081880 do Sở KH và ĐT TP Hà Nội cấp ngày 06/09/2016
+						
+		
+	</p>
+		
+	</div>
+</div> -->
+
+</footer>
+
+</body>
+</html>
