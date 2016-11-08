@@ -52,11 +52,12 @@ h1{
   backface-visibility: hidden;
 }
 
-.card:hover .back{
-    transform: rotateY(0deg);
-}
+
 .card:hover .front{
     transform: rotateY(180deg);
+}
+.card:hover .back{
+    transform: rotateY(270deg);
 }
 .card .back{
   /*position: absolute;*/
