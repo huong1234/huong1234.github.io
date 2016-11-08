@@ -28,7 +28,7 @@ var app={ //tao object app có 2 functions .
 		modal.openModal();
 
 		var item= $(span).parent();
-
+		$('#btn-delete').off('click');
 		$('#btn-delete').on('click', function(){
 		
 			item.remove();

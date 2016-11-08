@@ -18,16 +18,16 @@ h5 {
 .card:hover {
     box-shadow: 0 8px 17px 0 rgba(0,0,0,1);
     }
+
 input.newjob.ui-sortable-handle {
-    margin-top: 50px;
-}
-input.newjob.ui-sortable-handle {
+      margin-top: 50px;
     padding: 5px;
     /*border: 1px solid #777;*/
     position: absolute;
     bottom: 0;
     left: 20px;
     width: 184px;
+    background-color: white;
 
 }
 .collection.sorted-list.ui-sortable {
@@ -37,9 +37,7 @@ input.newjob.ui-sortable-handle {
 section.container {
     margin-top: 20px;
 }
-input.newjob.ui-sortable-handle {
-    background-color: white;
-}
+
 .ui-state-highlight{
 	background-color: #fafafa; 
 	height: calc(1.5rem + 20px);
