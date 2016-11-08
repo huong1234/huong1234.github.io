@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kanban Board</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="plugins/materialize/css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection">
+
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">KANBAN BOARD</a>
+            
+        </div>
+    </nav>
+    <section class="container">
+    	<div class="row">
+    		<div class="col m4">
+    			<div class="card">
+    				<h5>TODO(4)</h5>
+    				<div class="collection sorted-list" id ="todo">
+    					<a href="#!" class="collection-item">Soạn giáo án <span class="badge" onclick="app.deleteJob(this)"><i class="tiny material-icons">delete </i></span> </a>
+
+    					<a href="#!" class="collection-item">Chuẩn bị ví dụ mẫu <span class="badge" onclick="app.deleteJob(this)"><i class="tiny material-icons">delete </i></span></a>
+    					<a href="#!" class="collection-item">Chuẩn bị quiz <span class="badge" onclick="app.deleteJob(this)"><i class="tiny material-icons">delete </i></span></a>
+    					<a href="#!" class="collection-item">Chuẩn bi bài tập <span class="badge" onclick="app.deleteJob(this)"><i class="tiny material-icons">delete </i></span></a>    	
+                    </div>
+    				<div class="action">
+    					<div class="input-field">
+    						<input id="new_job_done" type="text" onkeydown="app.newJob(event, 'todo', this)" >
+    						<label for="new_job_done"  >New job...</label>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+
+    		<div class="col m4">
+    			<div class="card">
+    				<h5>DOING(1)</h5>
+    				<div class="collection sorted-list" id="doing">
+    					<a href="#!" class="collection-item">Quay Vlog <span class="badge" onclick="app.deleteJob(this)"><i class="tiny material-icons">delete </i></span></a>
+    				</div>
+    				<div class="action">
+    					<div class="input-field">
+    						<input id="new_job_done" type="text" onkeydown="app.newJob(event, 'doing', this)" >
+    						<label for="new_job_done"  >New job...</label>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+
+    		<div class="col m4">
+    			<div class="card">
+    				<h5>DONE(3)</h5>
+    				<div class="collection sorted-list" id="done">
+    					<a href="#!" class="collection-item">Tìm kiếm tài liệu <span class="badge" onclick="app.deleteJob(this)"><i class="tiny material-icons">delete </i></span></a>
+    					<a href="#!" class="collection-item">Tìm kiếm hình ảnh<span class="badge" onclick="app.deleteJob(this)"><i class="tiny material-icons">delete </i></span></a>
+    					<a href="#!" class="collection-item">Cài đặt công cụ<span class="badge" onclick="app.deleteJob(this)"><i class="tiny material-icons">delete </i></span></a>
+    				</div>
+    				<div class="action">
+    					<div class="input-field">
+    						<input id="new_job_done" type="text" onkeydown="app.newJob(event, 'done', this)" >
+                            <label for="new_job_done"  >New job...</label>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+
+    	</div>
+    </section>
+
+
+
+  <!-- Modal Trigger -->
+  <!-- <a class="modal-trigger waves-effect waves-light btn" href="#modal1">Modal</a> -->
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer" >
+    <div class="modal-content">
+      <h4>Confirm Delete</h4>
+      <p>Are you sure to delete? </p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action waves-effect waves-light btn" id="btn-delete">Delete</a>
+      <a href="#!" class="modal-action modal-close waves-effect btn-flat">Cancel</a>
+    </div>
+  </div>      
+        
+
+   
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="plugins/jqueryui/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+       
+<script>
+
+$(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    // $('.modal').modal();
+    // $('.modal').openModal();
+  });
+</script>
+</body>
+</html>
+
+
+
+
