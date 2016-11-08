@@ -59,6 +59,7 @@
       },
       clickHandlers: function() {
           $('.card').on('click', function() {
+            console.log(this);
             $(this).html('<p>' + $(this).data('cardValue') + '</p>').addClass('selected');
             app.checkMatch();
         });
